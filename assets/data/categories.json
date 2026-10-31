@@ -1,0 +1,50 @@
+[
+  {
+    "category_id": 1,
+    "name_en": "Heritage & Culture",
+    "name_ar": "التراث والثقافة",
+    "icon_path": "icons/heritage.png"
+  },
+  {
+    "category_id": 2,
+    "name_en": "Museums",
+    "name_ar": "المتاحف",
+    "icon_path": "icons/museum.png"
+  },
+  {
+    "category_id": 3,
+    "name_en": "Nature & Mountains",
+    "name_ar": "الطبيعة والجبال",
+    "icon_path": "icons/nature.png"
+  },
+  {
+    "category_id": 4,
+    "name_en": "Family & Adventure",
+    "name_ar": "العائلة والمغامرة",
+    "icon_path": "icons/adventure.png"
+  },
+  {
+    "category_id": 5,
+    "name_en": "Shopping",
+    "name_ar": "التسوق",
+    "icon_path": "icons/shopping.png"
+  },
+  {
+    "category_id": 6,
+    "name_en": "Parks & Gardens",
+    "name_ar": "الحدائق والمتنزهات",
+    "icon_path": "icons/park.png"
+  },
+  {
+    "category_id": 7,
+    "name_en": "Religious Sites",
+    "name_ar": "المواقع الدينية",
+    "icon_path": "icons/mosque.png"
+  },
+  {
+    "category_id": 8,
+    "name_en": "Sports & Recreation",
+    "name_ar": "الرياضة والترفيه",
+    "icon_path": "icons/sports.png"
+  }
+]

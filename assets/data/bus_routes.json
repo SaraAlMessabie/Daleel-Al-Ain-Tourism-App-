@@ -1,0 +1,242 @@
+[
+  {
+    "route_id": "alain-900",
+    "route_number": "900",
+    "name_en": "City Bus 900",
+    "name_ar": "City Bus 900",
+    "transport_type": "bus",
+    "color_hex": "1565C0",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-901",
+    "route_number": "901",
+    "name_en": "City Bus 901",
+    "name_ar": "City Bus 901",
+    "transport_type": "bus",
+    "color_hex": "2E7D32",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-902",
+    "route_number": "902",
+    "name_en": "City Bus 902",
+    "name_ar": "City Bus 902",
+    "transport_type": "bus",
+    "color_hex": "EF6C00",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-903",
+    "route_number": "903",
+    "name_en": "City Bus 903",
+    "name_ar": "City Bus 903",
+    "transport_type": "bus",
+    "color_hex": "6A1B9A",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-904",
+    "route_number": "904",
+    "name_en": "City Bus 904",
+    "name_ar": "City Bus 904",
+    "transport_type": "bus",
+    "color_hex": "C62828",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-905",
+    "route_number": "905",
+    "name_en": "City Bus 905",
+    "name_ar": "City Bus 905",
+    "transport_type": "bus",
+    "color_hex": "00838F",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-906",
+    "route_number": "906",
+    "name_en": "City Bus 906",
+    "name_ar": "City Bus 906",
+    "transport_type": "bus",
+    "color_hex": "AD1457",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-907",
+    "route_number": "907",
+    "name_en": "City Bus 907",
+    "name_ar": "City Bus 907",
+    "transport_type": "bus",
+    "color_hex": "4527A0",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-908",
+    "route_number": "908",
+    "name_en": "City Bus 908",
+    "name_ar": "City Bus 908",
+    "transport_type": "bus",
+    "color_hex": "558B2F",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-909",
+    "route_number": "909",
+    "name_en": "City Bus 909",
+    "name_ar": "City Bus 909",
+    "transport_type": "bus",
+    "color_hex": "F9A825",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-911",
+    "route_number": "911",
+    "name_en": "City Bus 911",
+    "name_ar": "City Bus 911",
+    "transport_type": "bus",
+    "color_hex": "283593",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-912",
+    "route_number": "912",
+    "name_en": "City Bus 912",
+    "name_ar": "City Bus 912",
+    "transport_type": "bus",
+    "color_hex": "00695C",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-913",
+    "route_number": "913",
+    "name_en": "City Bus 913",
+    "name_ar": "City Bus 913",
+    "transport_type": "bus",
+    "color_hex": "1565C0",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-914",
+    "route_number": "914",
+    "name_en": "City Bus 914",
+    "name_ar": "City Bus 914",
+    "transport_type": "bus",
+    "color_hex": "2E7D32",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-915",
+    "route_number": "915",
+    "name_en": "City Bus 915",
+    "name_ar": "City Bus 915",
+    "transport_type": "bus",
+    "color_hex": "EF6C00",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-916",
+    "route_number": "916",
+    "name_en": "City Bus 916",
+    "name_ar": "City Bus 916",
+    "transport_type": "bus",
+    "color_hex": "6A1B9A",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-917",
+    "route_number": "917",
+    "name_en": "City Bus 917",
+    "name_ar": "City Bus 917",
+    "transport_type": "bus",
+    "color_hex": "C62828",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-918",
+    "route_number": "918",
+    "name_en": "City Bus 918",
+    "name_ar": "City Bus 918",
+    "transport_type": "bus",
+    "color_hex": "00838F",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-919",
+    "route_number": "919",
+    "name_en": "City Bus 919",
+    "name_ar": "City Bus 919",
+    "transport_type": "bus",
+    "color_hex": "AD1457",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-927",
+    "route_number": "927",
+    "name_en": "City Bus 927",
+    "name_ar": "City Bus 927",
+    "transport_type": "bus",
+    "color_hex": "4527A0",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-928",
+    "route_number": "928",
+    "name_en": "City Bus 928",
+    "name_ar": "City Bus 928",
+    "transport_type": "bus",
+    "color_hex": "558B2F",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-937",
+    "route_number": "937",
+    "name_en": "City Bus 937",
+    "name_ar": "City Bus 937",
+    "transport_type": "bus",
+    "color_hex": "F9A825",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-938",
+    "route_number": "938",
+    "name_en": "City Bus 938",
+    "name_ar": "City Bus 938",
+    "transport_type": "bus",
+    "color_hex": "283593",
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "route_id": "alain-992",
+    "route_number": "992",
+    "name_en": "City Bus 992",
+    "name_ar": "City Bus 992",
+    "transport_type": "bus",
+    "color_hex": "00695C",
+    "is_active": 1,
+    "source_id": 1
+  }
+]

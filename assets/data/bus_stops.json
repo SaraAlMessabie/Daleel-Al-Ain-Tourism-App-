@@ -1,0 +1,6782 @@
+[
+  {
+    "stop_id": "1043000-0-B",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Al Souq",
+    "name_ar": "شارع العامرة / السوق",
+    "latitude": 24.22596,
+    "longitude": 55.56081,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043003-0-A",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Federal Authority for Identity and Citizenship",
+    "name_ar": "شارع العامرة / هيئة الامارات للهوية",
+    "latitude": 24.22167,
+    "longitude": 55.548,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043003-0-B",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Federal Authority for Identity and Citizenship",
+    "name_ar": "شارع العامرة / هيئة الامارات للهوية",
+    "latitude": 24.22163,
+    "longitude": 55.54703,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043007-0-A",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Al Yahar Mall",
+    "name_ar": "شارع العامرة / اليحر مول",
+    "latitude": 24.22039,
+    "longitude": 55.54417,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043007-0-B",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Al Yahar Mall",
+    "name_ar": "شارع العامرة / اليحر مول",
+    "latitude": 24.22023,
+    "longitude": 55.54328,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043011-0-A",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Al Aamerah North Public Park",
+    "name_ar": "شارع العامرة / حديقة العامرة شمال العامة",
+    "latitude": 24.21782,
+    "longitude": 55.53704,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043011-0-B",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Al Aamerah North Public Park",
+    "name_ar": "شارع العامرة / حديقة العامرة شمال العامة",
+    "latitude": 24.2179,
+    "longitude": 55.53623,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043013-0-A",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Department of Municipalities and Transport",
+    "name_ar": "شارع العامرة / دائرة البلديات والنقل",
+    "latitude": 24.21719,
+    "longitude": 55.53218,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043013-0-B",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Department of Municipalities and Transport",
+    "name_ar": "شارع العامرة / دائرة البلديات والنقل",
+    "latitude": 24.2172,
+    "longitude": 55.53151,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043015-0-A",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Shakhboot Bin Sultan Mosque",
+    "name_ar": "شارع العامرة / مسجد شخبوط بن سلطان",
+    "latitude": 24.21582,
+    "longitude": 55.52743,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043015-0-B",
+    "stop_code": null,
+    "name_en": "Al Aamerah St / Shakhboot Bin Sultan Mosque",
+    "name_ar": "شارع العامرة / مسجد شخبوط بن سلطان",
+    "latitude": 24.21566,
+    "longitude": 55.52672,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043019-0-A",
+    "stop_code": null,
+    "name_en": "Al Souq St / Al Aaliya School",
+    "name_ar": "شارع السُّوق / مدرسة عالية",
+    "latitude": 24.19779,
+    "longitude": 55.53236,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043147-0-A",
+    "stop_code": null,
+    "name_en": "ADNOC",
+    "name_ar": "ادنوك",
+    "latitude": 24.20776,
+    "longitude": 55.5254,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043147-0-B",
+    "stop_code": null,
+    "name_en": "ADNOC",
+    "name_ar": "ادنوك",
+    "latitude": 24.20833,
+    "longitude": 55.52489,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043203-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Al Athal St",
+    "name_ar": "شارع سالم بن ركاض العامري / شارع الأثَل",
+    "latitude": 24.22207,
+    "longitude": 55.55663,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043203-0-B",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Al Athal St",
+    "name_ar": "شارع سالم بن ركاض العامري / شارع الأثَل",
+    "latitude": 24.22201,
+    "longitude": 55.55617,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043205-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Al Zeenat St",
+    "name_ar": "شارع سالم بن ركاض العامري / شارع الزِّينات",
+    "latitude": 24.22056,
+    "longitude": 55.55093,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043205-0-B",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Al Zeenat St",
+    "name_ar": "شارع سالم بن ركاض العامري / شارع الزِّينات",
+    "latitude": 24.22034,
+    "longitude": 55.5499,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043207-0-A",
+    "stop_code": null,
+    "name_en": "Ali Almqaidi Al Ameri St / Al Aliyah Mall",
+    "name_ar": "شارع علي المقيضي العامري /  العالية مول",
+    "latitude": 24.2147,
+    "longitude": 55.54408,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043209-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St  / E22 Underpass",
+    "name_ar": "شارع سالم بن ركاض العامري / نفق اليحر أي 22",
+    "latitude": 24.2182,
+    "longitude": 55.54471,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043209-0-B",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St  / E22 Underpass",
+    "name_ar": "شارع سالم بن ركاض العامري / نفق اليحر أي 22",
+    "latitude": 24.2181,
+    "longitude": 55.54415,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043211-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Al Yahar South Park",
+    "name_ar": "شارع سالم بن ركاض العامري / حديقة اليحر الجنوبي",
+    "latitude": 24.21557,
+    "longitude": 55.53663,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043211-0-B",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Al Yahar South Park",
+    "name_ar": "شارع سالم بن ركاض العامري / حديقة اليحر الجنوبي",
+    "latitude": 24.21516,
+    "longitude": 55.53498,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043215-0-A",
+    "stop_code": null,
+    "name_en": "Al Manaz St / Al Souq",
+    "name_ar": "شارع المَنَز / السوق",
+    "latitude": 24.20994,
+    "longitude": 55.53069,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043409-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Yas Clinic Center Al Ain",
+    "name_ar": "شارع سالم بن ركاض العامري /  مركز ياس الصحي",
+    "latitude": 24.23198,
+    "longitude": 55.56371,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043409-0-B",
+    "stop_code": null,
+    "name_en": "Salem Bin Rakkad Al Ameri St / Yas Clinic Center Al Ain",
+    "name_ar": "شارع سالم بن ركاض العامري /  مركز ياس الصحي",
+    "latitude": 24.23168,
+    "longitude": 55.56351,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043412-0-A",
+    "stop_code": null,
+    "name_en": "Ghayt Shineen St / Yazrib Harbi Al-Amiri Mosque",
+    "name_ar": "شارع غَيط شِنِين /  مسجد يزرب حربي العامري",
+    "latitude": 24.23138,
+    "longitude": 55.57165,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043412-0-B",
+    "stop_code": null,
+    "name_en": "Ghayt Shineen St / Yazrib Harbi Al-Amiri Mosque",
+    "name_ar": "شارع غَيط شِنِين /  مسجد يزرب حربي العامري",
+    "latitude": 24.23145,
+    "longitude": 55.5715,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043413-0-A",
+    "stop_code": null,
+    "name_en": "St 23 / ADNOC",
+    "name_ar": "شارع 23 / ادنوك",
+    "latitude": 24.23932,
+    "longitude": 55.573,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043413-0-B",
+    "stop_code": null,
+    "name_en": "St 23 / ADNOC",
+    "name_ar": "شارع 23 / ادنوك",
+    "latitude": 24.23913,
+    "longitude": 55.57289,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043415-0-A",
+    "stop_code": null,
+    "name_en": "St 23 / Al Yadeed St",
+    "name_ar": "شارع 23 / شارع اليعضيد",
+    "latitude": 24.24592,
+    "longitude": 55.57378,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043415-0-B",
+    "stop_code": null,
+    "name_en": "St 23 / Al Yadeed St",
+    "name_ar": "شارع 23 / شارع اليعضيد",
+    "latitude": 24.24509,
+    "longitude": 55.57359,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043417-0-A",
+    "stop_code": null,
+    "name_en": "St 23 / Tawi Bin Sabir St",
+    "name_ar": "شارع 23 / شارع طَوِي بن صابِر",
+    "latitude": 24.25231,
+    "longitude": 55.57453,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043417-0-B",
+    "stop_code": null,
+    "name_en": "St 23 / Tawi Bin Sabir St",
+    "name_ar": "شارع 23 / شارع طَوِي بن صابِر",
+    "latitude": 24.25292,
+    "longitude": 55.57451,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1043419-0-A",
+    "stop_code": null,
+    "name_en": "Ghaleel Al Madar St / Abdullah Bin Rakad Al Ameri Mosque",
+    "name_ar": "شارع غلِيل المَدار / مسجد عبدالله بن ركاض العامري",
+    "latitude": 24.25628,
+    "longitude": 55.56994,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1044013-0-A",
+    "stop_code": null,
+    "name_en": "Fahad Bin Muaid Al Ahbabi St / Salama Bint Butti School",
+    "name_ar": "شارع فهد بن معيض الأحبابي /  مدرسة سلامة بنت بطي",
+    "latitude": 24.20489,
+    "longitude": 55.59199,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1044013-0-B",
+    "stop_code": null,
+    "name_en": "Fahad Bin Muaid Al Ahbabi St / Salama Bint Butti School",
+    "name_ar": "شارع فهد بن معيض الأحبابي /  مدرسة سلامة بنت بطي",
+    "latitude": 24.20391,
+    "longitude": 55.59274,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1044017-0-B",
+    "stop_code": null,
+    "name_en": "Falah Bin Jaber Al Ahbabi St / Omar Ibn Al-Khattab Mosque",
+    "name_ar": "شارع فلاح بن جابر الاحبابي / مسجد عمر بن الخطاب",
+    "latitude": 24.21288,
+    "longitude": 55.59454,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1044019-0-B",
+    "stop_code": null,
+    "name_en": "Falah Bin Jaber Al Ahbabi St / Fahad Bin Muaid Al Ahbabi St",
+    "name_ar": "شارع فلاح بن جابر الاحبابي / شارع فهد بن معيض الأحبابي",
+    "latitude": 24.20742,
+    "longitude": 55.58792,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1044021-0-A",
+    "stop_code": null,
+    "name_en": "Falah Bin Jaber Al Ahbabi St /  Co-op",
+    "name_ar": "شارع فلاح بن جابر الاحبابي/ جمعية العين التعاونية",
+    "latitude": 24.20394,
+    "longitude": 55.58397,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1044023-0-B",
+    "stop_code": null,
+    "name_en": "Fahad Bin Muaid Al Ahbabi St / Falah Bin Jaber Al Ahbabi St",
+    "name_ar": "شارع فهد بن معيض الأحبابي /  شارع فلاح بن جابر الاحبابي",
+    "latitude": 24.20736,
+    "longitude": 55.58935,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046000-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Barari Mall",
+    "name_ar": "شارع ام غافة / البراري مول",
+    "latitude": 24.08517,
+    "longitude": 55.83015,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046005-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Wedding Hall",
+    "name_ar": "شارع زايد بن سلطان/ صاله الاحتفالات",
+    "latitude": 24.076,
+    "longitude": 55.83466,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046005-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Wedding Hall",
+    "name_ar": "شارع زايد بن سلطان/ صاله الاحتفالات",
+    "latitude": 24.07375,
+    "longitude": 55.83485,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046009-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Neyadi Mosque",
+    "name_ar": "شارع زايد بن سلطان /  مسجد النيادي",
+    "latitude": 24.05912,
+    "longitude": 55.83965,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046009-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Neyadi Mosque",
+    "name_ar": "شارع زايد بن سلطان /  مسجد النيادي",
+    "latitude": 24.05435,
+    "longitude": 55.83996,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046015-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Rafiah Mosque",
+    "name_ar": "شارع زايد بن سلطان/ مسجد رفيعه",
+    "latitude": 24.04352,
+    "longitude": 55.84297,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046015-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Rafiah Mosque",
+    "name_ar": "شارع زايد بن سلطان/ مسجد رفيعه",
+    "latitude": 24.04255,
+    "longitude": 55.8428,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046017-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Ain Co-op Society",
+    "name_ar": "شارع زايد بن سلطان / جمعية العين التعاونية",
+    "latitude": 24.04047,
+    "longitude": 55.84353,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046017-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Ain Co-op Society",
+    "name_ar": "شارع زايد بن سلطان / جمعية العين التعاونية",
+    "latitude": 24.0395,
+    "longitude": 55.84346,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046019-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Sheikh Zayed Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد زايد بن سلطان",
+    "latitude": 24.03608,
+    "longitude": 55.84447,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046019-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Sheikh Zayed Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد زايد بن سلطان",
+    "latitude": 24.03572,
+    "longitude": 55.84428,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046023-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / ADNOC",
+    "name_ar": "شارع زايد بن سلطان/ ادنوك",
+    "latitude": 24.03071,
+    "longitude": 55.8456,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046049-0-A",
+    "stop_code": null,
+    "name_en": "Jabal Silateen St / Imran Bin Al Hussayen Mosque",
+    "name_ar": "شارع جَبَل سِلاطِين / مسجد عمران بن الحصين",
+    "latitude": 24.08357,
+    "longitude": 55.84297,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046049-0-B",
+    "stop_code": null,
+    "name_en": "Jabal Silateen St / Imran Bin Al Hussayen Mosque",
+    "name_ar": "شارع جَبَل سِلاطِين / مسجد عمران بن الحصين",
+    "latitude": 24.08363,
+    "longitude": 55.84285,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046101-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Mazyad Health Center",
+    "name_ar": "شارع ام غافة /  مركز مزيد الصحي",
+    "latitude": 24.08719,
+    "longitude": 55.84036,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046101-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Mazyad Health Center",
+    "name_ar": "شارع ام غافة /  مركز مزيد الصحي",
+    "latitude": 24.08691,
+    "longitude": 55.83753,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046105-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Womens Health Club",
+    "name_ar": "شارع ام غافة / نادي السيدات",
+    "latitude": 24.0877,
+    "longitude": 55.84498,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046105-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Womens Health Club",
+    "name_ar": "شارع ام غافة / نادي السيدات",
+    "latitude": 24.0877,
+    "longitude": 55.84448,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046105-0-C",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Womens Health Club",
+    "name_ar": "شارع ام غافة / نادي السيدات",
+    "latitude": 24.08814,
+    "longitude": 55.84353,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046107-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Wadi Al Dhahir St",
+    "name_ar": "شارع ام غافة / شارع وادِي الظَّاهر",
+    "latitude": 24.08985,
+    "longitude": 55.85258,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046107-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Wadi Al Dhahir St",
+    "name_ar": "شارع ام غافة / شارع وادِي الظَّاهر",
+    "latitude": 24.08944,
+    "longitude": 55.84956,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046109-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Jazeerat Bu Al Sayayif St",
+    "name_ar": "شارع ام غافة / شارع جَزيرة بو السَّياييف",
+    "latitude": 24.09157,
+    "longitude": 55.8607,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046109-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Jazeerat Bu Al Sayayif St",
+    "name_ar": "شارع ام غافة / شارع جَزيرة بو السَّياييف",
+    "latitude": 24.09122,
+    "longitude": 55.85782,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046111-0-A",
+    "stop_code": null,
+    "name_en": "Yaw Muwafjah St / Al Souq",
+    "name_ar": "شارع يَو مُوافجه / السوق",
+    "latitude": 24.09135,
+    "longitude": 55.86663,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046111-0-B",
+    "stop_code": null,
+    "name_en": "Yaw Muwafjah St / Al Souq",
+    "name_ar": "شارع يَو مُوافجه / السوق",
+    "latitude": 24.09169,
+    "longitude": 55.86667,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046113-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Um Ghafah school",
+    "name_ar": "شارع ام غافة / مدرسة ام غافة",
+    "latitude": 24.09286,
+    "longitude": 55.89281,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046113-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Um Ghafah school",
+    "name_ar": "شارع ام غافة / مدرسة ام غافة",
+    "latitude": 24.09306,
+    "longitude": 55.891,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046115-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Al Nakheel St",
+    "name_ar": "شارع ام غافة / شارع النخيل",
+    "latitude": 24.09297,
+    "longitude": 55.89933,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046115-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Al Nakheel St",
+    "name_ar": "شارع ام غافة / شارع النخيل",
+    "latitude": 24.09327,
+    "longitude": 55.9005,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046117-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Ibn Khaldoun St",
+    "name_ar": "شارع ام غافة / شارع ابن خلدون",
+    "latitude": 24.09318,
+    "longitude": 55.90873,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046117-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Ibn Khaldoun St",
+    "name_ar": "شارع ام غافة / شارع ابن خلدون",
+    "latitude": 24.09334,
+    "longitude": 55.90635,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046119-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Co-op",
+    "name_ar": "شارع ام غافة / جمعية العين التعاونية",
+    "latitude": 24.09362,
+    "longitude": 55.91684,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046119-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Co-op",
+    "name_ar": "شارع ام غافة / جمعية العين التعاونية",
+    "latitude": 24.09384,
+    "longitude": 55.91617,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046121-0-A",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Al Ain Co-op Society",
+    "name_ar": "شارع ام غافة / جمعية العين التعاونية",
+    "latitude": 24.09272,
+    "longitude": 55.92183,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046121-0-B",
+    "stop_code": null,
+    "name_en": "Um Ghafah St / Al Ain Co-op Society",
+    "name_ar": "شارع ام غافة / جمعية العين التعاونية",
+    "latitude": 24.09421,
+    "longitude": 55.91981,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046125-0-A",
+    "stop_code": null,
+    "name_en": "Al Gheemat St / Um Ghafah Souq",
+    "name_ar": "شارع الغيمات / سوق أم غفاه",
+    "latitude": 24.09202,
+    "longitude": 55.92403,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046201-0-A",
+    "stop_code": null,
+    "name_en": "Ghaleel Birayjah St / Sheikh Tahnoun Bin Muhammad Mosque",
+    "name_ar": "شارع غَلِيل بِرَيجة / مسجد الشيخ طحنون بن محمد",
+    "latitude": 24.11119,
+    "longitude": 55.83142,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046207-0-A",
+    "stop_code": null,
+    "name_en": "Obaid Bin Muaded Al Kheraibani St / Al Dhahir Park",
+    "name_ar": "شارع عبيد بن معضد الخريباني / حديقة الظاهر",
+    "latitude": 24.099,
+    "longitude": 55.83543,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046207-0-B",
+    "stop_code": null,
+    "name_en": "Obaid Bin Muaded Al Kheraibani St / Al Dhahir Park",
+    "name_ar": "شارع عبيد بن معضد الخريباني / حديقة الظاهر",
+    "latitude": 24.09859,
+    "longitude": 55.83543,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046211-0-A",
+    "stop_code": null,
+    "name_en": "Obaid Bin Muaded Al Kheraibani St / Abu Al Abyad St",
+    "name_ar": "شارع عبيد بن معضد الخريباني / شارع أبو الأبيَض",
+    "latitude": 24.09078,
+    "longitude": 55.83753,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046211-0-B",
+    "stop_code": null,
+    "name_en": "Obaid Bin Muaded Al Kheraibani St / Abu Al Abyad St",
+    "name_ar": "شارع عبيد بن معضد الخريباني / شارع أبو الأبيَض",
+    "latitude": 24.09019,
+    "longitude": 55.83881,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046223-0-A",
+    "stop_code": null,
+    "name_en": "Al Dhahir St / Arqoub At Tiyouh St",
+    "name_ar": "شارع الظَّاهِر / شارع عرقوب الطِّيُوح",
+    "latitude": 24.10887,
+    "longitude": 55.83858,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046223-0-B",
+    "stop_code": null,
+    "name_en": "Al Dhahir St / Arqoub At Tiyouh St",
+    "name_ar": "شارع الظَّاهِر / شارع عرقوب الطِّيُوح",
+    "latitude": 24.10824,
+    "longitude": 55.83985,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046227-0-A",
+    "stop_code": null,
+    "name_en": "Al Dhahir Park",
+    "name_ar": "حديقة الظاهر",
+    "latitude": 24.10068,
+    "longitude": 55.842,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046227-0-B",
+    "stop_code": null,
+    "name_en": "Al Dhahir Park",
+    "name_ar": "حديقة الظاهر",
+    "latitude": 24.0997,
+    "longitude": 55.84205,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046231-0-A",
+    "stop_code": null,
+    "name_en": "Abu Al Abyad St / Zee Diayj St",
+    "name_ar": "شارع أبو الابيض/ شارع زِي دِعَيج",
+    "latitude": 24.09282,
+    "longitude": 55.84398,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046231-0-B",
+    "stop_code": null,
+    "name_en": "Abu Al Abyad St / Zee Diayj St",
+    "name_ar": "شارع أبو الابيض/ شارع زِي دِعَيج",
+    "latitude": 24.09058,
+    "longitude": 55.84439,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046231-0-C",
+    "stop_code": null,
+    "name_en": "Abu Al Abyad St / Zee Diayj St",
+    "name_ar": "شارع أبو الابيض/ شارع زِي دِعَيج",
+    "latitude": 24.09128,
+    "longitude": 55.84343,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046306-0-A",
+    "stop_code": null,
+    "name_en": "Al Mamzar St / Al Zaher Girls School",
+    "name_ar": "شارع المَمزَر / مدرسة الظاهر للبنات",
+    "latitude": 24.07566,
+    "longitude": 55.84224,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046306-0-B",
+    "stop_code": null,
+    "name_en": "Al Mamzar St / Al Zaher Girls School",
+    "name_ar": "شارع المَمزَر / مدرسة الظاهر للبنات",
+    "latitude": 24.07584,
+    "longitude": 55.84211,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046309-0-A",
+    "stop_code": null,
+    "name_en": "Jabal Malaqat St / Mohammed Rashid Al Ketbi Mosque",
+    "name_ar": "شارع جَبَل مَلاقَط / مسجد محمد راشد الكتبي",
+    "latitude": 24.0724,
+    "longitude": 55.8455,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046401-0-A",
+    "stop_code": null,
+    "name_en": "Al Shuweehat St / Jabal Al Nijaymat St",
+    "name_ar": "شارع الشُّوِيهات / شارع جَبَل النِّجَيمات",
+    "latitude": 24.08618,
+    "longitude": 55.86839,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046401-0-B",
+    "stop_code": null,
+    "name_en": "Al Shuweehat St / Jabal Al Nijaymat St",
+    "name_ar": "شارع الشُّوِيهات / شارع جَبَل النِّجَيمات",
+    "latitude": 24.08564,
+    "longitude": 55.86832,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046403-0-A",
+    "stop_code": null,
+    "name_en": "Al Shuweehat St / Sultan Al Neyadi Mosque",
+    "name_ar": "شارع الشُّوِيهات / مسجد سلطان النيادي",
+    "latitude": 24.07933,
+    "longitude": 55.86854,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046403-0-B",
+    "stop_code": null,
+    "name_en": "Al Shuweehat St / Sultan Al Neyadi Mosque",
+    "name_ar": "شارع الشُّوِيهات / مسجد سلطان النيادي",
+    "latitude": 24.07889,
+    "longitude": 55.86846,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1046405-0-A",
+    "stop_code": null,
+    "name_en": "Halat Bu Niyaydah St / Dhahir Community Grand Mosque",
+    "name_ar": "شارع حالة بو نيَيده / مسجد الظاهر الكبير",
+    "latitude": 24.07087,
+    "longitude": 55.86574,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090000-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Al Ain Hospital",
+    "name_ar": "شارع شخبوط بن سلطان / مستشفى العين",
+    "latitude": 24.23165,
+    "longitude": 55.7363,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090000-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Al Ain Hospital",
+    "name_ar": "شارع شخبوط بن سلطان / مستشفى العين",
+    "latitude": 24.23261,
+    "longitude": 55.73371,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090002-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / NMC Hospital",
+    "name_ar": "شارع شخبوط بن سلطان / مستشفى ان ام سي",
+    "latitude": 24.23067,
+    "longitude": 55.74494,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090002-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / NMC Hospital",
+    "name_ar": "شارع شخبوط بن سلطان / مستشفى ان ام سي",
+    "latitude": 24.23217,
+    "longitude": 55.74173,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090008-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Mawasim St",
+    "name_ar": "شارع شخبوط بن سلطان/ شارع المَوَاسِم",
+    "latitude": 24.2307,
+    "longitude": 55.75818,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090010-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Moza Sultan Al Kindi Mosque",
+    "name_ar": "شارع شخبوط بن سلطان/ مسجد موزة سلطان الكندى",
+    "latitude": 24.23033,
+    "longitude": 55.76029,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090012-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Mudeef Garden",
+    "name_ar": "شارع شخبوط بن سلطان / حديقة المضيف",
+    "latitude": 24.23003,
+    "longitude": 55.76608,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090012-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Mudeef Garden",
+    "name_ar": "شارع شخبوط بن سلطان / حديقة المضيف",
+    "latitude": 24.2303,
+    "longitude": 55.76592,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090016-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / LuLu Hypermarket",
+    "name_ar": "شارع شخبوط بن سلطان / اللولو هايبر ماركت",
+    "latitude": 24.2297,
+    "longitude": 55.77161,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090016-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / LuLu Hypermarket",
+    "name_ar": "شارع شخبوط بن سلطان / اللولو هايبر ماركت",
+    "latitude": 24.2323,
+    "longitude": 55.77342,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090018-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Mohammed Khalaf Al Muhairi Mosque",
+    "name_ar": "شارع شخبوط بن سلطان/ مسجد محمدخلف المهيرى",
+    "latitude": 24.22919,
+    "longitude": 55.78076,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090018-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Mohammed Khalaf Al Muhairi Mosque",
+    "name_ar": "شارع شخبوط بن سلطان/ مسجد محمدخلف المهيرى",
+    "latitude": 24.22944,
+    "longitude": 55.78061,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090100-0-A",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Abi Firas Al Aslami Mosque",
+    "name_ar": "شارع عمر بن الخطاب /مسجد ابي فراس الاسلمي",
+    "latitude": 24.2259,
+    "longitude": 55.78475,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090100-0-B",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Abi Firas Al Aslami Mosque",
+    "name_ar": "شارع عمر بن الخطاب /مسجد ابي فراس الاسلمي",
+    "latitude": 24.22689,
+    "longitude": 55.78422,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090104-0-A",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Al Andalus Complex",
+    "name_ar": "شارع عمر بن الخطاب / مجمع الاندلس",
+    "latitude": 24.21872,
+    "longitude": 55.78595,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090104-0-B",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Al Andalus Complex",
+    "name_ar": "شارع عمر بن الخطاب / مجمع الاندلس",
+    "latitude": 24.21859,
+    "longitude": 55.78569,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090110-0-A",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Niyadat Mosque",
+    "name_ar": "شارع عمر بن الخطاب / مسجد النيادات",
+    "latitude": 24.21368,
+    "longitude": 55.78678,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090110-0-B",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Niyadat Mosque",
+    "name_ar": "شارع عمر بن الخطاب / مسجد النيادات",
+    "latitude": 24.21379,
+    "longitude": 55.7865,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090120-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Murabba Police Station",
+    "name_ar": "شارع زايد بن سلطان / مركز شرطة المربعة",
+    "latitude": 24.21878,
+    "longitude": 55.77545,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090120-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Murabba Police Station",
+    "name_ar": "شارع زايد بن سلطان / مركز شرطة المربعة",
+    "latitude": 24.21751,
+    "longitude": 55.776,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090122-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Hashim Bin Otba Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد هاشم بن عتبة",
+    "latitude": 24.21417,
+    "longitude": 55.77824,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090122-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Hashim Bin Otba Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد هاشم بن عتبة",
+    "latitude": 24.21434,
+    "longitude": 55.77788,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090130-0-A",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Radisson Blu Hotel",
+    "name_ar": "شارع عمر بن الخطاب / فندق رادسون بلو",
+    "latitude": 24.2075,
+    "longitude": 55.78784,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090130-0-B",
+    "stop_code": null,
+    "name_en": "Omar Bin Al Khattab St / Radisson Blu Hotel",
+    "name_ar": "شارع عمر بن الخطاب / فندق رادسون بلو",
+    "latitude": 24.20732,
+    "longitude": 55.78762,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090212-0-A",
+    "stop_code": null,
+    "name_en": "Ali Ibn Abi Taleb St / Eid Prayer Ground",
+    "name_ar": "شارع علي بن ابي طالب / مصلى العيد",
+    "latitude": 24.22678,
+    "longitude": 55.75463,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090212-0-B",
+    "stop_code": null,
+    "name_en": "Ali Ibn Abi Taleb St / Eid Prayer Ground",
+    "name_ar": "شارع علي بن ابي طالب / مصلى العيد",
+    "latitude": 24.227,
+    "longitude": 55.7541,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090216-0-A",
+    "stop_code": null,
+    "name_en": "Ali Ibn Abi Taleb St / Abu Dhabi Tourism Authority",
+    "name_ar": "شارع علي بن ابي طالب / هيئة ابوظبي للسياحة",
+    "latitude": 24.22748,
+    "longitude": 55.76007,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090216-0-B",
+    "stop_code": null,
+    "name_en": "Ali Ibn Abi Taleb St / Abu Dhabi Tourism Authority",
+    "name_ar": "شارع علي بن ابي طالب / هيئة ابوظبي للسياحة",
+    "latitude": 24.22781,
+    "longitude": 55.76048,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090224-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Al Muwaiji Souq",
+    "name_ar": "شارع خليفة بن زايد/ سوق المويجعي",
+    "latitude": 24.22469,
+    "longitude": 55.73388,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090224-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Al Muwaiji Souq",
+    "name_ar": "شارع خليفة بن زايد/ سوق المويجعي",
+    "latitude": 24.22496,
+    "longitude": 55.73445,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090226-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Imam Shafi'i Mosque",
+    "name_ar": "شارع خليفة بن زايد / مسجد الامام الشافعي",
+    "latitude": 24.22438,
+    "longitude": 55.74147,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090226-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Imam Shafi'i Mosque",
+    "name_ar": "شارع خليفة بن زايد / مسجد الامام الشافعي",
+    "latitude": 24.22492,
+    "longitude": 55.74058,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090228-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Sheikh Khalifa Bin Zayed Grand Mosque",
+    "name_ar": "شارع خليفة بن زايد/ مسجد الشيخ خليفة بن زايد",
+    "latitude": 24.224,
+    "longitude": 55.74838,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090228-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Sheikh Khalifa Bin Zayed Grand Mosque",
+    "name_ar": "شارع خليفة بن زايد/ مسجد الشيخ خليفة بن زايد",
+    "latitude": 24.22435,
+    "longitude": 55.74726,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090230-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Mohammed Bin Khalifa St",
+    "name_ar": "شارع خليفة بن زايد /شارع محمد بن خليفة",
+    "latitude": 24.2244,
+    "longitude": 55.75272,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090236-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Emirates  Commercial Complex",
+    "name_ar": "شارع خليفة بن زايد / مجمع الامارات التجاري",
+    "latitude": 24.22505,
+    "longitude": 55.76132,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090236-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Emirates  Commercial Complex",
+    "name_ar": "شارع خليفة بن زايد / مجمع الامارات التجاري",
+    "latitude": 24.22525,
+    "longitude": 55.76076,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090240-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Mediclinic Hospital",
+    "name_ar": "شارع خليفة بن زايد /  مستشفى ميديكلينك",
+    "latitude": 24.22501,
+    "longitude": 55.76822,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090240-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Mediclinic Hospital",
+    "name_ar": "شارع خليفة بن زايد /  مستشفى ميديكلينك",
+    "latitude": 24.22546,
+    "longitude": 55.76701,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090302-0-A",
+    "stop_code": null,
+    "name_en": "Abu Bakr Al Siddiq St / Al Souq",
+    "name_ar": "شارع أبو بكر الصديق / السوق",
+    "latitude": 24.2236,
+    "longitude": 55.7705,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090302-0-B",
+    "stop_code": null,
+    "name_en": "Abu Bakr Al Siddiq St / Al Souq",
+    "name_ar": "شارع أبو بكر الصديق / السوق",
+    "latitude": 24.2228,
+    "longitude": 55.77033,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090304-0-A",
+    "stop_code": null,
+    "name_en": "Salahuddeen Al Ayyubi St / Moza Saeed Sultan Al Darmaki Mosque",
+    "name_ar": "شارع صلاح الدين الايوبي/ مسجد موزة سعيد سلطان الدرمكي",
+    "latitude": 24.22724,
+    "longitude": 55.76496,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090304-0-B",
+    "stop_code": null,
+    "name_en": "Salahuddeen Al Ayyubi St / Moza Saeed Sultan Al Darmaki Mosque",
+    "name_ar": "شارع صلاح الدين الايوبي/ مسجد موزة سعيد سلطان الدرمكي",
+    "latitude": 24.227,
+    "longitude": 55.76478,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090306-0-A",
+    "stop_code": null,
+    "name_en": "Salahuddeen Al Ayyubi St / Al Ain Town Square",
+    "name_ar": "شارع صلاح الدين الايوبي/ ميدان مدينة العين",
+    "latitude": 24.22397,
+    "longitude": 55.76569,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090306-0-B",
+    "stop_code": null,
+    "name_en": "Salahuddeen Al Ayyubi St / Al Ain Town Square",
+    "name_ar": "شارع صلاح الدين الايوبي/ ميدان مدينة العين",
+    "latitude": 24.22359,
+    "longitude": 55.76556,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090404-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Shk. Hazza Bin Sultan Al Nahyan Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد الشيخ هزاع بن سلطان آل نهيان",
+    "latitude": 24.22059,
+    "longitude": 55.74064,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090404-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Shk. Hazza Bin Sultan Al Nahyan Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد الشيخ هزاع بن سلطان آل نهيان",
+    "latitude": 24.22078,
+    "longitude": 55.7416,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090406-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Rotana Hotel",
+    "name_ar": "شارع زايد بن سلطان/ فندق روتانا",
+    "latitude": 24.21966,
+    "longitude": 55.74903,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090406-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Rotana Hotel",
+    "name_ar": "شارع زايد بن سلطان/ فندق روتانا",
+    "latitude": 24.2202,
+    "longitude": 55.74728,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090410-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Jahli Park",
+    "name_ar": "شارع زايد بن سلطان /  حديقة الجاهلي",
+    "latitude": 24.22003,
+    "longitude": 55.75447,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090416-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / ADNOC",
+    "name_ar": "شارع زايد بن سلطان / ادنوك",
+    "latitude": 24.22143,
+    "longitude": 55.76272,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090416-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / ADNOC",
+    "name_ar": "شارع زايد بن سلطان / ادنوك",
+    "latitude": 24.22164,
+    "longitude": 55.76251,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090418-0-A",
+    "stop_code": null,
+    "name_en": "Zayed bin Sultan St / Al Karama Centre",
+    "name_ar": "شارع زايد بن سلطان / الكرامة سنتر",
+    "latitude": 24.22177,
+    "longitude": 55.76459,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090418-0-B",
+    "stop_code": null,
+    "name_en": "Zayed bin Sultan St / Al Karama Centre",
+    "name_ar": "شارع زايد بن سلطان / الكرامة سنتر",
+    "latitude": 24.22195,
+    "longitude": 55.76422,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090420-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Ibn Sultan St / Sheikha Slama Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد الشيخة سلامة",
+    "latitude": 24.22221,
+    "longitude": 55.76721,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090420-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Ibn Sultan St / Sheikha Slama Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد الشيخة سلامة",
+    "latitude": 24.22244,
+    "longitude": 55.76751,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090422-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St /  Al Souq",
+    "name_ar": "شارع زايد بن سلطان /  السوق",
+    "latitude": 24.22206,
+    "longitude": 55.76894,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090422-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St /  Al Souq",
+    "name_ar": "شارع زايد بن سلطان /  السوق",
+    "latitude": 24.22222,
+    "longitude": 55.76914,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090424-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Ain Bus Station",
+    "name_ar": "شارع زايد بن سلطان/ محطة حافلات العين",
+    "latitude": 24.22077,
+    "longitude": 55.7736,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090424-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Ain Bus Station",
+    "name_ar": "شارع زايد بن سلطان/ محطة حافلات العين",
+    "latitude": 24.22098,
+    "longitude": 55.7737,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090427-0-A",
+    "stop_code": null,
+    "name_en": "Othman Bin Affan St / Al Madeena Police Station",
+    "name_ar": "شارع عثمان بن عفان / مركز شرطة المدينة",
+    "latitude": 24.22005,
+    "longitude": 55.77618,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090427-0-B",
+    "stop_code": null,
+    "name_en": "Othman Bin Affan St / Al Madeena Police Station",
+    "name_ar": "شارع عثمان بن عفان / مركز شرطة المدينة",
+    "latitude": 24.22067,
+    "longitude": 55.77685,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090430-0-A",
+    "stop_code": null,
+    "name_en": "Othman Bin Affan St / Al Ain Mall",
+    "name_ar": "شارع عثمان بن عفان / العين مول",
+    "latitude": 24.22324,
+    "longitude": 55.78209,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090430-0-B",
+    "stop_code": null,
+    "name_en": "Othman Bin Affan St / Al Ain Mall",
+    "name_ar": "شارع عثمان بن عفان / العين مول",
+    "latitude": 24.22302,
+    "longitude": 55.78111,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090520-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St /Emirates Post",
+    "name_ar": "شارع حصة بنت محمد/ بريد الامارات",
+    "latitude": 24.21883,
+    "longitude": 55.75912,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090520-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St /Emirates Post",
+    "name_ar": "شارع حصة بنت محمد/ بريد الامارات",
+    "latitude": 24.21805,
+    "longitude": 55.75905,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090522-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Al Ain Palace Museum",
+    "name_ar": "شارع حصة بنت محمد/ متحف قصر العين",
+    "latitude": 24.21692,
+    "longitude": 55.75963,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090522-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Al Ain Palace Museum",
+    "name_ar": "شارع حصة بنت محمد/ متحف قصر العين",
+    "latitude": 24.21637,
+    "longitude": 55.75947,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090530-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Kanad Hospital",
+    "name_ar": "شارع حصة بنت محمد / مستشفى كند",
+    "latitude": 24.207,
+    "longitude": 55.76077,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090530-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Kanad Hospital",
+    "name_ar": "شارع حصة بنت محمد / مستشفى كند",
+    "latitude": 24.208,
+    "longitude": 55.76023,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090602-0-A",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed The First St / Al Jahli Graveyard",
+    "name_ar": "شارع سلطان بن زايد الأول / مقبرة الجاهلي",
+    "latitude": 24.2124,
+    "longitude": 55.74232,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090602-0-B",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed The First St / Al Jahli Graveyard",
+    "name_ar": "شارع سلطان بن زايد الأول / مقبرة الجاهلي",
+    "latitude": 24.21261,
+    "longitude": 55.74046,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090608-0-A",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed The First St / Al Jahli Fort",
+    "name_ar": "شارع سلطان بن زايد الأول / قلعة الجاهلي",
+    "latitude": 24.21292,
+    "longitude": 55.75022,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090608-0-B",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed The First St / Al Jahli Fort",
+    "name_ar": "شارع سلطان بن زايد الأول / قلعة الجاهلي",
+    "latitude": 24.21319,
+    "longitude": 55.75014,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090612-0-A",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed The First St / Specialized Medical Care Hospital",
+    "name_ar": "شارع سلطان بن زايد الأول / مستشفى العناية التخصصي",
+    "latitude": 24.2132,
+    "longitude": 55.75533,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090612-0-B",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed The First St / Specialized Medical Care Hospital",
+    "name_ar": "شارع سلطان بن زايد الأول / مستشفى العناية التخصصي",
+    "latitude": 24.21355,
+    "longitude": 55.75664,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090614-0-A",
+    "stop_code": null,
+    "name_en": "Al Salam St / Al Ain ALDAR Academy",
+    "name_ar": "شارع السلام / اكاديمية الدار",
+    "latitude": 24.21397,
+    "longitude": 55.78326,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090614-0-B",
+    "stop_code": null,
+    "name_en": "Al Salam St / Al Ain ALDAR Academy",
+    "name_ar": "شارع السلام / اكاديمية الدار",
+    "latitude": 24.21422,
+    "longitude": 55.78307,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090616-0-A",
+    "stop_code": null,
+    "name_en": "Al Salam St / Abo Baker Alsedeeq Mosque",
+    "name_ar": "شارع السلام / مسجد ابوبكر الصديق",
+    "latitude": 24.21477,
+    "longitude": 55.78989,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090616-0-B",
+    "stop_code": null,
+    "name_en": "Al Salam St / Abo Baker Alsedeeq Mosque",
+    "name_ar": "شارع السلام / مسجد ابوبكر الصديق",
+    "latitude": 24.21422,
+    "longitude": 55.79103,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090618-0-A",
+    "stop_code": null,
+    "name_en": "Al Salam St / Agriculture and Food Safety Authority",
+    "name_ar": "شارع السلام / هيئة الزراعة والسلامة الغذائية",
+    "latitude": 24.21058,
+    "longitude": 55.79631,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090618-0-B",
+    "stop_code": null,
+    "name_en": "Al Salam St / Agriculture and Food Safety Authority",
+    "name_ar": "شارع السلام / هيئة الزراعة والسلامة الغذائية",
+    "latitude": 24.21107,
+    "longitude": 55.79596,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090620-0-A",
+    "stop_code": null,
+    "name_en": "Al Salam St / Danat Resort Hotel",
+    "name_ar": "شارع السلام / منتجع دانات",
+    "latitude": 24.20747,
+    "longitude": 55.80405,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090620-0-B",
+    "stop_code": null,
+    "name_en": "Al Salam St / Danat Resort Hotel",
+    "name_ar": "شارع السلام / منتجع دانات",
+    "latitude": 24.20777,
+    "longitude": 55.80291,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090700-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Al Slimi Park",
+    "name_ar": "شارع محمد بن خليفة / حديقة السليمي",
+    "latitude": 24.2356,
+    "longitude": 55.75183,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090700-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Al Slimi Park",
+    "name_ar": "شارع محمد بن خليفة / حديقة السليمي",
+    "latitude": 24.2346,
+    "longitude": 55.7514,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090716-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Sheikh Khalifa Bin Zayed Grand Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول / مسجد الشيخ خليفة بن زايد",
+    "latitude": 24.22844,
+    "longitude": 55.74441,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090716-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Sheikh Khalifa Bin Zayed Grand Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول / مسجد الشيخ خليفة بن زايد",
+    "latitude": 24.22828,
+    "longitude": 55.74418,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090720-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Al Mutarad Souq",
+    "name_ar": "شارع خليفة بن زايد الأول / سوق المعترض",
+    "latitude": 24.21736,
+    "longitude": 55.74571,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090720-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Al Mutarad Souq",
+    "name_ar": "شارع خليفة بن زايد الأول / سوق المعترض",
+    "latitude": 24.21692,
+    "longitude": 55.74555,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090724-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Al Jahly School",
+    "name_ar": "شارع خليفة بن زايد الأول/ مدرسة الجاهلي",
+    "latitude": 24.20892,
+    "longitude": 55.7467,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090724-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Al Jahly School",
+    "name_ar": "شارع خليفة بن زايد الأول/ مدرسة الجاهلي",
+    "latitude": 24.20986,
+    "longitude": 55.74631,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090800-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / Al Furqan Mosque",
+    "name_ar": "شارع خالد بن سلطان / مسجد الفرقان",
+    "latitude": 24.20611,
+    "longitude": 55.73996,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090800-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / Al Furqan Mosque",
+    "name_ar": "شارع خالد بن سلطان / مسجد الفرقان",
+    "latitude": 24.2061,
+    "longitude": 55.74126,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090808-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Marys Church",
+    "name_ar": "شارع خالد بن سلطان / كنيسة القديسة مريم",
+    "latitude": 24.20543,
+    "longitude": 55.75308,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090808-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Marys Church",
+    "name_ar": "شارع خالد بن سلطان / كنيسة القديسة مريم",
+    "latitude": 24.20522,
+    "longitude": 55.75424,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090812-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / Remal Mall",
+    "name_ar": "شارع خالد بن سلطان / رمال مول",
+    "latitude": 24.2054,
+    "longitude": 55.76364,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090888-0-B",
+    "stop_code": null,
+    "name_en": "Othman Bin Affan St / Al Ain Central Bus Station",
+    "name_ar": "شارع عثمان بن عفان / محطة حافلات العين",
+    "latitude": 24.21964,
+    "longitude": 55.77136,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090888-0-C",
+    "stop_code": null,
+    "name_en": "Othman Bin Affan St / Al Ain Central Bus Station",
+    "name_ar": "شارع عثمان بن عفان / محطة حافلات العين",
+    "latitude": 24.21991,
+    "longitude": 55.77095,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090902-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Ain Hospital",
+    "name_ar": "شارع البلدية / مستشفى العين",
+    "latitude": 24.22882,
+    "longitude": 55.73846,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090902-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Ain Hospital",
+    "name_ar": "شارع البلدية / مستشفى العين",
+    "latitude": 24.22852,
+    "longitude": 55.73814,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090905-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Sheikh Hessa Bin Sultan Al Nahyan Mosque",
+    "name_ar": "شارع البلدية / مسجد الشيخة حصة بنت سلطان ال نهيان",
+    "latitude": 24.21969,
+    "longitude": 55.73796,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090905-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Sheikh Hessa Bin Sultan Al Nahyan Mosque",
+    "name_ar": "شارع البلدية / مسجد الشيخة حصة بنت سلطان ال نهيان",
+    "latitude": 24.21968,
+    "longitude": 55.73764,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090909-0-A",
+    "stop_code": null,
+    "name_en": "Al Tarish St / Ubaid Saif Al-Nasri Mosque",
+    "name_ar": "شارع الطارش / مسجد عبيد سيف الناصري",
+    "latitude": 24.20213,
+    "longitude": 55.73606,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1090909-0-B",
+    "stop_code": null,
+    "name_en": "Al Tarish St / Ubaid Saif Al-Nasri Mosque",
+    "name_ar": "شارع الطارش / مسجد عبيد سيف الناصري",
+    "latitude": 24.2015,
+    "longitude": 55.73585,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091001-1-A",
+    "stop_code": null,
+    "name_en": "Abu Obayda Bin Al Jarrah St / Al Foaa Mall",
+    "name_ar": "شارع ابوعبيده بن الجراح / الفوعه مول",
+    "latitude": 24.343,
+    "longitude": 55.79247,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091001-2-B",
+    "stop_code": null,
+    "name_en": "Abu Obayda Bin Al Jarrah St / Al Foaa Mall",
+    "name_ar": "شارع ابوعبيده بن الجراح / الفوعه مول",
+    "latitude": 24.34337,
+    "longitude": 55.79247,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091005-0-A",
+    "stop_code": null,
+    "name_en": "Abu Obayda Bin Al Jarrah St / Al Saliheen Mosque",
+    "name_ar": "شارع ابوعبيده بن الجراح / مسجد الصالحين",
+    "latitude": 24.33971,
+    "longitude": 55.80384,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091005-0-B",
+    "stop_code": null,
+    "name_en": "Abu Obayda Bin Al Jarrah St / Al Saliheen Mosque",
+    "name_ar": "شارع ابوعبيده بن الجراح / مسجد الصالحين",
+    "latitude": 24.34025,
+    "longitude": 55.80311,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091007-0-A",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Mohammed Bin Khalifa Al Nahyan St",
+    "name_ar": "شارع خلفان بن مطرالرميثي / شارع محمد بن خليفة ال نهيان",
+    "latitude": 24.29589,
+    "longitude": 55.77053,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091007-0-B",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Mohammed Bin Khalifa Al Nahyan St",
+    "name_ar": "شارع خلفان بن مطرالرميثي / شارع محمد بن خليفة ال نهيان",
+    "latitude": 24.29612,
+    "longitude": 55.7704,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091009-0-A",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Wedding Hall",
+    "name_ar": "شارع خلفان بن مطرالرميثي / صالة الافراح",
+    "latitude": 24.29709,
+    "longitude": 55.77891,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091009-0-B",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Wedding Hall",
+    "name_ar": "شارع خلفان بن مطرالرميثي / صالة الافراح",
+    "latitude": 24.29737,
+    "longitude": 55.77865,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091014-0-A",
+    "stop_code": null,
+    "name_en": "Al Athar St / Al Wafi St",
+    "name_ar": "شارع الاثار / شارع الوافِي",
+    "latitude": 24.28872,
+    "longitude": 55.77879,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091014-0-B",
+    "stop_code": null,
+    "name_en": "Al Athar St / Al Wafi St",
+    "name_ar": "شارع الاثار / شارع الوافِي",
+    "latitude": 24.28899,
+    "longitude": 55.77865,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091016-0-A",
+    "stop_code": null,
+    "name_en": "Al Athar St / Sheikh Zayed Bin Sultan Al Nahyan Mosque",
+    "name_ar": "شارع الاثار/ مسجد الشيخ زايد بن سلطان ال نهيان",
+    "latitude": 24.2875,
+    "longitude": 55.77054,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091016-0-B",
+    "stop_code": null,
+    "name_en": "Al Athar St / Sheikh Zayed Bin Sultan Al Nahyan Mosque",
+    "name_ar": "شارع الاثار/ مسجد الشيخ زايد بن سلطان ال نهيان",
+    "latitude": 24.28788,
+    "longitude": 55.77133,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091103-0-A",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Police Rehabilitation Department",
+    "name_ar": "شارع خلفان بن مطرالرميثي / ادارة التأهيل الشرطي",
+    "latitude": 24.33442,
+    "longitude": 55.80399,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091103-0-B",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Police Rehabilitation Department",
+    "name_ar": "شارع خلفان بن مطرالرميثي / ادارة التأهيل الشرطي",
+    "latitude": 24.33413,
+    "longitude": 55.80352,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091107-0-A",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Al Foah Plantation",
+    "name_ar": "شارع خلفان بن مطرالرميثي / مشتل الفوعة",
+    "latitude": 24.3199,
+    "longitude": 55.79873,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091107-0-B",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St / Al Foah Plantation",
+    "name_ar": "شارع خلفان بن مطرالرميثي / مشتل الفوعة",
+    "latitude": 24.31937,
+    "longitude": 55.79818,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091108-0-A",
+    "stop_code": null,
+    "name_en": "Niqa Bu Sumrah St / Co-op",
+    "name_ar": "شارع نِقا بو سمرة / جمعية العين التعاونية",
+    "latitude": 24.31384,
+    "longitude": 55.80312,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091111-0-A",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St  / Al Tafawuq School",
+    "name_ar": "شارع خلفان بن مطرالرميثي / مدرسة التفوق",
+    "latitude": 24.30733,
+    "longitude": 55.79398,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091111-0-B",
+    "stop_code": null,
+    "name_en": "Khalfan Bin Matar Al Rumaithi St  / Al Tafawuq School",
+    "name_ar": "شارع خلفان بن مطرالرميثي / مدرسة التفوق",
+    "latitude": 24.30666,
+    "longitude": 55.79341,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091180-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bin Khamis Al Dhaheri St / Grand Mart",
+    "name_ar": "شارع سالم بن خميس الظاهري / جراند مارت",
+    "latitude": 24.28014,
+    "longitude": 55.73164,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091200-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Humairi Mosque",
+    "name_ar": "شارع بني ياس/ مسجد الحميري",
+    "latitude": 24.26922,
+    "longitude": 55.73578,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091201-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St  / Muraijeb Park",
+    "name_ar": "شارع بني ياس/ حديقة مريجب",
+    "latitude": 24.26947,
+    "longitude": 55.74315,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091201-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St  / Muraijeb Park",
+    "name_ar": "شارع بني ياس/ حديقة مريجب",
+    "latitude": 24.26932,
+    "longitude": 55.73893,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091201-0-D",
+    "stop_code": null,
+    "name_en": "Bani Yas St  / Muraijeb Park",
+    "name_ar": "شارع بني ياس/ حديقة مريجب",
+    "latitude": 24.2696,
+    "longitude": 55.74262,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091203-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Safeer Mall",
+    "name_ar": "شارع بني ياس/ السفير مول",
+    "latitude": 24.27025,
+    "longitude": 55.74811,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091203-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Safeer Mall",
+    "name_ar": "شارع بني ياس/ السفير مول",
+    "latitude": 24.27051,
+    "longitude": 55.74854,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091207-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St  / Equestrian Club",
+    "name_ar": "شارع بني ياس / نادي الفروسية",
+    "latitude": 24.27106,
+    "longitude": 55.75331,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091207-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St  / Equestrian Club",
+    "name_ar": "شارع بني ياس / نادي الفروسية",
+    "latitude": 24.27118,
+    "longitude": 55.75287,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091209-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Al Ain School",
+    "name_ar": "شارع بني ياس / مدرسة العين",
+    "latitude": 24.27264,
+    "longitude": 55.76375,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091209-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Al Ain School",
+    "name_ar": "شارع بني ياس / مدرسة العين",
+    "latitude": 24.27281,
+    "longitude": 55.76345,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091211-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Al Harith Bin Al Numan Al Ansari Mosque",
+    "name_ar": "شارع بني ياس/ مسجد الحارث بن النعمان الأنصاري",
+    "latitude": 24.27339,
+    "longitude": 55.76825,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091211-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Al Harith Bin Al Numan Al Ansari Mosque",
+    "name_ar": "شارع بني ياس/ مسجد الحارث بن النعمان الأنصاري",
+    "latitude": 24.2736,
+    "longitude": 55.76803,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091213-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St / ADNOC",
+    "name_ar": "شارع بني ياس/ ادنوك",
+    "latitude": 24.27449,
+    "longitude": 55.77532,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091213-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St / ADNOC",
+    "name_ar": "شارع بني ياس/ ادنوك",
+    "latitude": 24.27455,
+    "longitude": 55.77377,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091215-0-A",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Hili Mall",
+    "name_ar": "شارع بني ياس/  هيلي مول",
+    "latitude": 24.27539,
+    "longitude": 55.78066,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091215-0-B",
+    "stop_code": null,
+    "name_en": "Bani Yas St / Hili Mall",
+    "name_ar": "شارع بني ياس/  هيلي مول",
+    "latitude": 24.27561,
+    "longitude": 55.78032,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091216-0-A",
+    "stop_code": null,
+    "name_en": "Khaled Bin Al Waleed St / Khawla Bint Malik Mosque",
+    "name_ar": "شارع خالد بن الوليد / مسجد خولة بنت مالك",
+    "latitude": 24.25891,
+    "longitude": 55.72296,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091216-0-B",
+    "stop_code": null,
+    "name_en": "Khaled Bin Al Waleed St / Khawla Bint Malik Mosque",
+    "name_ar": "شارع خالد بن الوليد / مسجد خولة بنت مالك",
+    "latitude": 24.2592,
+    "longitude": 55.72289,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091301-0-A",
+    "stop_code": null,
+    "name_en": "Ardh Al Jaw St / Hili Fun City",
+    "name_ar": "شارع ارض جو / مدينه العاب هيلي",
+    "latitude": 24.30099,
+    "longitude": 55.78412,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091302-0-B",
+    "stop_code": null,
+    "name_en": "Sayh Al Ramram St / Belvedere International School",
+    "name_ar": "شارع سيح الرَّمرام / مدرسة بلفيدير الدولية",
+    "latitude": 24.31419,
+    "longitude": 55.78614,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091305-0-A",
+    "stop_code": null,
+    "name_en": "Ardh Al Jaw St / Hili Archeological Park",
+    "name_ar": "شارع ارض جو / حديقة اثار هيلي",
+    "latitude": 24.29366,
+    "longitude": 55.78364,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091305-0-B",
+    "stop_code": null,
+    "name_en": "Ardh Al Jaw St / Hili Archeological Park",
+    "name_ar": "شارع ارض جو / حديقة اثار هيلي",
+    "latitude": 24.29313,
+    "longitude": 55.78333,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091307-0-A",
+    "stop_code": null,
+    "name_en": "Ardh Al Jaw St / Ali Gomaa Rahma Al Dermaki Mosque",
+    "name_ar": "شارع ارض جو/ مسجد علي جمعه رحمه الدرمكي",
+    "latitude": 24.28374,
+    "longitude": 55.78303,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091307-0-B",
+    "stop_code": null,
+    "name_en": "Ardh Al Jaw St / Ali Gomaa Rahma Al Dermaki Mosque",
+    "name_ar": "شارع ارض جو/ مسجد علي جمعه رحمه الدرمكي",
+    "latitude": 24.28364,
+    "longitude": 55.78266,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091325-0-B",
+    "stop_code": null,
+    "name_en": "Abu Obayda Bin Al Jarrah St / Al Waha Mall",
+    "name_ar": "شارع ابوعبيده بن الجراح / الواحه مول",
+    "latitude": 24.26316,
+    "longitude": 55.76528,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091327-0-B",
+    "stop_code": null,
+    "name_en": "Abu Obaida Bin Al Jarrah St / Hamid Saeed Al Kutbi Mosque",
+    "name_ar": "شارع ابوعبيده بن الجراح / مسجد حميد سعيد الكتبي",
+    "latitude": 24.26397,
+    "longitude": 55.76979,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091331-0-B",
+    "stop_code": null,
+    "name_en": "Abu Obaida Bin Al Jarrah St / Mohammed Ahmed Al Humairi Mosque",
+    "name_ar": "شارع ابوعبيده بن الجراح / مسجد محمد احمد الحميري",
+    "latitude": 24.26821,
+    "longitude": 55.77587,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091333-0-B",
+    "stop_code": null,
+    "name_en": "Abu Obaida Bin Al Jarrah St / Hili Apartment Complex",
+    "name_ar": "شارع ابوعبيده بن الجراح / مجمع هيلي السكني",
+    "latitude": 24.27123,
+    "longitude": 55.78032,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091397-0-A",
+    "stop_code": null,
+    "name_en": "Ahmed Al Mahmoud Al Blooshi St / Hazza Bin Zayed Stadium",
+    "name_ar": "شارع أحمد المحمود البلوشي / ستاد هزاع بن زايد",
+    "latitude": 24.2447,
+    "longitude": 55.71452,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091397-0-B",
+    "stop_code": null,
+    "name_en": "Ahmed Al Mahmoud Al Blooshi St / Hazza Bin Zayed Stadium",
+    "name_ar": "شارع أحمد المحمود البلوشي / ستاد هزاع بن زايد",
+    "latitude": 24.24455,
+    "longitude": 55.71427,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091415-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Zayed The First St / Al Kharais Souq",
+    "name_ar": "شارع حمدان بن زايد الأول / سوق الخريس",
+    "latitude": 24.24679,
+    "longitude": 55.74385,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091415-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Zayed The First St / Al Kharais Souq",
+    "name_ar": "شارع حمدان بن زايد الأول / سوق الخريس",
+    "latitude": 24.24706,
+    "longitude": 55.74401,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091417-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Zayed The First St / Mohammed Bin Khalifa Al Nahyan St",
+    "name_ar": "شارع حمدان بن زايد الأول / شارع محمد بن خليفة",
+    "latitude": 24.24649,
+    "longitude": 55.75009,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091417-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Zayed The First St / Mohammed Bin Khalifa Al Nahyan St",
+    "name_ar": "شارع حمدان بن زايد الأول / شارع محمد بن خليفة",
+    "latitude": 24.24678,
+    "longitude": 55.74874,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091501-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St  / Al Ain School",
+    "name_ar": "شارع محمد بن خليفة/ مدرسة العين",
+    "latitude": 24.29154,
+    "longitude": 55.76784,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091501-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St  / Al Ain School",
+    "name_ar": "شارع محمد بن خليفة/ مدرسة العين",
+    "latitude": 24.291,
+    "longitude": 55.76755,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091505-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Hili Fort",
+    "name_ar": "شارع محمد بن خليفة / قلعة هيلي",
+    "latitude": 24.2801,
+    "longitude": 55.76436,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091505-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Hili Fort",
+    "name_ar": "شارع محمد بن خليفة / قلعة هيلي",
+    "latitude": 24.27818,
+    "longitude": 55.76309,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091507-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St  / Hili Civil Defense",
+    "name_ar": "شارع محمد بن خليفة / الدفاع المدني (هيلي)",
+    "latitude": 24.27628,
+    "longitude": 55.76237,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091511-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Tahnoun Bin Mohammed Stadium",
+    "name_ar": "شارع محمد بن خليفة / استاد طحنون بن محمد",
+    "latitude": 24.26587,
+    "longitude": 55.7566,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091511-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Tahnoun Bin Mohammed Stadium",
+    "name_ar": "شارع محمد بن خليفة / استاد طحنون بن محمد",
+    "latitude": 24.2678,
+    "longitude": 55.7571,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091515-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Al Rahma Medical Center",
+    "name_ar": "شارع محمد بن خليفة / مركز الرحمة الطبي",
+    "latitude": 24.25815,
+    "longitude": 55.75477,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091515-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Al Rahma Medical Center",
+    "name_ar": "شارع محمد بن خليفة / مركز الرحمة الطبي",
+    "latitude": 24.25807,
+    "longitude": 55.75442,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091517-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Ibn Khalifa St / Al Qattara Primary School",
+    "name_ar": "شارع محمد بن خليفة / مدرسة القطارة الابتدائية",
+    "latitude": 24.25191,
+    "longitude": 55.75342,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091521-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Abd al-Rahman al-Dakhil Mosque",
+    "name_ar": "شارع محمد بن خليفة / مسجد عبدالرحمن الداخل",
+    "latitude": 24.24339,
+    "longitude": 55.75244,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091521-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Khalifa St / Abd al-Rahman al-Dakhil Mosque",
+    "name_ar": "شارع محمد بن خليفة / مسجد عبدالرحمن الداخل",
+    "latitude": 24.24333,
+    "longitude": 55.75215,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091554-0-A",
+    "stop_code": null,
+    "name_en": "Oud Shihaylah St / ADVETI",
+    "name_ar": "شارع عُود شهَيله / معهد ابوظبي للتعليم والتدريب المهني",
+    "latitude": 24.30583,
+    "longitude": 55.76028,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091601-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Ihssan Mosque",
+    "name_ar": "شارع حمدان بن محمد /  مسجد الاحسان",
+    "latitude": 24.24205,
+    "longitude": 55.72321,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091601-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Ihssan Mosque",
+    "name_ar": "شارع حمدان بن محمد /  مسجد الاحسان",
+    "latitude": 24.24241,
+    "longitude": 55.7218,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091603-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Jimi Mall",
+    "name_ar": "شارع حمدان بن محمد/ الجيمي مول",
+    "latitude": 24.2419,
+    "longitude": 55.72605,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091603-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Jimi Mall",
+    "name_ar": "شارع حمدان بن محمد/ الجيمي مول",
+    "latitude": 24.24217,
+    "longitude": 55.72664,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091605-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Immigration and Naturalization Department",
+    "name_ar": "شارع حمدان بن محمد / قسم الهجرة و الجنسية",
+    "latitude": 24.242,
+    "longitude": 55.73061,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091607-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Ain Distribution Company",
+    "name_ar": "شارع حمدان بن محمد/ شركة العين للتوزيع",
+    "latitude": 24.24159,
+    "longitude": 55.73322,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091607-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Ain Distribution Company",
+    "name_ar": "شارع حمدان بن محمد/ شركة العين للتوزيع",
+    "latitude": 24.24183,
+    "longitude": 55.73423,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091611-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Ain University",
+    "name_ar": "شارع حمدان بن محمد/ جامعة العين",
+    "latitude": 24.24113,
+    "longitude": 55.74335,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091611-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Al Ain University",
+    "name_ar": "شارع حمدان بن محمد/ جامعة العين",
+    "latitude": 24.24143,
+    "longitude": 55.74321,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091613-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / ADNOC",
+    "name_ar": "شارع حمدان بن محمد /  ادنوك",
+    "latitude": 24.24093,
+    "longitude": 55.7477,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091613-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / ADNOC",
+    "name_ar": "شارع حمدان بن محمد /  ادنوك",
+    "latitude": 24.24121,
+    "longitude": 55.74758,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091698-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyya St / Al Sheikh Essa Mosque",
+    "name_ar": "شارع البلدية / مسجد الشيخ عيسى",
+    "latitude": 24.27176,
+    "longitude": 55.74078,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091701-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Muraijeb Park",
+    "name_ar": "شارع البلدية / حديقه المريجب",
+    "latitude": 24.26334,
+    "longitude": 55.7404,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091701-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Muraijeb Park",
+    "name_ar": "شارع البلدية / حديقه المريجب",
+    "latitude": 24.26396,
+    "longitude": 55.74015,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091703-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Falah Academy",
+    "name_ar": "شارع البلدية /  اكاديمية الفلاح",
+    "latitude": 24.26015,
+    "longitude": 55.74029,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091703-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Falah Academy",
+    "name_ar": "شارع البلدية /  اكاديمية الفلاح",
+    "latitude": 24.26054,
+    "longitude": 55.73993,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091705-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Jimi Souq",
+    "name_ar": "شارع البلدية / سوق الجيمي",
+    "latitude": 24.25437,
+    "longitude": 55.73992,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091705-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Jimi Souq",
+    "name_ar": "شارع البلدية / سوق الجيمي",
+    "latitude": 24.25533,
+    "longitude": 55.73967,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091707-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Fusfour St",
+    "name_ar": "شارع البلدية / شارع الفُسفور",
+    "latitude": 24.25142,
+    "longitude": 55.7398,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091707-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Al Fusfour St",
+    "name_ar": "شارع البلدية / شارع الفُسفور",
+    "latitude": 24.25121,
+    "longitude": 55.73949,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091711-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Sheikh Hamdan Bin Zayed Al Awwal Mosque",
+    "name_ar": "شارع البلدية / مسجد الشيخ حمدان بن زايد ال نهيان",
+    "latitude": 24.24402,
+    "longitude": 55.73936,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091711-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyyah St / Sheikh Hamdan Bin Zayed Al Awwal Mosque",
+    "name_ar": "شارع البلدية / مسجد الشيخ حمدان بن زايد ال نهيان",
+    "latitude": 24.24429,
+    "longitude": 55.73911,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091713-0-A",
+    "stop_code": null,
+    "name_en": "Al Baladiyya St / Al Ain Municipality",
+    "name_ar": "شارع البلدية / بلدية العين",
+    "latitude": 24.23847,
+    "longitude": 55.73899,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091713-0-B",
+    "stop_code": null,
+    "name_en": "Al Baladiyya St / Al Ain Municipality",
+    "name_ar": "شارع البلدية / بلدية العين",
+    "latitude": 24.23827,
+    "longitude": 55.7386,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091801-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Mediclinic Hospital",
+    "name_ar": "شارع شخبوط بن سلطان /  مدياكلينك",
+    "latitude": 24.23141,
+    "longitude": 55.72278,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091801-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Mediclinic Hospital",
+    "name_ar": "شارع شخبوط بن سلطان /  مدياكلينك",
+    "latitude": 24.23165,
+    "longitude": 55.72262,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091805-0-A",
+    "stop_code": null,
+    "name_en": "Al Nahdah St / Al Ain Courts Complex",
+    "name_ar": "شارع النهضة / مجمع محاكم العين",
+    "latitude": 24.23682,
+    "longitude": 55.73276,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091805-0-B",
+    "stop_code": null,
+    "name_en": "Al Nahdah St / Al Ain Courts Complex",
+    "name_ar": "شارع النهضة / مجمع محاكم العين",
+    "latitude": 24.237,
+    "longitude": 55.73206,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091806-0-B",
+    "stop_code": null,
+    "name_en": "Al Nahdah St / Al Ain Courts Complex",
+    "name_ar": "شارع النهضة / مجمع محاكم العين",
+    "latitude": 24.23714,
+    "longitude": 55.72941,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091853-0-A",
+    "stop_code": null,
+    "name_en": "Al Maqoud St / Mosque",
+    "name_ar": "شارع المعقود / مسجد",
+    "latitude": 24.25648,
+    "longitude": 55.73113,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091881-0-A",
+    "stop_code": null,
+    "name_en": "Khaled Bin Al Waleed St / Ali Azeez Maktoum Al Shuraifi Mosque",
+    "name_ar": "شارع خالد بن الوليد / مسجد علي عزيز مكتوم الشريفي",
+    "latitude": 24.25902,
+    "longitude": 55.71767,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091881-0-B",
+    "stop_code": null,
+    "name_en": "Khaled Bin Al Waleed St / Ali Azeez Maktoum Al Shuraifi Mosque",
+    "name_ar": "شارع خالد بن الوليد / مسجد علي عزيز مكتوم الشريفي",
+    "latitude": 24.25927,
+    "longitude": 55.71728,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091883-0-A",
+    "stop_code": null,
+    "name_en": "Khaled Bin Al Waleed St / Al Rahabah St",
+    "name_ar": "شارع خالد بن الوليد / شارع الرحابة",
+    "latitude": 24.25916,
+    "longitude": 55.71155,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091883-0-B",
+    "stop_code": null,
+    "name_en": "Khaled Bin Al Waleed St / Al Rahabah St",
+    "name_ar": "شارع خالد بن الوليد / شارع الرحابة",
+    "latitude": 24.25938,
+    "longitude": 55.71155,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091887-0-A",
+    "stop_code": null,
+    "name_en": "Al Samir St / Maryam Bint Sultan School",
+    "name_ar": "شارع السَّامِر/ مدرسة مريم بنت سللطان",
+    "latitude": 24.25778,
+    "longitude": 55.70427,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091907-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Mohammed Bin Shaml Al Maamari Mosque",
+    "name_ar": "شارع زايد الأول / مسجد محمد بن شمل المعمري",
+    "latitude": 24.25364,
+    "longitude": 55.71977,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091908-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Mohammed Bin Shaml Al Maamari Mosque",
+    "name_ar": "شارع زايد الأول /  مسجد محمد بن شمل المعمري",
+    "latitude": 24.25148,
+    "longitude": 55.71996,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091908-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Mohammed Bin Shaml Al Maamari Mosque",
+    "name_ar": "شارع زايد الأول /  مسجد محمد بن شمل المعمري",
+    "latitude": 24.2504,
+    "longitude": 55.71958,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091911-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Souq Al Zafranah",
+    "name_ar": "شارع زايد الأول / سوق الزعفرانه",
+    "latitude": 24.23563,
+    "longitude": 55.71959,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091911-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Souq Al Zafranah",
+    "name_ar": "شارع زايد الأول / سوق الزعفرانه",
+    "latitude": 24.2346,
+    "longitude": 55.71928,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091913-0-A",
+    "stop_code": null,
+    "name_en": "Al Muwaiji St / Al Ain Disease Prevention and Screening Center",
+    "name_ar": "شارع المُوَيجعِي / مركز العين للفحص والصحة الوقائية",
+    "latitude": 24.23414,
+    "longitude": 55.73035,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091915-0-A",
+    "stop_code": null,
+    "name_en": "Al Nahdah St / Al Ain Municipality",
+    "name_ar": "شارع النهضة / بلدية العين",
+    "latitude": 24.23911,
+    "longitude": 55.73569,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1091915-0-B",
+    "stop_code": null,
+    "name_en": "Al Nahdah St / Al Ain Municipality",
+    "name_ar": "شارع النهضة / بلدية العين",
+    "latitude": 24.2385,
+    "longitude": 55.73538,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092101-0-A",
+    "stop_code": null,
+    "name_en": "Al Afiyah St / Emirates National School Boys",
+    "name_ar": "شارع العافية / مدرسة الإمارات الوطنية للبنين",
+    "latitude": 24.26053,
+    "longitude": 55.69259,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092102-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Emirates National School",
+    "name_ar": "شارع محمد بن زايد الأول / مدرسة الإمارات الوطنية",
+    "latitude": 24.2583,
+    "longitude": 55.69042,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092102-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Emirates National School",
+    "name_ar": "شارع محمد بن زايد الأول / مدرسة الإمارات الوطنية",
+    "latitude": 24.2575,
+    "longitude": 55.69093,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092105-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Al Tawteen Council",
+    "name_ar": "شارع محمد بن زايد الأول/ مجلس التوطين",
+    "latitude": 24.25031,
+    "longitude": 55.69494,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092105-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Al Tawteen Council",
+    "name_ar": "شارع محمد بن زايد الأول/ مجلس التوطين",
+    "latitude": 24.24984,
+    "longitude": 55.69487,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092111-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Towayyah Park",
+    "name_ar": "شارع محمد بن زايد الأول/ حديقة الطوية",
+    "latitude": 24.24438,
+    "longitude": 55.70125,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092111-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Towayyah Park",
+    "name_ar": "شارع محمد بن زايد الأول/ حديقة الطوية",
+    "latitude": 24.24395,
+    "longitude": 55.70122,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092113-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Khawarizmi International College",
+    "name_ar": "شارع محمد بن زايد الأول/ كلية الخوارزمي",
+    "latitude": 24.23784,
+    "longitude": 55.70434,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092113-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Khawarizmi International College",
+    "name_ar": "شارع محمد بن زايد الأول/ كلية الخوارزمي",
+    "latitude": 24.23688,
+    "longitude": 55.70455,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092115-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Shk. Muhammad Bin Khalifa Al Nahyan Mosque",
+    "name_ar": "شارح محمد بن زايد الأول / مسجد الشيخ محمد بن خليفة ال نهيان",
+    "latitude": 24.23045,
+    "longitude": 55.70872,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092115-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Zayed The First St / Shk. Muhammad Bin Khalifa Al Nahyan Mosque",
+    "name_ar": "شارح محمد بن زايد الأول / مسجد الشيخ محمد بن خليفة ال نهيان",
+    "latitude": 24.23008,
+    "longitude": 55.70871,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092213-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Hazza Bin Zayed Stadium",
+    "name_ar": "شارع حمدان بن محمد/ ستاد هزاع بن زايد",
+    "latitude": 24.2423,
+    "longitude": 55.71732,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092213-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Hazza Bin Zayed Stadium",
+    "name_ar": "شارع حمدان بن محمد/ ستاد هزاع بن زايد",
+    "latitude": 24.24256,
+    "longitude": 55.7175,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092215-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Saeed Abdullah Al Darmaki Mosque",
+    "name_ar": "شارع حمدان بن محمد / مسجد سعيد عبدالله الدرمكي",
+    "latitude": 24.24272,
+    "longitude": 55.70583,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092217-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Towayyah Park",
+    "name_ar": "شارع حمدان بن محمد/ حديقة الطوية",
+    "latitude": 24.24102,
+    "longitude": 55.69941,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092217-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Towayyah Park",
+    "name_ar": "شارع حمدان بن محمد/ حديقة الطوية",
+    "latitude": 24.24127,
+    "longitude": 55.6991,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092219-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Mahra Bint Khaled Bin Sultan St",
+    "name_ar": "شارع حمدان بن محمد / شارع مهره بنت خالد بن سلطان",
+    "latitude": 24.23864,
+    "longitude": 55.69325,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092219-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Mahra Bint Khaled Bin Sultan St",
+    "name_ar": "شارع حمدان بن محمد / شارع مهره بنت خالد بن سلطان",
+    "latitude": 24.23888,
+    "longitude": 55.69296,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092221-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Bakhita Afari Al-Mansouri Mosque",
+    "name_ar": "شارع حمدان بن محمد / مسجد بخيتة عفاري المنصوري",
+    "latitude": 24.23484,
+    "longitude": 55.68342,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092221-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Bakhita Afari Al-Mansouri Mosque",
+    "name_ar": "شارع حمدان بن محمد / مسجد بخيتة عفاري المنصوري",
+    "latitude": 24.23634,
+    "longitude": 55.68636,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092227-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Mubarak Mohammad Al Ameri Mosque",
+    "name_ar": "شارع حمدان بن محمد/ مسجد مبارك محمد العامري",
+    "latitude": 24.23015,
+    "longitude": 55.67094,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092227-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Mubarak Mohammad Al Ameri Mosque",
+    "name_ar": "شارع حمدان بن محمد/ مسجد مبارك محمد العامري",
+    "latitude": 24.22984,
+    "longitude": 55.66939,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092231-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St  / Hassan Al Mammari Mosque",
+    "name_ar": "شارع حمدان بن محمد / مسجد حسن المعمري",
+    "latitude": 24.22471,
+    "longitude": 55.65647,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092231-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St  / Hassan Al Mammari Mosque",
+    "name_ar": "شارع حمدان بن محمد / مسجد حسن المعمري",
+    "latitude": 24.22459,
+    "longitude": 55.65529,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092235-0-A",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Abdullah Bin Ghanoum Al Hameli St",
+    "name_ar": "شارع حمدان بن محمد / شارع عبدالله بن غنوم الهاملي",
+    "latitude": 24.22216,
+    "longitude": 55.64928,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092235-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Abdullah Bin Ghanoum Al Hameli St",
+    "name_ar": "شارع حمدان بن محمد / شارع عبدالله بن غنوم الهاملي",
+    "latitude": 24.22202,
+    "longitude": 55.64772,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092237-0-B",
+    "stop_code": null,
+    "name_en": "Hamdan Bin Mohammed St / Souq Extra",
+    "name_ar": "شارع حمدان بن محمد / سوق اكسترا",
+    "latitude": 24.21853,
+    "longitude": 55.63893,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092239-0-A",
+    "stop_code": null,
+    "name_en": "Al Shabab St / Souq Extra",
+    "name_ar": "شارع الشَّباب / سوق إكسترا",
+    "latitude": 24.21708,
+    "longitude": 55.64064,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092239-0-B",
+    "stop_code": null,
+    "name_en": "Al Shabab St / Souq Extra",
+    "name_ar": "شارع الشَّباب / سوق إكسترا",
+    "latitude": 24.21688,
+    "longitude": 55.64041,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092241-0-A",
+    "stop_code": null,
+    "name_en": "Al Basmah St / Al Tomouh School",
+    "name_ar": "شارع البَسمة / مدرسة الطموح",
+    "latitude": 24.2127,
+    "longitude": 55.63582,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092241-0-B",
+    "stop_code": null,
+    "name_en": "Al Basmah St / Al Tomouh School",
+    "name_ar": "شارع البَسمة / مدرسة الطموح",
+    "latitude": 24.21319,
+    "longitude": 55.63549,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092303-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Water Pumping Station",
+    "name_ar": "شارع هزاع بن سلطان  / محطة ضخ المياه",
+    "latitude": 24.25233,
+    "longitude": 55.6731,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092303-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Water Pumping Station",
+    "name_ar": "شارع هزاع بن سلطان  / محطة ضخ المياه",
+    "latitude": 24.25126,
+    "longitude": 55.67305,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092309-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Cambridge Medical and Rehabilitation",
+    "name_ar": "شارع هزاع بن سلطان  / مركز كامبريدج للطب وإعادة التأهيل",
+    "latitude": 24.22846,
+    "longitude": 55.68095,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092311-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Cambridge Medical and Rehabilitation",
+    "name_ar": "شارع هزاع بن سلطان /  مركز كامبريدج للطب وإعادة التأهيل",
+    "latitude": 24.22807,
+    "longitude": 55.68063,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092313-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Ahmad Khalaf Al-Hamli Mosque",
+    "name_ar": "شارع هزاع بن سلطان  / مسجد أحمد خلف الهاملي",
+    "latitude": 24.21935,
+    "longitude": 55.68249,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092313-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Ahmad Khalaf Al-Hamli Mosque",
+    "name_ar": "شارع هزاع بن سلطان  / مسجد أحمد خلف الهاملي",
+    "latitude": 24.21919,
+    "longitude": 55.68216,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092521-0-A",
+    "stop_code": null,
+    "name_en": "Tahnoun Bin Zayed The First St / Omar Bin Abdulaziz Mosque",
+    "name_ar": "شارع طحنون بن زايد الأول / مسجد عمر بن عبد العزيز",
+    "latitude": 24.23203,
+    "longitude": 55.70299,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092521-0-B",
+    "stop_code": null,
+    "name_en": "Tahnoun Bin Zayed The First St / Omar Bin Abdulaziz Mosque",
+    "name_ar": "شارع طحنون بن زايد الأول / مسجد عمر بن عبد العزيز",
+    "latitude": 24.23223,
+    "longitude": 55.70284,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092523-0-A",
+    "stop_code": null,
+    "name_en": "Tahnoun Bin Zayed The First St / Al Amin Mosque",
+    "name_ar": "شارع طحنون بن زايد الأول / مسجد الأمين",
+    "latitude": 24.22975,
+    "longitude": 55.69721,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092523-0-B",
+    "stop_code": null,
+    "name_en": "Tahnoun Bin Zayed The First St / Al Amin Mosque",
+    "name_ar": "شارع طحنون بن زايد الأول / مسجد الأمين",
+    "latitude": 24.22993,
+    "longitude": 55.69695,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092525-0-A",
+    "stop_code": null,
+    "name_en": "Mahra Bint Khaled Bin Sultan St / Al Falah Academy",
+    "name_ar": "شارع مهره بنت خالد بن سلطان / أكاديمية الفلاح",
+    "latitude": 24.23371,
+    "longitude": 55.69176,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092525-0-B",
+    "stop_code": null,
+    "name_en": "Mahra Bint Khaled Bin Sultan St / Al Falah Academy",
+    "name_ar": "شارع مهره بنت خالد بن سلطان / أكاديمية الفلاح",
+    "latitude": 24.23298,
+    "longitude": 55.6918,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092527-0-A",
+    "stop_code": null,
+    "name_en": "Yayb Al Misaylli St / Al Ain Co-op Society",
+    "name_ar": "شارع يَيب المِصَيلِّي/ جمعية العين التعاونية",
+    "latitude": 24.24247,
+    "longitude": 55.68819,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092601-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Housing Complex",
+    "name_ar": "شارع شخبوط بن سلطان/  المجمّع السكني",
+    "latitude": 24.22963,
+    "longitude": 55.71746,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092601-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Housing Complex",
+    "name_ar": "شارع شخبوط بن سلطان/  المجمّع السكني",
+    "latitude": 24.22986,
+    "longitude": 55.71716,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092603-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Dhabi St",
+    "name_ar": "شارع شخبوط بن سلطان/شارع الظَّبِي",
+    "latitude": 24.22786,
+    "longitude": 55.71324,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092605-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Imam Bokhari Mosque",
+    "name_ar": "شارع شخبوط بن سلطان/ مسجد جامع الامام البخاري",
+    "latitude": 24.22616,
+    "longitude": 55.70914,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092605-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Imam Bokhari Mosque",
+    "name_ar": "شارع شخبوط بن سلطان/ مسجد جامع الامام البخاري",
+    "latitude": 24.22552,
+    "longitude": 55.70681,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092607-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Khibeesi Community Center",
+    "name_ar": "شارع شخبوط بن سلطان / مركز الخبيصي المجتمعي",
+    "latitude": 24.22366,
+    "longitude": 55.70275,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092607-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Khibeesi Community Center",
+    "name_ar": "شارع شخبوط بن سلطان / مركز الخبيصي المجتمعي",
+    "latitude": 24.22357,
+    "longitude": 55.70174,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092609-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Ain Co-op Society",
+    "name_ar": "شارع شخبوط بن سلطان / جمعية العين التعاونية",
+    "latitude": 24.22086,
+    "longitude": 55.69468,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092609-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Ain Co-op Society",
+    "name_ar": "شارع شخبوط بن سلطان / جمعية العين التعاونية",
+    "latitude": 24.22144,
+    "longitude": 55.69562,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092613-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / ADNOC",
+    "name_ar": "شارع شخبوط بن سلطان / ادنوك",
+    "latitude": 24.2179,
+    "longitude": 55.6862,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092613-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / ADNOC",
+    "name_ar": "شارع شخبوط بن سلطان / ادنوك",
+    "latitude": 24.21845,
+    "longitude": 55.68699,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092615-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Al Jawharah St",
+    "name_ar": "شارع شخبوط بن سلطان / شارع الجوهرة",
+    "latitude": 24.21554,
+    "longitude": 55.6792,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092615-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Al Jawharah St",
+    "name_ar": "شارع شخبوط بن سلطان / شارع الجوهرة",
+    "latitude": 24.21567,
+    "longitude": 55.67877,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092619-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Al Ain Ladies Club",
+    "name_ar": "شارع شخبوط بن سلطان / نادي العين للسيدات",
+    "latitude": 24.2126,
+    "longitude": 55.66903,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092619-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St  / Al Ain Ladies Club",
+    "name_ar": "شارع شخبوط بن سلطان / نادي العين للسيدات",
+    "latitude": 24.21323,
+    "longitude": 55.67036,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092621-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St /  Al Ain Co-op Society",
+    "name_ar": "شارع شخبوط بن سلطان / جمعية العين التعاونية",
+    "latitude": 24.2099,
+    "longitude": 55.66262,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092621-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St /  Al Ain Co-op Society",
+    "name_ar": "شارع شخبوط بن سلطان / جمعية العين التعاونية",
+    "latitude": 24.20987,
+    "longitude": 55.66183,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092623-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Asharij St",
+    "name_ar": "شارع شخبوط بن سلطان / شارع عَشَارِج",
+    "latitude": 24.20768,
+    "longitude": 55.6582,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092623-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Asharij St",
+    "name_ar": "شارع شخبوط بن سلطان / شارع عَشَارِج",
+    "latitude": 24.20833,
+    "longitude": 55.65882,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092625-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Ain American School",
+    "name_ar": "شارع شخبوط بن سلطان / مدرسة العين الامريكيه",
+    "latitude": 24.20581,
+    "longitude": 55.65396,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1092625-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Al Ain American School",
+    "name_ar": "شارع شخبوط بن سلطان / مدرسة العين الامريكيه",
+    "latitude": 24.20562,
+    "longitude": 55.6527,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093000-0-A",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Shk.Tahnoon Bin Mohammed Medical City",
+    "name_ar": "شارع شخبوط بن سلطان / مدينة الشيخ طحنون بن محمد الطبية",
+    "latitude": 24.23192,
+    "longitude": 55.73122,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093000-0-B",
+    "stop_code": null,
+    "name_en": "Shakhbout Bin Sultan St / Shk.Tahnoon Bin Mohammed Medical City",
+    "name_ar": "شارع شخبوط بن سلطان / مدينة الشيخ طحنون بن محمد الطبية",
+    "latitude": 24.23224,
+    "longitude": 55.72916,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093004-0-A",
+    "stop_code": null,
+    "name_en": "Al Nawkhadhah St / Radwan Mosque",
+    "name_ar": "شارع النوخذة / مسجد الرضوان",
+    "latitude": 24.18646,
+    "longitude": 55.63277,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093004-0-B",
+    "stop_code": null,
+    "name_en": "Al Nawkhadhah St / Radwan Mosque",
+    "name_ar": "شارع النوخذة / مسجد الرضوان",
+    "latitude": 24.18636,
+    "longitude": 55.63224,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093006-0-A",
+    "stop_code": null,
+    "name_en": "Al Ameen St / Garden",
+    "name_ar": "شارع الأمين / الحديقة",
+    "latitude": 24.18774,
+    "longitude": 55.63535,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093006-0-B",
+    "stop_code": null,
+    "name_en": "Al Ameen St / Garden",
+    "name_ar": "شارع الأمين / الحديقة",
+    "latitude": 24.18772,
+    "longitude": 55.63507,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093010-0-A",
+    "stop_code": null,
+    "name_en": "St 1 / Tawam Hospital",
+    "name_ar": "شارع  1 / مستشفى توام",
+    "latitude": 24.19448,
+    "longitude": 55.65059,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093010-0-B",
+    "stop_code": null,
+    "name_en": "St 1 / Tawam Hospital",
+    "name_ar": "شارع  1 / مستشفى توام",
+    "latitude": 24.19455,
+    "longitude": 55.65022,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093011-0-A",
+    "stop_code": null,
+    "name_en": "St 1 / Co-Op",
+    "name_ar": "شارع  1 / التعاونية",
+    "latitude": 24.19272,
+    "longitude": 55.64689,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093011-0-B",
+    "stop_code": null,
+    "name_en": "St 1 / Co-Op",
+    "name_ar": "شارع  1 / التعاونية",
+    "latitude": 24.19278,
+    "longitude": 55.64663,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093022-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Maqam Palace",
+    "name_ar": "شارع خليفة بن زايد / قصر المقام",
+    "latitude": 24.18704,
+    "longitude": 55.63796,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093022-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Maqam Palace",
+    "name_ar": "شارع خليفة بن زايد / قصر المقام",
+    "latitude": 24.18644,
+    "longitude": 55.63597,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093026-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St  / Fatima College of Health Sciences",
+    "name_ar": "شارع خليفة بن زايد/ كلية فاطمة للعلوم الصحية",
+    "latitude": 24.19133,
+    "longitude": 55.64785,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093028-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Hamad Rashed Muhammad Al-Khili Mosque",
+    "name_ar": "شارع خليفة بن زايد/  مسجد حمد راشد محمد الخيلي",
+    "latitude": 24.19496,
+    "longitude": 55.65686,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093028-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Hamad Rashed Muhammad Al-Khili Mosque",
+    "name_ar": "شارع خليفة بن زايد/  مسجد حمد راشد محمد الخيلي",
+    "latitude": 24.19546,
+    "longitude": 55.65651,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093032-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Al Souq",
+    "name_ar": "شارع خليفة بن زايد/ السوق",
+    "latitude": 24.19908,
+    "longitude": 55.66645,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093032-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Al Souq",
+    "name_ar": "شارع خليفة بن زايد/ السوق",
+    "latitude": 24.19895,
+    "longitude": 55.66531,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093036-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / UAE University",
+    "name_ar": "شارع خليفة بن زايد/ جامعة الامارات",
+    "latitude": 24.20262,
+    "longitude": 55.67516,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093036-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / UAE University",
+    "name_ar": "شارع خليفة بن زايد/ جامعة الامارات",
+    "latitude": 24.20269,
+    "longitude": 55.67429,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093040-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Family Development Foundation",
+    "name_ar": "شارع خليفة بن زايد/ مؤسسة التنمية الاسرية",
+    "latitude": 24.20672,
+    "longitude": 55.68503,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093040-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Family Development Foundation",
+    "name_ar": "شارع خليفة بن زايد/ مؤسسة التنمية الاسرية",
+    "latitude": 24.20754,
+    "longitude": 55.68568,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093042-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Medical Center",
+    "name_ar": "شارع خليفة بن زايد/  مركز طبي",
+    "latitude": 24.20858,
+    "longitude": 55.68942,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093042-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Medical Center",
+    "name_ar": "شارع خليفة بن زايد/  مركز طبي",
+    "latitude": 24.20892,
+    "longitude": 55.68897,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093044-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / TRANSCO",
+    "name_ar": "شارع خليفة بن زايد / شركة ترانسكو (شركة أبوظبي للنقل والتحكم)",
+    "latitude": 24.21224,
+    "longitude": 55.69797,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093044-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / TRANSCO",
+    "name_ar": "شارع خليفة بن زايد / شركة ترانسكو (شركة أبوظبي للنقل والتحكم)",
+    "latitude": 24.21187,
+    "longitude": 55.69645,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093050-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / UAE University Student Accomodation",
+    "name_ar": "شارع خليفة بن زايد/ سكن طلاب جامعة الامارات",
+    "latitude": 24.21489,
+    "longitude": 55.70335,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093050-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / UAE University Student Accomodation",
+    "name_ar": "شارع خليفة بن زايد/ سكن طلاب جامعة الامارات",
+    "latitude": 24.21627,
+    "longitude": 55.70543,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093052-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Al Tayr St",
+    "name_ar": "شارع خليفة بن زايد/ شارع الطَّيْر",
+    "latitude": 24.21866,
+    "longitude": 55.71088,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093052-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Al Tayr St",
+    "name_ar": "شارع خليفة بن زايد/ شارع الطَّيْر",
+    "latitude": 24.21843,
+    "longitude": 55.70986,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093054-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Mouijay College Of Sciences",
+    "name_ar": "شارع خليفة بن زايد/ كلية مويجي للعلوم",
+    "latitude": 24.22056,
+    "longitude": 55.7152,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093056-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Healthcare Center",
+    "name_ar": "شارع خليفة بن زايد /  مركز صحي",
+    "latitude": 24.22226,
+    "longitude": 55.72005,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093056-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Healthcare Center",
+    "name_ar": "شارع خليفة بن زايد /  مركز صحي",
+    "latitude": 24.22255,
+    "longitude": 55.71968,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093059-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Qasr Al Muwaji",
+    "name_ar": "شارع خليفة بن زايد / قصر المويجعي",
+    "latitude": 24.22409,
+    "longitude": 55.72841,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093059-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed St / Qasr Al Muwaji",
+    "name_ar": "شارع خليفة بن زايد / قصر المويجعي",
+    "latitude": 24.22427,
+    "longitude": 55.72731,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093060-0-A",
+    "stop_code": null,
+    "name_en": "St 65 / Bin Harmal Mosque",
+    "name_ar": "شارع 65 / مسجد بن حرمل",
+    "latitude": 24.17798,
+    "longitude": 55.61062,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093110-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Mohammed Bin Khaled School",
+    "name_ar": "شارع زايد الأول / مدرسة محمد بن خالد",
+    "latitude": 24.20786,
+    "longitude": 55.72636,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093110-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Mohammed Bin Khaled School",
+    "name_ar": "شارع زايد الأول / مدرسة محمد بن خالد",
+    "latitude": 24.20811,
+    "longitude": 55.72593,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093112-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Falaj Hazza Police Station",
+    "name_ar": "شارع زايد الأول / مركز شرطة فلج هزاع",
+    "latitude": 24.2017,
+    "longitude": 55.72788,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093112-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Falaj Hazza Police Station",
+    "name_ar": "شارع زايد الأول / مركز شرطة فلج هزاع",
+    "latitude": 24.19979,
+    "longitude": 55.72799,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093113-0-A",
+    "stop_code": null,
+    "name_en": "Jazeerat Abu Mousa St / Traffic Department",
+    "name_ar": "شارع جزيرة أبو موسى /  إدارة المرور",
+    "latitude": 24.19498,
+    "longitude": 55.72834,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093114-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Traffic Department",
+    "name_ar": "شارع زايد الأول / إدارة المرور",
+    "latitude": 24.19708,
+    "longitude": 55.72904,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093114-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Traffic Department",
+    "name_ar": "شارع زايد الأول / إدارة المرور",
+    "latitude": 24.19682,
+    "longitude": 55.72875,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093115-0-A",
+    "stop_code": null,
+    "name_en": "Jazeerat Abu Mousa St / Road Permit Department",
+    "name_ar": "شارع جزيرة أبو موسى /  إدارة تصاريح الطريق",
+    "latitude": 24.19279,
+    "longitude": 55.72422,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093115-0-B",
+    "stop_code": null,
+    "name_en": "Jazeerat Abu Mousa St / Road Permit Department",
+    "name_ar": "شارع جزيرة أبو موسى /  إدارة تصاريح الطريق",
+    "latitude": 24.19255,
+    "longitude": 55.72326,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093116-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Traffic Department",
+    "name_ar": "شارع زايد الأول / إدارة المرور",
+    "latitude": 24.19344,
+    "longitude": 55.72959,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093118-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Social Support Center",
+    "name_ar": "شارع زايد الأول / مركز الدعم الاجتماعي",
+    "latitude": 24.19038,
+    "longitude": 55.73076,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093118-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Social Support Center",
+    "name_ar": "شارع زايد الأول / مركز الدعم الاجتماعي",
+    "latitude": 24.18947,
+    "longitude": 55.73064,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093120-0-A",
+    "stop_code": null,
+    "name_en": "Zayed The First St / HCT Womens College",
+    "name_ar": "شارع زايد الأول / كلية التقنية العليا",
+    "latitude": 24.18698,
+    "longitude": 55.73165,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093120-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / HCT Womens College",
+    "name_ar": "شارع زايد الأول / كلية التقنية العليا",
+    "latitude": 24.1839,
+    "longitude": 55.73216,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093201-0-A",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / Manasir Market",
+    "name_ar": "شارع ميثة بنت محمد / سوق المناصير",
+    "latitude": 24.21647,
+    "longitude": 55.73486,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093201-0-B",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / Manasir Market",
+    "name_ar": "شارع ميثة بنت محمد / سوق المناصير",
+    "latitude": 24.21601,
+    "longitude": 55.73134,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093205-0-A",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / Al Ruwaikah Residential Complex",
+    "name_ar": "شارع ميثة بنت محمد / مجمع الرويكة السكني",
+    "latitude": 24.21118,
+    "longitude": 55.71701,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093205-0-B",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / Al Ruwaikah Residential Complex",
+    "name_ar": "شارع ميثة بنت محمد / مجمع الرويكة السكني",
+    "latitude": 24.21242,
+    "longitude": 55.71964,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093209-0-A",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / Omar Ibn Al-Khattab Mosque",
+    "name_ar": "شارع ميثاء بنت محمد / مسجد عمر ابن الخطاب",
+    "latitude": 24.20722,
+    "longitude": 55.70868,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093209-0-B",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / Omar Ibn Al-Khattab Mosque",
+    "name_ar": "شارع ميثاء بنت محمد / مسجد عمر ابن الخطاب",
+    "latitude": 24.20681,
+    "longitude": 55.70744,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093211-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Sheikh Mohammed Al Nahyan Field Hospital",
+    "name_ar": "شارع هزاع بن سلطان / مستشفى الشيخ محمد بن زايد",
+    "latitude": 24.19962,
+    "longitude": 55.69054,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093213-0-A",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St  / UAE Science and Innovation Park",
+    "name_ar": "شارع ميثة بنت محمد / منتزه الإمارات للعلوم والابتكار",
+    "latitude": 24.19486,
+    "longitude": 55.68483,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093213-0-B",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St  / UAE Science and Innovation Park",
+    "name_ar": "شارع ميثة بنت محمد / منتزه الإمارات للعلوم والابتكار",
+    "latitude": 24.19418,
+    "longitude": 55.68243,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093215-0-A",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St  /  UAE University Maqam 4 Hostel",
+    "name_ar": "شارع ميثة بنت محمد  / سكن جامعة الامارات - مقام 4",
+    "latitude": 24.19204,
+    "longitude": 55.67758,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093215-0-B",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St  /  UAE University Maqam 4 Hostel",
+    "name_ar": "شارع ميثة بنت محمد  / سكن جامعة الامارات - مقام 4",
+    "latitude": 24.19127,
+    "longitude": 55.67493,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093223-0-A",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / UAE University Maqam 2 Hostel",
+    "name_ar": "شارع ميثة بنت محمد / سكن جامعة الامارات - مقام 2",
+    "latitude": 24.18568,
+    "longitude": 55.66132,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093223-0-B",
+    "stop_code": null,
+    "name_en": "Maitha Bint Mohammed St / UAE University Maqam 2 Hostel",
+    "name_ar": "شارع ميثة بنت محمد / سكن جامعة الامارات - مقام 2",
+    "latitude": 24.18586,
+    "longitude": 55.66113,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093300-0-A",
+    "stop_code": null,
+    "name_en": "Saaed Bin Shakhbout St / ADNOC Vehicle Inspection Center",
+    "name_ar": "شارع سعيد بن شخبوط / مركز فحص السيارات ادنوك",
+    "latitude": 24.1897,
+    "longitude": 55.72177,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093300-0-B",
+    "stop_code": null,
+    "name_en": "Saaed Bin Shakhbout St / ADNOC Vehicle Inspection Center",
+    "name_ar": "شارع سعيد بن شخبوط / مركز فحص السيارات ادنوك",
+    "latitude": 24.18963,
+    "longitude": 55.72157,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093410-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Applied Technology Schools",
+    "name_ar": "شارع خالد بن سلطان / مدارس التكنولوجيا التطبيقية",
+    "latitude": 24.17801,
+    "longitude": 55.66842,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093410-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Applied Technology Schools",
+    "name_ar": "شارع خالد بن سلطان / مدارس التكنولوجيا التطبيقية",
+    "latitude": 24.1774,
+    "longitude": 55.66703,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093412-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Abu Dhabi University",
+    "name_ar": "شارع خالد بن سلطان / جامعة ابوظبي",
+    "latitude": 24.18134,
+    "longitude": 55.67321,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093412-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Abu Dhabi University",
+    "name_ar": "شارع خالد بن سلطان / جامعة ابوظبي",
+    "latitude": 24.18103,
+    "longitude": 55.67242,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093414-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Hamad Saeed Al Suwaiket Al Shamsi Mosque",
+    "name_ar": "شارع خالد بن سلطان  / جامع حمد سعيد السويكت الشامسي",
+    "latitude": 24.18539,
+    "longitude": 55.68181,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093414-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Hamad Saeed Al Suwaiket Al Shamsi Mosque",
+    "name_ar": "شارع خالد بن سلطان  / جامع حمد سعيد السويكت الشامسي",
+    "latitude": 24.18426,
+    "longitude": 55.67809,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093420-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / St 1",
+    "name_ar": "شارع خالد بن سلطان / شارع 1",
+    "latitude": 24.1896,
+    "longitude": 55.69266,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093420-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / St 1",
+    "name_ar": "شارع خالد بن سلطان / شارع 1",
+    "latitude": 24.18954,
+    "longitude": 55.69175,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093424-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Global English School",
+    "name_ar": "شارع خالد بن سلطان /  المدرسة العالمية الإنجليزية",
+    "latitude": 24.19358,
+    "longitude": 55.70159,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093424-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Global English School",
+    "name_ar": "شارع خالد بن سلطان /  المدرسة العالمية الإنجليزية",
+    "latitude": 24.19293,
+    "longitude": 55.69944,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093426-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / ADNOC",
+    "name_ar": "شارع خالد بن سلطان / ادنوك",
+    "latitude": 24.19524,
+    "longitude": 55.70482,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093426-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / ADNOC",
+    "name_ar": "شارع خالد بن سلطان / ادنوك",
+    "latitude": 24.19486,
+    "longitude": 55.70342,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093428-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Indian School Al Ain",
+    "name_ar": "شارع خالد بن سلطان / المدرسة الهندية",
+    "latitude": 24.1978,
+    "longitude": 55.70993,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093428-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Indian School Al Ain",
+    "name_ar": "شارع خالد بن سلطان / المدرسة الهندية",
+    "latitude": 24.19718,
+    "longitude": 55.70803,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093430-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / International School of Choueifat",
+    "name_ar": "شارع خالد بن سلطان / مدرسة الشويفات الدولية",
+    "latitude": 24.19984,
+    "longitude": 55.71393,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093430-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / International School of Choueifat",
+    "name_ar": "شارع خالد بن سلطان / مدرسة الشويفات الدولية",
+    "latitude": 24.19951,
+    "longitude": 55.71268,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093432-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / Darul Huda Islamic School",
+    "name_ar": "شارع خالد بن سلطان / مدرسة دار العلوم الإسلامية",
+    "latitude": 24.20257,
+    "longitude": 55.71951,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093432-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St  / Darul Huda Islamic School",
+    "name_ar": "شارع خالد بن سلطان / مدرسة دار العلوم الإسلامية",
+    "latitude": 24.20194,
+    "longitude": 55.71748,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093434-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Manaser Mosque",
+    "name_ar": "شارع خالد بن سلطان / مسجد المناصير",
+    "latitude": 24.20493,
+    "longitude": 55.72423,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093434-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Manaser Mosque",
+    "name_ar": "شارع خالد بن سلطان / مسجد المناصير",
+    "latitude": 24.20418,
+    "longitude": 55.72196,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093436-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Education Center",
+    "name_ar": "شارع خالد بن سلطان /  مركز تعليمي",
+    "latitude": 24.20633,
+    "longitude": 55.72876,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093438-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / ADNOC",
+    "name_ar": "شارع خالد بن سلطان / ادنوك",
+    "latitude": 24.2069,
+    "longitude": 55.73294,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093438-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / ADNOC",
+    "name_ar": "شارع خالد بن سلطان / ادنوك",
+    "latitude": 24.20697,
+    "longitude": 55.73113,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093440-0-A",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed the First St / Manasir Market",
+    "name_ar": "شارع سلطان بن زايد الأول / سوق المناصير",
+    "latitude": 24.21189,
+    "longitude": 55.73251,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093440-0-B",
+    "stop_code": null,
+    "name_en": "Sultan Bin Zayed the First St / Manasir Market",
+    "name_ar": "شارع سلطان بن زايد الأول / سوق المناصير",
+    "latitude": 24.21213,
+    "longitude": 55.73204,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093500-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St /Saeed Bin Hashil Al Mansouri Mosque",
+    "name_ar": "شارع هزاع بن سلطان / مسجد سعيد بن هاشل المنصوري",
+    "latitude": 24.2127,
+    "longitude": 55.68505,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093500-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St /Saeed Bin Hashil Al Mansouri Mosque",
+    "name_ar": "شارع هزاع بن سلطان / مسجد سعيد بن هاشل المنصوري",
+    "latitude": 24.21324,
+    "longitude": 55.68453,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093502-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Family Development Foundation",
+    "name_ar": "شارع هزاع بن سلطان / مؤسسة التنمية الأسرية",
+    "latitude": 24.2101,
+    "longitude": 55.68617,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093502-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Family Development Foundation",
+    "name_ar": "شارع هزاع بن سلطان / مؤسسة التنمية الأسرية",
+    "latitude": 24.21005,
+    "longitude": 55.68585,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093620-0-A",
+    "stop_code": null,
+    "name_en": "Falaj Hazza St / Al Sultan Hospital",
+    "name_ar": "شارع فلج هزاع /  مستشفى السلطان",
+    "latitude": 24.17397,
+    "longitude": 55.70908,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093624-0-A",
+    "stop_code": null,
+    "name_en": "Falaj Hazza St / Al Safa Centre",
+    "name_ar": "شارع فلج هزاع/ مركز الصفا",
+    "latitude": 24.17897,
+    "longitude": 55.71848,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093624-0-B",
+    "stop_code": null,
+    "name_en": "Falaj Hazza St / Al Safa Centre",
+    "name_ar": "شارع فلج هزاع/ مركز الصفا",
+    "latitude": 24.17695,
+    "longitude": 55.71831,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093628-0-A",
+    "stop_code": null,
+    "name_en": "Falaj Hazza St / Co-op",
+    "name_ar": "شارع فلج هزاع / إجمعية العين التعاونية",
+    "latitude": 24.1836,
+    "longitude": 55.72506,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093628-0-B",
+    "stop_code": null,
+    "name_en": "Falaj Hazza St / Co-op",
+    "name_ar": "شارع فلج هزاع / إجمعية العين التعاونية",
+    "latitude": 24.18184,
+    "longitude": 55.7245,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093636-0-A",
+    "stop_code": null,
+    "name_en": "Bad Hazza St / Traffic Department",
+    "name_ar": "شارع بدع هزاع / إدارة المرور",
+    "latitude": 24.19628,
+    "longitude": 55.73099,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093638-0-A",
+    "stop_code": null,
+    "name_en": "Bad Hazza St / Falaj Hazaa Park",
+    "name_ar": "شارع بدع هزاع / حديقة فلج هزاع",
+    "latitude": 24.1972,
+    "longitude": 55.7354,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093638-0-B",
+    "stop_code": null,
+    "name_en": "Bad Hazza St / Falaj Hazaa Park",
+    "name_ar": "شارع بدع هزاع / حديقة فلج هزاع",
+    "latitude": 24.19715,
+    "longitude": 55.73478,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093702-0-A",
+    "stop_code": null,
+    "name_en": "Tawam St / College of Medicine and Health Science",
+    "name_ar": "شارع توام / كلية الطب والعلوم الصحية",
+    "latitude": 24.20017,
+    "longitude": 55.6527,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093702-0-B",
+    "stop_code": null,
+    "name_en": "Tawam St / College of Medicine and Health Science",
+    "name_ar": "شارع توام / كلية الطب والعلوم الصحية",
+    "latitude": 24.19934,
+    "longitude": 55.65283,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093709-0-A",
+    "stop_code": null,
+    "name_en": "Al Ain Equestrian and Shooting Club",
+    "name_ar": "نادي العين للفروسية والرماية والجولف",
+    "latitude": 24.18458,
+    "longitude": 55.65837,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093710-0-A",
+    "stop_code": null,
+    "name_en": "Tawam St / UAE University Maqam 2 Hostel",
+    "name_ar": "شارع توام / سكن جامعة الامارات  مقام 2",
+    "latitude": 24.18347,
+    "longitude": 55.66025,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093711-0-A",
+    "stop_code": null,
+    "name_en": "Tuwam St / Applied Technology Schools",
+    "name_ar": "شارع تُوام / مدارس التكنولوجيا التطبيقية",
+    "latitude": 24.17805,
+    "longitude": 55.66334,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093712-0-A",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Sultan Al Darmaki St / Co-op",
+    "name_ar": "شارع محمد بن سلطان الدرمكي / جمعية العين التعاونية",
+    "latitude": 24.17402,
+    "longitude": 55.66618,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093712-0-B",
+    "stop_code": null,
+    "name_en": "Mohammed Bin Sultan Al Darmaki St / Co-op",
+    "name_ar": "شارع محمد بن سلطان الدرمكي / جمعية العين التعاونية",
+    "latitude": 24.17089,
+    "longitude": 55.66585,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093713-0-B",
+    "stop_code": null,
+    "name_en": "Jazeerat Al Reem St / Al Hzm St",
+    "name_ar": "شارع جَزِيرة الرِّيم / شارع الحزم",
+    "latitude": 24.16733,
+    "longitude": 55.6676,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093802-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / HCT Men's College",
+    "name_ar": "شارع نهيان الأول / كلية التقنية العليا بنين",
+    "latitude": 24.17425,
+    "longitude": 55.71999,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093802-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / HCT Men's College",
+    "name_ar": "شارع نهيان الأول / كلية التقنية العليا بنين",
+    "latitude": 24.1742,
+    "longitude": 55.71922,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093804-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Omar Ibn Abdulaziz Mosque",
+    "name_ar": "شارع نهيان الأول / مسجد عمر بن عبدالعزيز",
+    "latitude": 24.17794,
+    "longitude": 55.72792,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093804-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Omar Ibn Abdulaziz Mosque",
+    "name_ar": "شارع نهيان الأول / مسجد عمر بن عبدالعزيز",
+    "latitude": 24.17797,
+    "longitude": 55.72732,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093808-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / HCT Women's College",
+    "name_ar": "شارع نهيان الأول / كلية التقنية العليا بنات",
+    "latitude": 24.18161,
+    "longitude": 55.73597,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093808-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / HCT Women's College",
+    "name_ar": "شارع نهيان الأول / كلية التقنية العليا بنات",
+    "latitude": 24.18187,
+    "longitude": 55.73582,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093814-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Khalifa Bin Zayed The First St",
+    "name_ar": "شارع نهيان الأول / شارع خليفة بن زايد الاول",
+    "latitude": 24.18649,
+    "longitude": 55.75284,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093910-0-A",
+    "stop_code": null,
+    "name_en": "Al Bisharah St / Saeed Abdullah Hattab Al Dhari Mosque",
+    "name_ar": "شارع البشارة / مسجد سعيد عبدالله حطب الظاهري",
+    "latitude": 24.18108,
+    "longitude": 55.60904,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093910-0-B",
+    "stop_code": null,
+    "name_en": "Al Bisharah St / Saeed Abdullah Hattab Al Dhari Mosque",
+    "name_ar": "شارع البشارة / مسجد سعيد عبدالله حطب الظاهري",
+    "latitude": 24.18085,
+    "longitude": 55.60905,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093915-0-A",
+    "stop_code": null,
+    "name_en": "Al Nawkhadhah St / Zahrat Al Maqam Markets",
+    "name_ar": "شارع النوخذة / اسواق زهره المقام",
+    "latitude": 24.18454,
+    "longitude": 55.62804,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093915-0-B",
+    "stop_code": null,
+    "name_en": "Al Nawkhadhah St / Zahrat Al Maqam Markets",
+    "name_ar": "شارع النوخذة / اسواق زهره المقام",
+    "latitude": 24.18431,
+    "longitude": 55.62732,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093919-0-A",
+    "stop_code": null,
+    "name_en": "Al Naseem St / North Souq",
+    "name_ar": "شارع النسيم / السوق شمال",
+    "latitude": 24.19111,
+    "longitude": 55.62296,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093920-0-B",
+    "stop_code": null,
+    "name_en": "Al Khaleej St / Al Souq",
+    "name_ar": "شارع الخليج / السوق",
+    "latitude": 24.1791,
+    "longitude": 55.60508,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093923-0-A",
+    "stop_code": null,
+    "name_en": "Ubad Bin Abdullah St / Salem Saud Al Wahaibi Mosque",
+    "name_ar": "شارع عُباد بن عبدالله / مسجد سالم  سعود الوهيبي",
+    "latitude": 24.20027,
+    "longitude": 55.61447,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093923-0-B",
+    "stop_code": null,
+    "name_en": "Ubad Bin Abdullah St / Salem Saud Al Wahaibi Mosque",
+    "name_ar": "شارع عُباد بن عبدالله / مسجد سالم  سعود الوهيبي",
+    "latitude": 24.20009,
+    "longitude": 55.61538,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1093931-0-A",
+    "stop_code": null,
+    "name_en": "Sahlah Bint Suhail St / Hamouda Sarhan Al Neyadi Mosque",
+    "name_ar": "شارع سَهلَة بنت سُهَيل / مسجد حمودة سرحان النيادي",
+    "latitude": 24.19638,
+    "longitude": 55.60867,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094000-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Hamala Mosque",
+    "name_ar": "شارع خالد بن سلطان / مسجد الهملة",
+    "latitude": 24.20563,
+    "longitude": 55.77341,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094000-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Hamala Mosque",
+    "name_ar": "شارع خالد بن سلطان / مسجد الهملة",
+    "latitude": 24.20592,
+    "longitude": 55.77294,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094004-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Al Sarouj Park",
+    "name_ar": "شارع خالد بن سلطان / حديقة الصاروج",
+    "latitude": 24.20535,
+    "longitude": 55.79709,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094004-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Al Sarouj Park",
+    "name_ar": "شارع خالد بن سلطان / حديقة الصاروج",
+    "latitude": 24.20584,
+    "longitude": 55.79437,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094200-0-A",
+    "stop_code": null,
+    "name_en": "Hamed Albadi Al Dhaheri St / ADNOC",
+    "name_ar": "شارع حمد البادي الظاهري / ادنوك",
+    "latitude": 24.20522,
+    "longitude": 55.79265,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094200-0-B",
+    "stop_code": null,
+    "name_en": "Hamed Albadi Al Dhaheri St / ADNOC",
+    "name_ar": "شارع حمد البادي الظاهري / ادنوك",
+    "latitude": 24.20533,
+    "longitude": 55.79223,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094212-0-A",
+    "stop_code": null,
+    "name_en": "Al Mantaqah Al Sinaiyah St 1 / Al Taqwa Mosque",
+    "name_ar": "شارع المنطقة الصناعية 1/ مسجد التقوى",
+    "latitude": 24.19601,
+    "longitude": 55.75653,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094212-0-B",
+    "stop_code": null,
+    "name_en": "Al Mantaqah Al Sinaiyah St 1 / Al Taqwa Mosque",
+    "name_ar": "شارع المنطقة الصناعية 1/ مسجد التقوى",
+    "latitude": 24.1961,
+    "longitude": 55.75535,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094302-0-A",
+    "stop_code": null,
+    "name_en": "Rashid Bin Mohammed Al Neyadi St / Matar Bin Khalfan Mosque",
+    "name_ar": "شارع راشد بن محمد النيادي / مسجد مطر بن خلفان",
+    "latitude": 24.19992,
+    "longitude": 55.80187,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094302-0-B",
+    "stop_code": null,
+    "name_en": "Rashid Bin Mohammed Al Neyadi St / Matar Bin Khalfan Mosque",
+    "name_ar": "شارع راشد بن محمد النيادي / مسجد مطر بن خلفان",
+    "latitude": 24.1997,
+    "longitude": 55.80175,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094310-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Mohammed Sayf Salim Saeed Al Neyadi Mosque",
+    "name_ar": "شارع زايد بن سلطان/  مسجد محمد سيف سليم سعيد النيادي",
+    "latitude": 24.20364,
+    "longitude": 55.78347,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094310-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Mohammed Sayf Salim Saeed Al Neyadi Mosque",
+    "name_ar": "شارع زايد بن سلطان/  مسجد محمد سيف سليم سعيد النيادي",
+    "latitude": 24.20337,
+    "longitude": 55.78327,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094314-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Brooka Mosque",
+    "name_ar": "شارع زايد بن سلطان / مسجد البروكة",
+    "latitude": 24.19681,
+    "longitude": 55.78693,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094316-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Military Camp",
+    "name_ar": "شارع زايد بن سلطان / المعسكر",
+    "latitude": 24.191,
+    "longitude": 55.78977,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094316-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Military Camp",
+    "name_ar": "شارع زايد بن سلطان / المعسكر",
+    "latitude": 24.19109,
+    "longitude": 55.7894,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094318-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Zayed Military College",
+    "name_ar": "شارع زايد بن سلطان / كلية زايد العسكرية",
+    "latitude": 24.18406,
+    "longitude": 55.79329,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094318-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Zayed Military College",
+    "name_ar": "شارع زايد بن سلطان / كلية زايد العسكرية",
+    "latitude": 24.18347,
+    "longitude": 55.79318,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094357-0-A",
+    "stop_code": null,
+    "name_en": "Al Shabhat St / Niyadat Grand Mosque",
+    "name_ar": "شارع الشَّبحات / مسجد النيادات الكبير",
+    "latitude": 24.19607,
+    "longitude": 55.79617,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094357-0-B",
+    "stop_code": null,
+    "name_en": "Al Shabhat St / Niyadat Grand Mosque",
+    "name_ar": "شارع الشَّبحات / مسجد النيادات الكبير",
+    "latitude": 24.19555,
+    "longitude": 55.79428,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094359-0-A",
+    "stop_code": null,
+    "name_en": "Al Shabhat St / Khalid Bin Al Waleed High School East",
+    "name_ar": "شارع الشَّبحات / مدرسة خالد بن الوليد شرق",
+    "latitude": 24.19434,
+    "longitude": 55.79192,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094359-0-B",
+    "stop_code": null,
+    "name_en": "Al Shabhat St / Khalid Bin Al Waleed High School East",
+    "name_ar": "شارع الشَّبحات / مدرسة خالد بن الوليد شرق",
+    "latitude": 24.19415,
+    "longitude": 55.79103,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094366-0-A",
+    "stop_code": null,
+    "name_en": "Al Kawakib St 8 / Al Uqhuwan 1 St",
+    "name_ar": "شارع الكَواكِب 8 /  اشارع الأقحُوان 1",
+    "latitude": 24.14712,
+    "longitude": 55.81978,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094366-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib St 8 / Al Uqhuwan 1 St",
+    "name_ar": "شارع الكَواكِب 8 /  اشارع الأقحُوان 1",
+    "latitude": 24.14585,
+    "longitude": 55.81976,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094382-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St  / Bawadi Mall South",
+    "name_ar": "شارع زايد بن سلطان / بوادي مول جنوب",
+    "latitude": 24.1559,
+    "longitude": 55.80697,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094384-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Uqhuwan St 1",
+    "name_ar": "شارع زايد بن سلطان /شارع الأقحُوان 1",
+    "latitude": 24.15015,
+    "longitude": 55.81012,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094384-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Uqhuwan St 1",
+    "name_ar": "شارع زايد بن سلطان /شارع الأقحُوان 1",
+    "latitude": 24.14967,
+    "longitude": 55.80998,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094392-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Al Ahlia Gulf Line Co",
+    "name_ar": "شارع زايد بن سلطان / شركة الاهلية خط الخليج",
+    "latitude": 24.12121,
+    "longitude": 55.82294,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094394-0-A",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Malaqit St",
+    "name_ar": "شارع زايد بن سلطان / شارع مَلاقط",
+    "latitude": 24.11365,
+    "longitude": 55.82493,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094394-0-B",
+    "stop_code": null,
+    "name_en": "Zayed Bin Sultan St / Malaqit St",
+    "name_ar": "شارع زايد بن سلطان / شارع مَلاقط",
+    "latitude": 24.11303,
+    "longitude": 55.82474,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094401-0-B",
+    "stop_code": null,
+    "name_en": "Zayed The First St / Al Ain Zoo",
+    "name_ar": "شارع زايد الأول / حديقة الحيوانات  العين",
+    "latitude": 24.17938,
+    "longitude": 55.73835,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094403-0-A",
+    "stop_code": null,
+    "name_en": "Al Ain Zoo",
+    "name_ar": "حديقة الحيوانات  العين",
+    "latitude": 24.17443,
+    "longitude": 55.73591,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094416-0-A",
+    "stop_code": null,
+    "name_en": "Al Namaa St 6 / Bawadi Mall",
+    "name_ar": "شارع النَّماء 6 / البوادي  مول",
+    "latitude": 24.16007,
+    "longitude": 55.8096,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094416-0-B",
+    "stop_code": null,
+    "name_en": "Al Namaa St 6 / Bawadi Mall",
+    "name_ar": "شارع النَّماء 6 / البوادي  مول",
+    "latitude": 24.16027,
+    "longitude": 55.80985,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094422-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Hai Zayed Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول / حي جامع زايد",
+    "latitude": 24.13389,
+    "longitude": 55.72252,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094422-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Hai Zayed Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول / حي جامع زايد",
+    "latitude": 24.13433,
+    "longitude": 55.72195,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094423-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed the First St / Al Rahayeen School",
+    "name_ar": "شارع خليفة بن زايد الأول /  مدرسة الرياحين",
+    "latitude": 24.13487,
+    "longitude": 55.73594,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094423-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed the First St / Al Rahayeen School",
+    "name_ar": "شارع خليفة بن زايد الأول /  مدرسة الرياحين",
+    "latitude": 24.13597,
+    "longitude": 55.73644,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094424-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed the First St / Emirates Cement",
+    "name_ar": "شارع خليفة بن زايد الأول  / مصنع الاسمنت",
+    "latitude": 24.14014,
+    "longitude": 55.73613,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094532-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / ADNOC",
+    "name_ar": "شارع حصة بنت محمد / ادنوك",
+    "latitude": 24.20043,
+    "longitude": 55.76142,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094532-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / ADNOC",
+    "name_ar": "شارع حصة بنت محمد / ادنوك",
+    "latitude": 24.20019,
+    "longitude": 55.7611,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094536-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Al Mantaqah Al Sinaiyah St 7",
+    "name_ar": "شارع حصة بنت محمد/ شارع المنطقة الصناعية 7",
+    "latitude": 24.19313,
+    "longitude": 55.76211,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094536-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Al Mantaqah Al Sinaiyah St 7",
+    "name_ar": "شارع حصة بنت محمد/ شارع المنطقة الصناعية 7",
+    "latitude": 24.1924,
+    "longitude": 55.76191,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094538-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Al Siham St 1",
+    "name_ar": "شارع نهيان الأول/ شارع السِّهام 1",
+    "latitude": 24.18906,
+    "longitude": 55.76028,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094538-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Al Siham St 1",
+    "name_ar": "شارع نهيان الأول/ شارع السِّهام 1",
+    "latitude": 24.18943,
+    "longitude": 55.76065,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094540-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Ali Khalfan Abdullah Sultan Al Dhaheri Mosque",
+    "name_ar": "شارع حصة بنت محمد/ مسجد علي خلفان عبدالله سلطان الظاهري",
+    "latitude": 24.18657,
+    "longitude": 55.7627,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094540-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Ali Khalfan Abdullah Sultan Al Dhaheri Mosque",
+    "name_ar": "شارع حصة بنت محمد/ مسجد علي خلفان عبدالله سلطان الظاهري",
+    "latitude": 24.18612,
+    "longitude": 55.76255,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094542-0-A",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Ali Bin Harmal Mosque",
+    "name_ar": "شارع حصة بنت محمد /  مسجد علي بن حرمل",
+    "latitude": 24.17842,
+    "longitude": 55.76362,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094542-0-B",
+    "stop_code": null,
+    "name_en": "Hessa Bint Mohammed St / Ali Bin Harmal Mosque",
+    "name_ar": "شارع حصة بنت محمد /  مسجد علي بن حرمل",
+    "latitude": 24.17785,
+    "longitude": 55.76332,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094602-0-A",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 1 St / Al Kawakib 8 St",
+    "name_ar": "شارع الأقحُوان 1 / شارع الكَواكِب 8",
+    "latitude": 24.14966,
+    "longitude": 55.81757,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094603-0-A",
+    "stop_code": null,
+    "name_en": "Al Kawakib 1 St / Al Ahali Slaughterhouse",
+    "name_ar": "شارع الكَواكِب 1 /  مسلخ الأهالي",
+    "latitude": 24.15912,
+    "longitude": 55.81907,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094603-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 1 St / Al Ahali Slaughterhouse",
+    "name_ar": "شارع الكَواكِب 1 /  مسلخ الأهالي",
+    "latitude": 24.15906,
+    "longitude": 55.8158,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094605-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 1 St / As Siqa 1 St",
+    "name_ar": "شارع الكَواكِب 1 / شارع السِّقا 1",
+    "latitude": 24.15962,
+    "longitude": 55.82264,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094605-0-C",
+    "stop_code": null,
+    "name_en": "Al Kawakib 1 St / As Siqa 1 St",
+    "name_ar": "شارع الكَواكِب 1 / شارع السِّقا 1",
+    "latitude": 24.15907,
+    "longitude": 55.82364,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094627-0-A",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 1 St / LuLu Hypermarket",
+    "name_ar": "شارع الأقحُوان 1/ لولو هايبرماركت",
+    "latitude": 24.15039,
+    "longitude": 55.82613,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094627-0-B",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 1 St / LuLu Hypermarket",
+    "name_ar": "شارع الأقحُوان 1/ لولو هايبرماركت",
+    "latitude": 24.15032,
+    "longitude": 55.82382,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094629-0-A",
+    "stop_code": null,
+    "name_en": "Al Zanbaq 8 St / Al Uqhuwan 1",
+    "name_ar": "شارع الزَّنبَق 8 / شارع الأقحُوان 1",
+    "latitude": 24.15019,
+    "longitude": 55.83341,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094629-0-B",
+    "stop_code": null,
+    "name_en": "Al Zanbaq 8 St / Al Uqhuwan 1",
+    "name_ar": "شارع الزَّنبَق 8 / شارع الأقحُوان 1",
+    "latitude": 24.15105,
+    "longitude": 55.83229,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094641-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / Al Uqhuwan 9 St",
+    "name_ar": "شارع الكَواكِب 7 / شارع الأقحُوان 9",
+    "latitude": 24.14001,
+    "longitude": 55.81693,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094645-0-A",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Al Qunout 7 St",
+    "name_ar": "شارع الأقحُوان 9 / شارع القنوت 7",
+    "latitude": 24.14104,
+    "longitude": 55.83014,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094645-0-B",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Al Qunout 7 St",
+    "name_ar": "شارع الأقحُوان 9 / شارع القنوت 7",
+    "latitude": 24.14063,
+    "longitude": 55.82383,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094646-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 2 St  / Emirates Transport",
+    "name_ar": "ش الكواكب 2 / مواصلات الامارات",
+    "latitude": 24.13717,
+    "longitude": 55.8175,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094647-0-A",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Al Zanbaq 8 St",
+    "name_ar": "شارع الأقحُوان 9 / شارع الزَّنبَق 8",
+    "latitude": 24.14151,
+    "longitude": 55.83484,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094647-0-B",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Al Zanbaq 8 St",
+    "name_ar": "شارع الأقحُوان 9 / شارع الزَّنبَق 8",
+    "latitude": 24.14146,
+    "longitude": 55.83377,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094647-0-C",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Al Zanbaq 8 St",
+    "name_ar": "شارع الأقحُوان 9 / شارع الزَّنبَق 8",
+    "latitude": 24.14188,
+    "longitude": 55.8344,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094648-0-A",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Emirates Driving School",
+    "name_ar": "شارع الأقحُوان 9 / مدرسة الامارات تعليم القيادة",
+    "latitude": 24.1419,
+    "longitude": 55.83946,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094648-0-B",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / Emirates Driving School",
+    "name_ar": "شارع الأقحُوان 9 / مدرسة الامارات تعليم القيادة",
+    "latitude": 24.1418,
+    "longitude": 55.83762,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094649-0-A",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / MarThoma Church",
+    "name_ar": "شارع الأقحُوان 9 / كنيسة مارتوما",
+    "latitude": 24.14224,
+    "longitude": 55.84354,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094649-0-B",
+    "stop_code": null,
+    "name_en": "Al Uqhuwan 9 St / MarThoma Church",
+    "name_ar": "شارع الأقحُوان 9 / كنيسة مارتوما",
+    "latitude": 24.1422,
+    "longitude": 55.84206,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094651-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / Al Kawakib 1 St",
+    "name_ar": "شارع الكَواكِب 7 / شارع الكَواكِب 1",
+    "latitude": 24.15833,
+    "longitude": 55.81534,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094653-0-A",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / IFFCO",
+    "name_ar": "شارع الكَواكِب 7 /شركة العين الوطنية للعصير والمرطبات",
+    "latitude": 24.15533,
+    "longitude": 55.81575,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094653-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / IFFCO",
+    "name_ar": "شارع الكَواكِب 7 /شركة العين الوطنية للعصير والمرطبات",
+    "latitude": 24.15396,
+    "longitude": 55.81576,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094655-0-A",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / Al Uqhuwan 1 St",
+    "name_ar": "شارع الكَواكِب 7 / شارع الأقحُوان 1",
+    "latitude": 24.15067,
+    "longitude": 55.81622,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094657-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / Al Uqhuwan 4 St",
+    "name_ar": "شارع الكَواكِب 7 / شارع الأقحُوان 4",
+    "latitude": 24.14363,
+    "longitude": 55.81687,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094657-0-C",
+    "stop_code": null,
+    "name_en": "Al Kawakib 7 St / Al Uqhuwan 4 St",
+    "name_ar": "شارع الكَواكِب 7 / شارع الأقحُوان 4",
+    "latitude": 24.14486,
+    "longitude": 55.81802,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094663-0-B",
+    "stop_code": null,
+    "name_en": "Al Kawakib 2 St / Tahnoun Bin Mohammed Educational Complex",
+    "name_ar": "شارع الكَواكِب 2 / مجمع طحنون بن محمد التعليمي",
+    "latitude": 24.13272,
+    "longitude": 55.81972,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094671-0-A",
+    "stop_code": null,
+    "name_en": "Al Siqa St 1 / Al Jandaliyah St 3",
+    "name_ar": "شارع السِّقا 1 / شارع الجَندَلِيَّة 3",
+    "latitude": 24.156,
+    "longitude": 55.82404,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094671-0-B",
+    "stop_code": null,
+    "name_en": "Al Siqa St 1 / Al Jandaliyah St 3",
+    "name_ar": "شارع السِّقا 1 / شارع الجَندَلِيَّة 3",
+    "latitude": 24.1547,
+    "longitude": 55.82406,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094687-0-A",
+    "stop_code": null,
+    "name_en": "Al Zanbaq 8 St/ Al Uqhuwan 4 St",
+    "name_ar": "شارع الزَّنبَق 8 / شارع الأقحُوان 4",
+    "latitude": 24.14667,
+    "longitude": 55.83385,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094687-0-B",
+    "stop_code": null,
+    "name_en": "Al Zanbaq 8 St/ Al Uqhuwan 4 St",
+    "name_ar": "شارع الزَّنبَق 8 / شارع الأقحُوان 4",
+    "latitude": 24.14599,
+    "longitude": 55.83387,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094714-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Emirates Motor Company",
+    "name_ar": "شارع خليفة بن زايد الأول/ شركة الإمارات للسيارات",
+    "latitude": 24.18277,
+    "longitude": 55.75671,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094714-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Emirates Motor Company",
+    "name_ar": "شارع خليفة بن زايد الأول/ شركة الإمارات للسيارات",
+    "latitude": 24.18362,
+    "longitude": 55.75613,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094718-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St  / Nour and Huda Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول  / مسجد النور والهدى",
+    "latitude": 24.17787,
+    "longitude": 55.75665,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094718-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St  / Nour and Huda Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول  / مسجد النور والهدى",
+    "latitude": 24.18016,
+    "longitude": 55.75652,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094722-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Al Otaibah Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول / مسجد العتيبة",
+    "latitude": 24.1682,
+    "longitude": 55.75572,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094724-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St /  ITC Bus Depot",
+    "name_ar": "شارع خليفة بن زايد الأول/ محطة ايواء حافلات مركز النقل المتكامل",
+    "latitude": 24.16899,
+    "longitude": 55.75621,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094724-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St /  ITC Bus Depot",
+    "name_ar": "شارع خليفة بن زايد الأول/ محطة ايواء حافلات مركز النقل المتكامل",
+    "latitude": 24.16203,
+    "longitude": 55.75365,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094728-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Muhammad Abdullah Al Zaroony Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول/مسجد محمد عبدالله الزرعوني",
+    "latitude": 24.15748,
+    "longitude": 55.75031,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094728-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / Muhammad Abdullah Al Zaroony Mosque",
+    "name_ar": "شارع خليفة بن زايد الأول/مسجد محمد عبدالله الزرعوني",
+    "latitude": 24.1575,
+    "longitude": 55.74965,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094730-0-A",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / ADNOC",
+    "name_ar": "شارع خليفة بن زايد الأول / ادنوك",
+    "latitude": 24.1499,
+    "longitude": 55.74006,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094730-0-B",
+    "stop_code": null,
+    "name_en": "Khalifa Bin Zayed The First St / ADNOC",
+    "name_ar": "شارع خليفة بن زايد الأول / ادنوك",
+    "latitude": 24.1493,
+    "longitude": 55.73933,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094740-0-A",
+    "stop_code": null,
+    "name_en": "Hafeet Street / Hafeet Reserve",
+    "name_ar": "شارع حفيت / محمية حفيت",
+    "latitude": 24.12343,
+    "longitude": 55.7541,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094740-0-B",
+    "stop_code": null,
+    "name_en": "Hafeet Street / Hafeet Reserve",
+    "name_ar": "شارع حفيت / محمية حفيت",
+    "latitude": 24.12293,
+    "longitude": 55.7537,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094800-0-B",
+    "stop_code": null,
+    "name_en": "Al Khizamiyah St / Green Mubazzarah",
+    "name_ar": "شارع الخِزامِيَّة / مبزرة الخضراء",
+    "latitude": 24.10697,
+    "longitude": 55.7491,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094808-0-B",
+    "stop_code": null,
+    "name_en": "Irq Al Hilayw St / Al Ain Adventure",
+    "name_ar": "شارع عِرق الحِلَيو / العين أدفينتشر",
+    "latitude": 24.09419,
+    "longitude": 55.73789,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094810-0-A",
+    "stop_code": null,
+    "name_en": "Sir Bani Yas St / Halat Qantour St",
+    "name_ar": "شارع صير بني ياس / شارع حالة قنطور",
+    "latitude": 24.09101,
+    "longitude": 55.73339,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094810-0-B",
+    "stop_code": null,
+    "name_en": "Sir Bani Yas St / Halat Qantour St",
+    "name_ar": "شارع صير بني ياس / شارع حالة قنطور",
+    "latitude": 24.08997,
+    "longitude": 55.73348,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094814-0-A",
+    "stop_code": null,
+    "name_en": "Sir Bani Yas St / Jabel Hafeet School",
+    "name_ar": "شارع صير بني ياس / مدرسة جبل حفيت",
+    "latitude": 24.0859,
+    "longitude": 55.7348,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094814-0-B",
+    "stop_code": null,
+    "name_en": "Sir Bani Yas St / Jabel Hafeet School",
+    "name_ar": "شارع صير بني ياس / مدرسة جبل حفيت",
+    "latitude": 24.08458,
+    "longitude": 55.73492,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094818-0-A",
+    "stop_code": null,
+    "name_en": "Sir Bani Yas St / Alsaadah Mosque",
+    "name_ar": "شارع صير بني ياس / مسجد السعادة",
+    "latitude": 24.08003,
+    "longitude": 55.73636,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094818-0-B",
+    "stop_code": null,
+    "name_en": "Sir Bani Yas St / Alsaadah Mosque",
+    "name_ar": "شارع صير بني ياس / مسجد السعادة",
+    "latitude": 24.07869,
+    "longitude": 55.7365,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094823-0-A",
+    "stop_code": null,
+    "name_en": "Ghafat Saaydah St / AF Co-op",
+    "name_ar": "شارع غافات سَعَيدة / جمعية القوات المسلحة",
+    "latitude": 24.07153,
+    "longitude": 55.73759,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094900-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Sultan Ali Saif Mohayri Mosque",
+    "name_ar": "شارع هزاع بن سلطان / مسجد سلطان  علي سيف المهيري",
+    "latitude": 24.16466,
+    "longitude": 55.71178,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094900-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Sultan Ali Saif Mohayri Mosque",
+    "name_ar": "شارع هزاع بن سلطان / مسجد سلطان  علي سيف المهيري",
+    "latitude": 24.16298,
+    "longitude": 55.71142,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094906-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St  / Mediclinic Zakher",
+    "name_ar": "شارع هزاع بن سلطان / ميدكلينك زاخر",
+    "latitude": 24.15011,
+    "longitude": 55.71266,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094908-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Zayed House for Islamic Culture",
+    "name_ar": "شارع هزاع بن سلطان / دار زايد للثقافة الإسلامية",
+    "latitude": 24.14646,
+    "longitude": 55.71285,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094908-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Zayed House for Islamic Culture",
+    "name_ar": "شارع هزاع بن سلطان / دار زايد للثقافة الإسلامية",
+    "latitude": 24.1471,
+    "longitude": 55.71261,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094910-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Neima 1 Playground",
+    "name_ar": "شارع هزاع بن سلطان / ملعب نعمة 1",
+    "latitude": 24.13991,
+    "longitude": 55.71331,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094910-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Neima 1 Playground",
+    "name_ar": "شارع هزاع بن سلطان / ملعب نعمة 1",
+    "latitude": 24.13978,
+    "longitude": 55.71301,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094912-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Al Salheen Mosque",
+    "name_ar": "شارع هزاع بن سلطان / مسجد الصالحين",
+    "latitude": 24.13387,
+    "longitude": 55.71377,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094912-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Al Salheen Mosque",
+    "name_ar": "شارع هزاع بن سلطان / مسجد الصالحين",
+    "latitude": 24.13328,
+    "longitude": 55.71345,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094914-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Al Souq",
+    "name_ar": "شارع هزاع بن سلطان / السوق",
+    "latitude": 24.12693,
+    "longitude": 55.71423,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094914-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Al Souq",
+    "name_ar": "شارع هزاع بن سلطان / السوق",
+    "latitude": 24.12638,
+    "longitude": 55.7139,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094920-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Neima Playground",
+    "name_ar": "شارع هزاع بن سلطان / ملعب نعمة",
+    "latitude": 24.11252,
+    "longitude": 55.71669,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094920-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Neima Playground",
+    "name_ar": "شارع هزاع بن سلطان / ملعب نعمة",
+    "latitude": 24.11364,
+    "longitude": 55.71608,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094924-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Neima Healthcare Center",
+    "name_ar": "شارع هزاع بن سلطان / مركز نعمة الصحي",
+    "latitude": 24.10542,
+    "longitude": 55.71764,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094928-0-A",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Salem Bin Tannaf Al Shamsi St",
+    "name_ar": "شارع هزاع بن سلطان  / شارع سالم بن طناف الشامسي",
+    "latitude": 24.09516,
+    "longitude": 55.72264,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1094928-0-B",
+    "stop_code": null,
+    "name_en": "Hazza Bin Sultan St / Salem Bin Tannaf Al Shamsi St",
+    "name_ar": "شارع هزاع بن سلطان  / شارع سالم بن طناف الشامسي",
+    "latitude": 24.0935,
+    "longitude": 55.72293,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095130-0-A",
+    "stop_code": null,
+    "name_en": "Tawam St / Al Ain Sports and Cultural Club",
+    "name_ar": "شارع توام / نادي العين الرياضي الثقافي",
+    "latitude": 24.13989,
+    "longitude": 55.69452,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095130-0-B",
+    "stop_code": null,
+    "name_en": "Tawam St / Al Ain Sports and Cultural Club",
+    "name_ar": "شارع توام / نادي العين الرياضي الثقافي",
+    "latitude": 24.1388,
+    "longitude": 55.69542,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095132-0-A",
+    "stop_code": null,
+    "name_en": "Tawam St  / Al Zaydiya School",
+    "name_ar": "شارع توام / مدرسة الزايدية",
+    "latitude": 24.13578,
+    "longitude": 55.6996,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095132-0-B",
+    "stop_code": null,
+    "name_en": "Tawam St  / Al Zaydiya School",
+    "name_ar": "شارع توام / مدرسة الزايدية",
+    "latitude": 24.1349,
+    "longitude": 55.70033,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095215-0-A",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / Tuwam St",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / شارع تُوام",
+    "latitude": 24.16083,
+    "longitude": 55.6692,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095215-0-B",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / Tuwam St",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / شارع تُوام",
+    "latitude": 24.16039,
+    "longitude": 55.66841,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095219-0-A",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / ADNOC",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / ادنوك",
+    "latitude": 24.15404,
+    "longitude": 55.66093,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095219-0-B",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / ADNOC",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / ادنوك",
+    "latitude": 24.15375,
+    "longitude": 55.66029,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095221-0-A",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / Al Ain Co-op Society",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / جمعية العين التعاونية",
+    "latitude": 24.14678,
+    "longitude": 55.65188,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095221-0-B",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / Al Ain Co-op Society",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / جمعية العين التعاونية",
+    "latitude": 24.14651,
+    "longitude": 55.65139,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095225-0-A",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / Mohammed bin Nasser bin Salmeen Al Mansoori Mosque",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / مسجد محمد بن ناصر بن سالمين المنصوري",
+    "latitude": 24.14025,
+    "longitude": 55.64109,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095225-0-B",
+    "stop_code": null,
+    "name_en": "Al Rawdah Al Sharqiyah St / Mohammed bin Nasser bin Salmeen Al Mansoori Mosque",
+    "name_ar": "شارع الرَّوضة الشَّرقِية / مسجد محمد بن ناصر بن سالمين المنصوري",
+    "latitude": 24.14,
+    "longitude": 55.64001,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095229-0-A",
+    "stop_code": null,
+    "name_en": "Yazeed Bin Al Aswad St / Meshbeb Fadel Mohammed Al Otaibi Mosque",
+    "name_ar": "شارع يَزِيد بن الأسوَد / مسجد مشبب فاضل محمد العتيبي",
+    "latitude": 24.13898,
+    "longitude": 55.62953,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095253-0-A",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Al Itizaz St",
+    "name_ar": "شارع خالد بن سلطان / شارع الاعتزاز",
+    "latitude": 24.16395,
+    "longitude": 55.65388,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095253-0-B",
+    "stop_code": null,
+    "name_en": "Khalid Bin Sultan St / Al Itizaz St",
+    "name_ar": "شارع خالد بن سلطان / شارع الاعتزاز",
+    "latitude": 24.16294,
+    "longitude": 55.65338,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095259-0-A",
+    "stop_code": null,
+    "name_en": "Al Huquf St / Grandmart",
+    "name_ar": "شارع الحُقُف / جراند مارت",
+    "latitude": 24.15159,
+    "longitude": 55.63734,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095259-0-B",
+    "stop_code": null,
+    "name_en": "Al Huquf St / Grandmart",
+    "name_ar": "شارع الحُقُف / جراند مارت",
+    "latitude": 24.15079,
+    "longitude": 55.63698,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095263-0-A",
+    "stop_code": null,
+    "name_en": "Al Yah St / Fadhel Saif Al Kaabi Mosque",
+    "name_ar": "شارع الياه / جامع فاضل سيف الكعبي",
+    "latitude": 24.14815,
+    "longitude": 55.62951,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095263-0-B",
+    "stop_code": null,
+    "name_en": "Al Yah St / Fadhel Saif Al Kaabi Mosque",
+    "name_ar": "شارع الياه / جامع فاضل سيف الكعبي",
+    "latitude": 24.14803,
+    "longitude": 55.62936,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095271-0-A",
+    "stop_code": null,
+    "name_en": "Al Sifouf St / Ghoneimah Mosque",
+    "name_ar": "شارع الصفوف / مسجد غنيمة",
+    "latitude": 24.14528,
+    "longitude": 55.62032,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095408-0-A",
+    "stop_code": null,
+    "name_en": "Al Zakhirah St / Al Mottaqein Mosque",
+    "name_ar": "شارع الزخيرة / مسجد المتقين",
+    "latitude": 24.12634,
+    "longitude": 55.68073,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095410-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Zakhir Health Center",
+    "name_ar": "شارع نهيان الأول / مركز زاخر الصحي",
+    "latitude": 24.13543,
+    "longitude": 55.68495,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095410-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Zakhir Health Center",
+    "name_ar": "شارع نهيان الأول / مركز زاخر الصحي",
+    "latitude": 24.1351,
+    "longitude": 55.68444,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095412-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St  / Bin Amer Mosque",
+    "name_ar": "شارع نهيان الأول / مسجد بن عامر",
+    "latitude": 24.141,
+    "longitude": 55.68806,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095412-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St  / Bin Amer Mosque",
+    "name_ar": "شارع نهيان الأول / مسجد بن عامر",
+    "latitude": 24.13993,
+    "longitude": 55.68708,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095414-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Zakhir Park",
+    "name_ar": "شارع نهيان الأول / حديقة زاخر",
+    "latitude": 24.14484,
+    "longitude": 55.69075,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095414-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Zakhir Park",
+    "name_ar": "شارع نهيان الأول / حديقة زاخر",
+    "latitude": 24.14472,
+    "longitude": 55.68992,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095416-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Ahmed Bin Zayed School",
+    "name_ar": "شارع نهيان الأول/ مدرسة احمد بن زايد",
+    "latitude": 24.14704,
+    "longitude": 55.69251,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095416-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Ahmed Bin Zayed School",
+    "name_ar": "شارع نهيان الأول/ مدرسة احمد بن زايد",
+    "latitude": 24.14746,
+    "longitude": 55.69222,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095418-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Co-op",
+    "name_ar": "شارع نهيان الأول / جمعية العين التعاونية",
+    "latitude": 24.15223,
+    "longitude": 55.69682,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095418-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Co-op",
+    "name_ar": "شارع نهيان الأول / جمعية العين التعاونية",
+    "latitude": 24.15263,
+    "longitude": 55.6968,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095422-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Laith Bin Abi Saleem Mosque",
+    "name_ar": "شارع نهيان الأول / مسجد ليث بن ابي سليم",
+    "latitude": 24.15801,
+    "longitude": 55.70202,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095422-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Laith Bin Abi Saleem Mosque",
+    "name_ar": "شارع نهيان الأول / مسجد ليث بن ابي سليم",
+    "latitude": 24.15793,
+    "longitude": 55.70165,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095426-0-A",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Eid Prayer Ground",
+    "name_ar": "شارع نهيان الأول / مصلى العيد",
+    "latitude": 24.16368,
+    "longitude": 55.7072,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095426-0-B",
+    "stop_code": null,
+    "name_en": "Nahyan The First St / Eid Prayer Ground",
+    "name_ar": "شارع نهيان الأول / مصلى العيد",
+    "latitude": 24.16369,
+    "longitude": 55.70687,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095455-0-B",
+    "stop_code": null,
+    "name_en": "Al Mayrad St / AF Co-op",
+    "name_ar": "شارع المَيرَد / جمعية القوات المسلحة التعاونية",
+    "latitude": 24.15255,
+    "longitude": 55.71952,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095455-0-E",
+    "stop_code": null,
+    "name_en": "Al Mayrad St / AF Co-op",
+    "name_ar": "شارع المَيرَد / جمعية القوات المسلحة التعاونية",
+    "latitude": 24.15186,
+    "longitude": 55.72,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095470-0-A",
+    "stop_code": null,
+    "name_en": "Al Ahmadiyah St / Al Alin Coop",
+    "name_ar": "شارع الأحمَديَّة / جمعية العين التعاونية",
+    "latitude": 24.15144,
+    "longitude": 55.72848,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095620-0-B",
+    "stop_code": null,
+    "name_en": "Nimah St | Zakhir East Police Station",
+    "name_ar": "شارع نعمة / مركز شرطة زاخر شرق",
+    "latitude": 24.13274,
+    "longitude": 55.70853,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095629-0-A",
+    "stop_code": null,
+    "name_en": "Al Fusoul St / Makani Mall",
+    "name_ar": "شارع الفُصُول / مكاني مول",
+    "latitude": 24.10983,
+    "longitude": 55.70415,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095629-0-B",
+    "stop_code": null,
+    "name_en": "Al Fusoul St / Makani Mall",
+    "name_ar": "شارع الفُصُول / مكاني مول",
+    "latitude": 24.10957,
+    "longitude": 55.70487,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095706-0-A",
+    "stop_code": null,
+    "name_en": "Nimah St / Mosque",
+    "name_ar": "شارع نعمة / مسجد",
+    "latitude": 24.12093,
+    "longitude": 55.70499,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095706-0-B",
+    "stop_code": null,
+    "name_en": "Nimah St / Mosque",
+    "name_ar": "شارع نعمة / مسجد",
+    "latitude": 24.11907,
+    "longitude": 55.7037,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095720-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bilmur Al Ameri St / Jabal Al Qinan St",
+    "name_ar": "شارع سالم بالمر العامري / شارع جَبَل القِنان",
+    "latitude": 24.10485,
+    "longitude": 55.70572,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095720-0-B",
+    "stop_code": null,
+    "name_en": "Salem Bilmur Al Ameri St / Jabal Al Qinan St",
+    "name_ar": "شارع سالم بالمر العامري / شارع جَبَل القِنان",
+    "latitude": 24.10337,
+    "longitude": 55.70538,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095724-0-A",
+    "stop_code": null,
+    "name_en": "Salem Bilmur Al Ameri St / Saeed bin Sultan Al Dhaheri Mosque",
+    "name_ar": "شارع سالم بالمر العامري / مسجد سعيد بن سلطان الظاهري",
+    "latitude": 24.09548,
+    "longitude": 55.70651,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095800-0-B",
+    "stop_code": null,
+    "name_en": "Park Road / Ain Al Faydah Park West",
+    "name_ar": "شارع الحديقة / حديقة العين الفايضة غرب",
+    "latitude": 24.09142,
+    "longitude": 55.71231,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095806-0-A",
+    "stop_code": null,
+    "name_en": "Park Road / One To One Hotel",
+    "name_ar": "شارع الحديقة / فندق وان تو  وان",
+    "latitude": 24.09036,
+    "longitude": 55.72219,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1095806-0-B",
+    "stop_code": null,
+    "name_en": "Park Road / One To One Hotel",
+    "name_ar": "شارع الحديقة / فندق وان تو  وان",
+    "latitude": 24.09059,
+    "longitude": 55.72239,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096809-0-A",
+    "stop_code": null,
+    "name_en": "Niqa Lafhad St / Khalifa Bin Zayed Air College",
+    "name_ar": "شارع نِقا لَفهاد / كلية خليفة الجوية",
+    "latitude": 24.25829,
+    "longitude": 55.62866,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096809-0-B",
+    "stop_code": null,
+    "name_en": "Niqa Lafhad St / Khalifa Bin Zayed Air College",
+    "name_ar": "شارع نِقا لَفهاد / كلية خليفة الجوية",
+    "latitude": 24.25869,
+    "longitude": 55.6288,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096901-0-B",
+    "stop_code": null,
+    "name_en": "Al Ain Int'l Airport St / STRATA",
+    "name_ar": "شارع مطار العين الدولي / ستراتا",
+    "latitude": 24.28574,
+    "longitude": 55.62402,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096905-0-A",
+    "stop_code": null,
+    "name_en": "Yaw Nmayl St / Abu Dhabi Polytechnic",
+    "name_ar": "شارع يَو نميل / بوليتكنك أبوظبي",
+    "latitude": 24.27414,
+    "longitude": 55.62308,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096906-0-A",
+    "stop_code": null,
+    "name_en": "Al Heed St / National Center of Meteorology",
+    "name_ar": "شارع الحِيد / المركز الوطني للارصاد الجوية",
+    "latitude": 24.27462,
+    "longitude": 55.62056,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096906-0-B",
+    "stop_code": null,
+    "name_en": "Al Heed St / National Center of Meteorology",
+    "name_ar": "شارع الحِيد / المركز الوطني للارصاد الجوية",
+    "latitude": 24.27407,
+    "longitude": 55.61953,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096907-0-A",
+    "stop_code": null,
+    "name_en": "Al Yas Al Safli St  / Cargo Terminal",
+    "name_ar": "شارع الياس السَّافلِي / مبنى الشحن",
+    "latitude": 24.2693,
+    "longitude": 55.61976,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096907-0-B",
+    "stop_code": null,
+    "name_en": "Al Yas Al Safli St  / Cargo Terminal",
+    "name_ar": "شارع الياس السَّافلِي / مبنى الشحن",
+    "latitude": 24.27032,
+    "longitude": 55.61909,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096909-0-B",
+    "stop_code": null,
+    "name_en": "Qara Al Rikayah St / Airport Park",
+    "name_ar": "شارع قرا الرِّكَيَّه / حديقة المطار",
+    "latitude": 24.26541,
+    "longitude": 55.61913,
+    "is_active": 1,
+    "source_id": 1
+  },
+  {
+    "stop_id": "1096913-0-B",
+    "stop_code": null,
+    "name_en": "Niqa Lafhad St / Passenger Terminal",
+    "name_ar": "شارع نِقا لَفهاد / مبنى المسافرين",
+    "latitude": 24.26034,
+    "longitude": 55.61659,
+    "is_active": 1,
+    "source_id": 1
+  }
+]

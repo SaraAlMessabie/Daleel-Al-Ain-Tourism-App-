@@ -1,0 +1,482 @@
+[
+  {
+    "direction_id": "auh:21900:P:H:6p2",
+    "route_id": "alain-900",
+    "direction_code": "H",
+    "destination_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "destination_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21900:P:R:6p2",
+    "route_id": "alain-900",
+    "direction_code": "R",
+    "destination_en": "Hili, Bani Yas St / Hili Mall",
+    "destination_ar": "Hili, Bani Yas St / Hili Mall",
+    "description_en": "Hili, Bani Yas St / Hili Mall",
+    "description_ar": "Hili, Bani Yas St / Hili Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21901:P:H:6p2",
+    "route_id": "alain-901",
+    "direction_code": "H",
+    "destination_en": "Al Maqam, Al Khaleej St / Al Souq",
+    "destination_ar": "Al Maqam, Al Khaleej St / Al Souq",
+    "description_en": "Al Maqam, Al Khaleej St / Al Souq",
+    "description_ar": "Al Maqam, Al Khaleej St / Al Souq",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21901:P:R:6p2",
+    "route_id": "alain-901",
+    "direction_code": "R",
+    "destination_en": "Hili, Bani Yas St / Hili Mall",
+    "destination_ar": "Hili, Bani Yas St / Hili Mall",
+    "description_en": "Hili, Bani Yas St / Hili Mall",
+    "description_ar": "Hili, Bani Yas St / Hili Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21902:P:H:6p2",
+    "route_id": "alain-902",
+    "direction_code": "H",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21902:P:R:6p2",
+    "route_id": "alain-902",
+    "direction_code": "R",
+    "destination_en": "Hili, Bani Yas St / Hili Mall",
+    "destination_ar": "Hili, Bani Yas St / Hili Mall",
+    "description_en": "Hili, Bani Yas St / Hili Mall",
+    "description_ar": "Hili, Bani Yas St / Hili Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21903:P:H:6p2",
+    "route_id": "alain-903",
+    "direction_code": "H",
+    "destination_en": "Zakhir, Nimah St | Zakhir East Police Station",
+    "destination_ar": "Zakhir, Nimah St | Zakhir East Police Station",
+    "description_en": "Zakhir, Nimah St | Zakhir East Police Station",
+    "description_ar": "Zakhir, Nimah St | Zakhir East Police Station",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21903:P:R:6p2",
+    "route_id": "alain-903",
+    "direction_code": "R",
+    "destination_en": "Hili, Bani Yas St / Hili Mall",
+    "destination_ar": "Hili, Bani Yas St / Hili Mall",
+    "description_en": "Hili, Bani Yas St / Hili Mall",
+    "description_ar": "Hili, Bani Yas St / Hili Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21904:P:H:6p2",
+    "route_id": "alain-904",
+    "direction_code": "H",
+    "destination_en": "Ni'mah, Al Fusoul St / Makani Mall",
+    "destination_ar": "Ni'mah, Al Fusoul St / Makani Mall",
+    "description_en": "Ni'mah, Al Fusoul St / Makani Mall",
+    "description_ar": "Ni'mah, Al Fusoul St / Makani Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21904:P:R:6p2",
+    "route_id": "alain-904",
+    "direction_code": "R",
+    "destination_en": "Al Ameriyah, Al Maqoud St / Mosque",
+    "destination_ar": "Al Ameriyah, Al Maqoud St / Mosque",
+    "description_en": "Al Ameriyah, Al Maqoud St / Mosque",
+    "description_ar": "Al Ameriyah, Al Maqoud St / Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21905:P:H:6p2",
+    "route_id": "alain-905",
+    "direction_code": "H",
+    "destination_en": "Shiab Al Ashkhar, Al Ahmadiyah St / Al Alin Coop",
+    "destination_ar": "Shiab Al Ashkhar, Al Ahmadiyah St / Al Alin Coop",
+    "description_en": "Shiab Al Ashkhar, Al Ahmadiyah St / Al Alin Coop",
+    "description_ar": "Shiab Al Ashkhar, Al Ahmadiyah St / Al Alin Coop",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21905:P:R:6p2",
+    "route_id": "alain-905",
+    "direction_code": "R",
+    "destination_en": "Al Tiwayyah, Yayb Al Misaylli St / Al Ain Co-op Society",
+    "destination_ar": "Al Tiwayyah, Yayb Al Misaylli St / Al Ain Co-op Society",
+    "description_en": "Al Tiwayyah, Yayb Al Misaylli St / Al Ain Co-op Society",
+    "description_ar": "Al Tiwayyah, Yayb Al Misaylli St / Al Ain Co-op Society",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21906:P:H:6p2",
+    "route_id": "alain-906",
+    "direction_code": "H",
+    "destination_en": "Mbazzarah Al Khadra, Al Khizamiyah St / Green Mubazzarah",
+    "destination_ar": "Mbazzarah Al Khadra, Al Khizamiyah St / Green Mubazzarah",
+    "description_en": "Mbazzarah Al Khadra, Al Khizamiyah St / Green Mubazzarah",
+    "description_ar": "Mbazzarah Al Khadra, Al Khizamiyah St / Green Mubazzarah",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21906:P:R:6p2",
+    "route_id": "alain-906",
+    "direction_code": "R",
+    "destination_en": "Al Ain Int'l Airport, Al Ain Int'l Airport St / STRATA",
+    "destination_ar": "Al Ain Int'l Airport, Al Ain Int'l Airport St / STRATA",
+    "description_en": "Al Ain Int'l Airport, Al Ain Int'l Airport St / STRATA",
+    "description_ar": "Al Ain Int'l Airport, Al Ain Int'l Airport St / STRATA",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21907:P:H:6p2",
+    "route_id": "alain-907",
+    "direction_code": "H",
+    "destination_en": "Mazyad, Zayed Bin Sultan St / ADNOC",
+    "destination_ar": "Mazyad, Zayed Bin Sultan St / ADNOC",
+    "description_en": "Mazyad, Zayed Bin Sultan St / ADNOC",
+    "description_ar": "Mazyad, Zayed Bin Sultan St / ADNOC",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21907:P:R:6p2",
+    "route_id": "alain-907",
+    "direction_code": "R",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21908:P:H:6p2",
+    "route_id": "alain-908",
+    "direction_code": "H",
+    "destination_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "destination_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21908:P:R:6p2",
+    "route_id": "alain-908",
+    "direction_code": "R",
+    "destination_en": "Al Aamerah, Al Aamerah St / Shakhboot Bin Sultan Mosque",
+    "destination_ar": "Al Aamerah, Al Aamerah St / Shakhboot Bin Sultan Mosque",
+    "description_en": "Al Aamerah, Al Aamerah St / Shakhboot Bin Sultan Mosque",
+    "description_ar": "Al Aamerah, Al Aamerah St / Shakhboot Bin Sultan Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21909:P:H:6p2",
+    "route_id": "alain-909",
+    "direction_code": "H",
+    "destination_en": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "destination_ar": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "description_en": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "description_ar": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21909:P:R:6p2",
+    "route_id": "alain-909",
+    "direction_code": "R",
+    "destination_en": "Ghireebah, Al Sifouf St / Ghoneimah Mosque",
+    "destination_ar": "Ghireebah, Al Sifouf St / Ghoneimah Mosque",
+    "description_en": "Ghireebah, Al Sifouf St / Ghoneimah Mosque",
+    "description_ar": "Ghireebah, Al Sifouf St / Ghoneimah Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21911:P:H:6p2",
+    "route_id": "alain-911",
+    "direction_code": "H",
+    "destination_en": "Al Bateen, Sahlah Bint Suhail St / Hamouda Sarhan Al Neyadi Mosque",
+    "destination_ar": "Al Bateen, Sahlah Bint Suhail St / Hamouda Sarhan Al Neyadi Mosque",
+    "description_en": "Al Bateen, Sahlah Bint Suhail St / Hamouda Sarhan Al Neyadi Mosque",
+    "description_ar": "Al Bateen, Sahlah Bint Suhail St / Hamouda Sarhan Al Neyadi Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21911:P:R:6p2",
+    "route_id": "alain-911",
+    "direction_code": "R",
+    "destination_en": "Hili, Ardh Al Jaw St / Hili Fun City",
+    "destination_ar": "Hili, Ardh Al Jaw St / Hili Fun City",
+    "description_en": "Hili, Ardh Al Jaw St / Hili Fun City",
+    "description_ar": "Hili, Ardh Al Jaw St / Hili Fun City",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21912:P:H:6p2",
+    "route_id": "alain-912",
+    "direction_code": "H",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21912:P:R:6p2",
+    "route_id": "alain-912",
+    "direction_code": "R",
+    "destination_en": "Al Fou'ah, Abu Obayda Bin Al Jarrah St / Al Foaa Mall",
+    "destination_ar": "Al Fou'ah, Abu Obayda Bin Al Jarrah St / Al Foaa Mall",
+    "description_en": "Al Fou'ah, Abu Obayda Bin Al Jarrah St / Al Foaa Mall",
+    "description_ar": "Al Fou'ah, Abu Obayda Bin Al Jarrah St / Al Foaa Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21913:P:H:6p2",
+    "route_id": "alain-913",
+    "direction_code": "H",
+    "destination_en": "Zakhir, Nimah St | Zakhir East Police Station",
+    "destination_ar": "Zakhir, Nimah St | Zakhir East Police Station",
+    "description_en": "Zakhir, Nimah St | Zakhir East Police Station",
+    "description_ar": "Zakhir, Nimah St | Zakhir East Police Station",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21913:P:R:6p2",
+    "route_id": "alain-913",
+    "direction_code": "R",
+    "destination_en": "Al Nayfa, Oud Shihaylah St / ADVETI",
+    "destination_ar": "Al Nayfa, Oud Shihaylah St / ADVETI",
+    "description_en": "Al Nayfa, Oud Shihaylah St / ADVETI",
+    "description_ar": "Al Nayfa, Oud Shihaylah St / ADVETI",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21914:P:H:6p2",
+    "route_id": "alain-914",
+    "direction_code": "H",
+    "destination_en": "Mbazzarah Al Khadra, Ghafat Saaydah St / AF Co-op",
+    "destination_ar": "Mbazzarah Al Khadra, Ghafat Saaydah St / AF Co-op",
+    "description_en": "Mbazzarah Al Khadra, Ghafat Saaydah St / AF Co-op",
+    "description_ar": "Mbazzarah Al Khadra, Ghafat Saaydah St / AF Co-op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21914:P:R:6p2",
+    "route_id": "alain-914",
+    "direction_code": "R",
+    "destination_en": "Al Tiwayyah, Al Samir St / Maryam Bint Sultan School",
+    "destination_ar": "Al Tiwayyah, Al Samir St / Maryam Bint Sultan School",
+    "description_en": "Al Tiwayyah, Al Samir St / Maryam Bint Sultan School",
+    "description_ar": "Al Tiwayyah, Al Samir St / Maryam Bint Sultan School",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21915:P:H:6p2",
+    "route_id": "alain-915",
+    "direction_code": "H",
+    "destination_en": "Ain Al Faydah, Park Road / Ain Al Faydah Park West",
+    "destination_ar": "Ain Al Faydah, Park Road / Ain Al Faydah Park West",
+    "description_en": "Ain Al Faydah, Park Road / Ain Al Faydah Park West",
+    "description_ar": "Ain Al Faydah, Park Road / Ain Al Faydah Park West",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21915:P:R:6p2",
+    "route_id": "alain-915",
+    "direction_code": "R",
+    "destination_en": "Al Tiwayyah, Al Afiyah St / Emirates National School Boys",
+    "destination_ar": "Al Tiwayyah, Al Afiyah St / Emirates National School Boys",
+    "description_en": "Al Tiwayyah, Al Afiyah St / Emirates National School Boys",
+    "description_ar": "Al Tiwayyah, Al Afiyah St / Emirates National School Boys",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21916:P:H:6p2",
+    "route_id": "alain-916",
+    "direction_code": "H",
+    "destination_en": "Zakhir, Al Zakhirah St / Al Mottaqein Mosque",
+    "destination_ar": "Zakhir, Al Zakhirah St / Al Mottaqein Mosque",
+    "description_en": "Zakhir, Al Zakhirah St / Al Mottaqein Mosque",
+    "description_ar": "Zakhir, Al Zakhirah St / Al Mottaqein Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21916:P:R:6p2",
+    "route_id": "alain-916",
+    "direction_code": "R",
+    "destination_en": "Al Salamat, Falah Bin Jaber Al Ahbabi St /  Co-op",
+    "destination_ar": "Al Salamat, Falah Bin Jaber Al Ahbabi St /  Co-op",
+    "description_en": "Al Salamat, Falah Bin Jaber Al Ahbabi St /  Co-op",
+    "description_ar": "Al Salamat, Falah Bin Jaber Al Ahbabi St /  Co-op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21917:P:H:6p2",
+    "route_id": "alain-917",
+    "direction_code": "H",
+    "destination_en": "Al Dhahir, AL Dhahir Grand Mosque",
+    "destination_ar": "Al Dhahir, AL Dhahir Grand Mosque",
+    "description_en": "Al Dhahir, AL Dhahir Grand Mosque",
+    "description_ar": "Al Dhahir, AL Dhahir Grand Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21917:P:R:6p2",
+    "route_id": "alain-917",
+    "direction_code": "R",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21918:P:H:6p2",
+    "route_id": "alain-918",
+    "direction_code": "H",
+    "destination_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "destination_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21918:P:R:6p2",
+    "route_id": "alain-918",
+    "direction_code": "R",
+    "destination_en": "Aliyah, Al Souq St  / Al Aaliya School",
+    "destination_ar": "Aliyah, Al Souq St  / Al Aaliya School",
+    "description_en": "Aliyah, Al Souq St  / Al Aaliya School",
+    "description_ar": "Aliyah, Al Souq St  / Al Aaliya School",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21919:P:H:6p2",
+    "route_id": "alain-919",
+    "direction_code": "H",
+    "destination_en": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "destination_ar": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "description_en": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "description_ar": "Al Noud, Al Uqhuwan 9 St / MarThoma Church",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21919:P:R:6p2",
+    "route_id": "alain-919",
+    "direction_code": "R",
+    "destination_en": "Al Rawdah Al Sharqiyah, Yazeed Bin Al Aswad St / Meshbeb Fadel Mohammed Al Otaibi Mosque",
+    "destination_ar": "Al Rawdah Al Sharqiyah, Yazeed Bin Al Aswad St / Meshbeb Fadel Mohammed Al Otaibi Mosque",
+    "description_en": "Al Rawdah Al Sharqiyah, Yazeed Bin Al Aswad St / Meshbeb Fadel Mohammed Al Otaibi Mosque",
+    "description_ar": "Al Rawdah Al Sharqiyah, Yazeed Bin Al Aswad St / Meshbeb Fadel Mohammed Al Otaibi Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21927:P:H:6p2",
+    "route_id": "alain-927",
+    "direction_code": "H",
+    "destination_en": "Al Dhahir Community, Halat Bu Niyaydah St / Dhahir Community Grand Mosque",
+    "destination_ar": "Al Dhahir Community, Halat Bu Niyaydah St / Dhahir Community Grand Mosque",
+    "description_en": "Al Dhahir Community, Halat Bu Niyaydah St / Dhahir Community Grand Mosque",
+    "description_ar": "Al Dhahir Community, Halat Bu Niyaydah St / Dhahir Community Grand Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21927:P:R:6p2",
+    "route_id": "alain-927",
+    "direction_code": "R",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21928:P:H:6p2",
+    "route_id": "alain-928",
+    "direction_code": "H",
+    "destination_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "destination_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21928:P:R:6p2",
+    "route_id": "alain-928",
+    "direction_code": "R",
+    "destination_en": "Al Aamerah, Al Manaz St / Al Souq",
+    "destination_ar": "Al Aamerah, Al Manaz St / Al Souq",
+    "description_en": "Al Aamerah, Al Manaz St / Al Souq",
+    "description_ar": "Al Aamerah, Al Manaz St / Al Souq",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21937:P:H:6p2",
+    "route_id": "alain-937",
+    "direction_code": "H",
+    "destination_en": "Um Ghafah, Al Gheemat St / Um Ghafah Souq",
+    "destination_ar": "Um Ghafah, Al Gheemat St / Um Ghafah Souq",
+    "description_en": "Um Ghafah, Al Gheemat St / Um Ghafah Souq",
+    "description_ar": "Um Ghafah, Al Gheemat St / Um Ghafah Souq",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21937:P:R:6p2",
+    "route_id": "alain-937",
+    "direction_code": "R",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21938:P:H:6p2",
+    "route_id": "alain-938",
+    "direction_code": "H",
+    "destination_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "destination_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_en": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "description_ar": "Al Noud , Al Namaa St 6 / Bawadi Mall",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21938:P:R:6p2",
+    "route_id": "alain-938",
+    "direction_code": "R",
+    "destination_en": "Al Aamerah, Ghaleel Al Madar St / Abdullah Bin Rakad Al Ameri Mosque",
+    "destination_ar": "Al Aamerah, Ghaleel Al Madar St / Abdullah Bin Rakad Al Ameri Mosque",
+    "description_en": "Al Aamerah, Ghaleel Al Madar St / Abdullah Bin Rakad Al Ameri Mosque",
+    "description_ar": "Al Aamerah, Ghaleel Al Madar St / Abdullah Bin Rakad Al Ameri Mosque",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21992:P:H:6p2",
+    "route_id": "alain-992",
+    "direction_code": "H",
+    "destination_en": "Al Maqam, St 1 / Co-Op",
+    "destination_ar": "Al Maqam, St 1 / Co-Op",
+    "description_en": "Al Maqam, St 1 / Co-Op",
+    "description_ar": "Al Maqam, St 1 / Co-Op",
+    "source_id": 1
+  },
+  {
+    "direction_id": "auh:21992:P:R:6p2",
+    "route_id": "alain-992",
+    "direction_code": "R",
+    "destination_en": "Hili, Bani Yas St / Hili Mall",
+    "destination_ar": "Hili, Bani Yas St / Hili Mall",
+    "description_en": "Hili, Bani Yas St / Hili Mall",
+    "description_ar": "Hili, Bani Yas St / Hili Mall",
+    "source_id": 1
+  }
+]
