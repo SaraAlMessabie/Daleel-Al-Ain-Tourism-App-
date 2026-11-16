@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_edge_ai/flutter_edge_ai.dart';
+import 'package:flutter_edge_ai_litertlm/flutter_edge_ai_litertlm.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 
@@ -25,6 +27,22 @@ Future<void> main() async {
   PaintingBinding.instance.imageCache
     ..maximumSize = 60
     ..maximumSizeBytes = 60 << 20; // 60 MB
+
+  // On-device assistant (Gemma 4 language model + EmbeddingGemma 2 search model). If the engines cannot
+  // start on this phone, the rest of the app still works and the Assistant tab explains.
+  try {
+    await FlutterEdgeAi.initialize(
+      inferenceEngines: const [LiteRtLmEngine()],
+      embeddingBackends: const [LiteRtEmbeddingBackend()],
+      // Only needed if a Hugging Face download says the model is gated.
+      // Never hard-code it: flutter run --dart-define=HUGGINGFACE_TOKEN=hf_xxx
+      huggingFaceToken: const String.fromEnvironment('HUGGINGFACE_TOKEN').isEmpty
+          ? null
+          : const String.fromEnvironment('HUGGINGFACE_TOKEN'),
+    );
+  } catch (e, st) {
+    debugPrint('Assistant engines did not start: $e\n$st');
+  }
 
   final state = AppState();
   try {

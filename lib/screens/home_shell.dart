@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../app_state.dart';
+import '../assistant/assistant_screen.dart';
 import '../map_module/al_ain_map_module.dart';
 import 'browse_screen.dart';
 import 'camera_screen.dart';
 import 'detail_screen.dart';
 import 'profile_screen.dart';
 
-/// The four bottom tabs: Explore, Map (with buses), Camera, Profile.
-/// The Assistant tab returns here once it actually works; a "coming soon"
-/// page should not take a main navigation slot.
+/// The five bottom tabs: Explore, Map (with buses), Assistant, Camera, Profile.
 /// Tabs are built the first time they are opened (saves RAM at start-up).
 class HomeShell extends StatefulWidget {
   const HomeShell({super.key});
@@ -39,6 +38,8 @@ class _HomeShellState extends State<HomeShell> {
           onToggleFavorite: s.toggleFavorite,
           onOpenDetails: (id) => DetailScreen.openById(context, id),
         );
+      case Tabs.assistant:
+        return const AssistantScreen();
       case Tabs.camera:
         return const CameraScreen();
       default:
@@ -68,7 +69,7 @@ class _HomeShellState extends State<HomeShell> {
     return Scaffold(
       body: IndexedStack(
         index: _i,
-        children: [for (var i = 0; i < 4; i++) _page(i, s)],
+        children: [for (var i = 0; i < 5; i++) _page(i, s)],
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _i,
@@ -82,6 +83,10 @@ class _HomeShellState extends State<HomeShell> {
               icon: const Icon(Icons.map_outlined),
               selectedIcon: const Icon(Icons.map),
               label: t('tab_map')),
+          NavigationDestination(
+              icon: const Icon(Icons.auto_awesome_outlined),
+              selectedIcon: const Icon(Icons.auto_awesome),
+              label: t('tab_assistant')),
           NavigationDestination(
               icon: const Icon(Icons.photo_camera_outlined),
               selectedIcon: const Icon(Icons.photo_camera),
