@@ -58,6 +58,7 @@ class Classifier {
   final Float32List _b;
   final double _temp;
   final double notSureBelow;
+  static const double minGap = 0.15; // best guess must beat the second by 15 points
 
   static Future<Classifier> load() async {
     final interp = await Interpreter.fromAsset('assets/model/mobilenetv3_embedder.tflite');
@@ -111,7 +112,10 @@ class Classifier {
     final top = [
       for (final i in order.take(3)) Prediction(_labels[i], exps[i] / sum),
     ];
-    return ClassifyResult(top, top.first.confidence < notSureBelow);
+    // Be cautious: also say "Not sure" when the top two guesses are close,
+    // because then the model is torn between two places.
+    final close = top.length > 1 && (top[0].confidence - top[1].confidence) < minGap;
+    return ClassifyResult(top, top.first.confidence < notSureBelow || close);
   }
 
   void close() => _interp.close();

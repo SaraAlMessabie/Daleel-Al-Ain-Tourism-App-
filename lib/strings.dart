@@ -2,6 +2,11 @@
 const Map<String, String> _en = {
   'tab_browse': 'Explore', 'tab_map': 'Map', 'tab_camera': 'Camera', 'tab_profile': 'Profile',
   'q_lang': 'Welcome to Daleel', 'q_lang_sub': 'Choose your language',
+  'q_name': 'What should we call you?', 'q_name_hint': 'Your first name (optional)',
+  'hello': 'Hello,', 'p_name': 'Name', 'p_name_title': 'Your name', 'p_save': 'Save',
+  'cam_likely': 'This looks like', 'cam_possible': 'This could be',
+  'cam_band_high': 'Strong match', 'cam_band_mid': 'Possible match',
+  'cam_check': 'This is a computer guess and it can be wrong. Please check the signs at the place.',
   'q_who': 'Who is travelling?', 'q_who_sub': 'Pick one',
   'q_interests': 'What do you enjoy?', 'q_interests_sub': 'Pick up to 4',
   'q_limit': 'You can pick up to 4. Remove one to choose another.',
@@ -46,6 +51,11 @@ const Map<String, String> _en = {
 const Map<String, String> _ar = {
   'tab_browse': 'استكشف', 'tab_map': 'الخريطة', 'tab_camera': 'الكاميرا', 'tab_profile': 'حسابي',
   'q_lang': 'مرحباً بك في دليل', 'q_lang_sub': 'اختر لغتك',
+  'q_name': 'بماذا نناديك؟', 'q_name_hint': 'اسمك الأول (اختياري)',
+  'hello': 'مرحباً', 'p_name': 'الاسم', 'p_name_title': 'اسمك', 'p_save': 'حفظ',
+  'cam_likely': 'يبدو أن هذا هو', 'cam_possible': 'قد يكون هذا',
+  'cam_band_high': 'تطابق قوي', 'cam_band_mid': 'تطابق محتمل',
+  'cam_check': 'هذا تخمين من الحاسوب وقد يكون خاطئاً. يرجى التأكد من اللوحات في المكان.',
   'q_who': 'مع من تسافر؟', 'q_who_sub': 'اختر واحداً',
   'q_interests': 'ما الذي تستمتع به؟', 'q_interests_sub': 'اختر حتى 4',
   'q_limit': 'يمكنك اختيار 4 كحد أقصى. أزل اختياراً لتختار غيره.',

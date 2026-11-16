@@ -22,12 +22,14 @@ class _QuizScreenState extends State<QuizScreen> {
   String? _style;
   Set<int> _groups = {};
   int? _budget;
+  final _name = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     final s = context.read<AppState>();
     _lang = s.language;
+    _name.text = s.userName;
     if (widget.retake) {
       _style = s.travelStyle;
       _groups = groupsOf(s.tagIds);
@@ -38,6 +40,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   void dispose() {
     _pc.dispose();
+    _name.dispose();
     super.dispose();
   }
 
@@ -58,6 +61,7 @@ class _QuizScreenState extends State<QuizScreen> {
     if (_page < 3) return _go(1);
     final s = context.read<AppState>();
     final b = _budget!;
+    await s.setUserName(_name.text);
     await s.save(
       lang: _lang,
       style: _style,
@@ -107,12 +111,30 @@ class _QuizScreenState extends State<QuizScreen> {
                     logo: true,
                     title: s.t('q_lang'),
                     sub: s.t('q_lang_sub'),
-                    child: LanguageChoice(
-                      value: _lang,
-                      onChanged: (v) {
-                        setState(() => _lang = v);
-                        s.setLanguage(v); // switch the screen language immediately
-                      },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        LanguageChoice(
+                          value: _lang,
+                          onChanged: (v) {
+                            setState(() => _lang = v);
+                            s.setLanguage(v); // switch the screen language immediately
+                          },
+                        ),
+                        const SizedBox(height: 28),
+                        Text(s.t('q_name'), style: Theme.of(context).textTheme.titleMedium),
+                        const SizedBox(height: 8),
+                        TextField(
+                          controller: _name,
+                          maxLength: 30,
+                          textCapitalization: TextCapitalization.words,
+                          textInputAction: TextInputAction.done,
+                          decoration: InputDecoration(
+                            hintText: s.t('q_name_hint'),
+                            prefixIcon: const Icon(Icons.person_outline),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   _Question(
