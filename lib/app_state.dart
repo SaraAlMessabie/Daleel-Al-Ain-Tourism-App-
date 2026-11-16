@@ -10,8 +10,9 @@ import 'strings.dart';
 class Tabs {
   static const explore = 0;
   static const map = 1;
-  static const camera = 2;
-  static const profile = 3;
+  static const assistant = 2;
+  static const camera = 3;
+  static const profile = 4;
 }
 
 /// Holds the user's preferences. Saved in user_preference / user_preference_tags.
