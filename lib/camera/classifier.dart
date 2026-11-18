@@ -49,7 +49,8 @@ Float32List _prepare(String path) {
 
 /// MobileNetV3 (TFLite) -> 1280 numbers -> linear SVM -> 21 places.
 class Classifier {
-  Classifier._(this._interp, this._labels, this._w, this._b, this._temp, this.notSureBelow);
+  Classifier._(this._interp, this._labels, this._w, this._b, this._temp, this.notSureBelow,
+      this._centroids, this._scoreMin, this._simMin);
 
   static const dim = 1280;
   final Interpreter _interp;
@@ -58,6 +59,9 @@ class Classifier {
   final Float32List _b;
   final double _temp;
   final double notSureBelow;
+  final Float32List? _centroids; // classes x dim, unit length (null with an old svm_head.json)
+  final double _scoreMin; // best raw SVM score must reach this
+  final double _simMin; // photo must be this close (cosine) to the winning place's average photo
   static const double minGap = 0.15; // best guess must beat the second by 15 points
 
   static Future<Classifier> load() async {
@@ -80,8 +84,21 @@ class Classifier {
     final b = Float32List.fromList(
         (j['bias'] as List).map((e) => (e as num).toDouble()).toList());
     final temp = (j['temperature'] as num?)?.toDouble() ?? 10.0;
-    final limit = (j['not_sure_below'] as num?)?.toDouble() ?? 0.40;
-    return Classifier._(interp, labels, w, b, temp, limit);
+    final limit = (j['not_sure_below'] as num?)?.toDouble() ?? 0.65;
+    Float32List? cen;
+    final cj = j['centroids'] as List?;
+    if (cj != null) {
+      cen = Float32List(labels.length * dim);
+      for (var c = 0; c < labels.length; c++) {
+        final row = cj[c] as List;
+        for (var d = 0; d < dim; d++) {
+          cen[c * dim + d] = (row[d] as num).toDouble();
+        }
+      }
+    }
+    final scoreMin = (j['score_min'] as num?)?.toDouble() ?? -double.infinity;
+    final simMin = (j['sim_min'] as num?)?.toDouble() ?? -double.infinity;
+    return Classifier._(interp, labels, w, b, temp, limit, cen, scoreMin, simMin);
   }
 
   Future<ClassifyResult> classify(String photoPath) async {
@@ -115,7 +132,29 @@ class Classifier {
     // Be cautious: also say "Not sure" when the top two guesses are close,
     // because then the model is torn between two places.
     final close = top.length > 1 && (top[0].confidence - top[1].confidence) < minGap;
-    return ClassifyResult(top, top.first.confidence < notSureBelow || close);
+
+    // "Is this really one of my places?" checks (stop the app guessing on random photos).
+    final best = order.first;
+    final lowScore = scores[best] < _scoreMin;
+    var lowSim = false;
+    final cen = _centroids;
+    if (cen != null) {
+      var dot = 0.0, norm = 0.0;
+      final base = best * dim;
+      for (var d = 0; d < dim; d++) {
+        dot += emb[d] * cen[base + d];
+        norm += emb[d] * emb[d];
+      }
+      final sim = dot / math.sqrt(norm == 0 ? 1 : norm);
+      lowSim = sim < _simMin;
+      if (kDebugMode) {
+        debugPrint('camera: score=${scores[best].toStringAsFixed(3)} (min ${_scoreMin.toStringAsFixed(3)}) '
+            'match=${sim.toStringAsFixed(3)} (min ${_simMin.toStringAsFixed(3)}) '
+            'conf=${top.first.confidence.toStringAsFixed(2)}');
+      }
+    }
+    return ClassifyResult(
+        top, top.first.confidence < notSureBelow || close || lowScore || lowSim);
   }
 
   void close() => _interp.close();
