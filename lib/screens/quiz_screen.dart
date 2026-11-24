@@ -22,6 +22,7 @@ class _QuizScreenState extends State<QuizScreen> {
   String? _style;
   Set<int> _groups = {};
   int? _budget;
+  bool _saving = false; // stops a double-tap on "Finish" from saving twice
 
   @override
   void initState() {
@@ -56,15 +57,24 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<void> _next() async {
     if (_page < 3) return _go(1);
+    if (_saving) return;
     final s = context.read<AppState>();
     final b = _budget!;
-    await s.save(
-      lang: _lang,
-      style: _style,
-      budget: b < 0 ? null : b.toDouble(),
-      tags: tagsOf(_groups),
-    );
-    if (widget.retake && mounted) Navigator.pop(context);
+    setState(() => _saving = true);
+    try {
+      await s.save(
+        lang: _lang,
+        style: _style,
+        budget: b < 0 ? null : b.toDouble(),
+        tags: tagsOf(_groups),
+      );
+      if (widget.retake && mounted) Navigator.pop(context);
+    } catch (e, st) {
+      // The answers were not saved: stay on the last question and let the button work again.
+      debugPrint('Quiz: save failed: $e\n$st');
+    } finally {
+      if (mounted) setState(() => _saving = false);
+    }
   }
 
   void _back() {
@@ -150,7 +160,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     TextButton(onPressed: _back, child: Text(s.t('back'))),
                   const Spacer(),
                   FilledButton(
-                    onPressed: _valid ? _next : null,
+                    onPressed: _valid && !_saving ? _next : null,
                     child: Text(_page == 3 ? s.t('finish') : s.t('next')),
                   ),
                 ],
