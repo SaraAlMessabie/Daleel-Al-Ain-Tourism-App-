@@ -139,7 +139,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ],
       ),
     );
-    c.dispose();
+    // The controller is not disposed here: the dialog is still animating out and would read a disposed controller.
     if (saved != null) await s.setUserName(saved);
   }
 

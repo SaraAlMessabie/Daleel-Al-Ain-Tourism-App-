@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Daleel uses the camera to recognise Al Ain places from your photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Daleel lets you pick a photo to recognise an Al Ain place.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Daleel uses your location to show where you are on the map and to plan routes to places.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
