@@ -154,7 +154,7 @@ Widget attractionImage(Attraction a, double height, {String? semanticLabel}) {
     cacheWidth: 800, // decode at phone size, not full camera size: saves a lot of RAM
     semanticLabel: semanticLabel,
     excludeFromSemantics: semanticLabel == null,
-    errorBuilder: (_, __, ___) => Container(
+    errorBuilder: (_, _, _) => Container(
       height: height,
       width: double.infinity,
       color: sandDeep,
@@ -215,7 +215,7 @@ class DaleelLogo extends StatelessWidget {
         width: size,
         cacheWidth: 400,
         semanticLabel: 'Daleel',
-        errorBuilder: (_, __, ___) => Icon(
+        errorBuilder: (_, _, _) => Icon(
           Icons.explore,
           size: size,
           color: Theme.of(context).colorScheme.primary,
