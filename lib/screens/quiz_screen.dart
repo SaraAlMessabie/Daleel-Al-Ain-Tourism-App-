@@ -22,6 +22,7 @@ class _QuizScreenState extends State<QuizScreen> {
   String? _style;
   Set<int> _groups = {};
   int? _budget;
+  bool _saving = false; // stops a double-tap on "Finish" from saving twice
   final _name = TextEditingController();
 
   @override
@@ -62,14 +63,22 @@ class _QuizScreenState extends State<QuizScreen> {
     if (_saving) return;
     final s = context.read<AppState>();
     final b = _budget!;
-    await s.setUserName(_name.text);
-    await s.save(
-      lang: _lang,
-      style: _style,
-      budget: b < 0 ? null : b.toDouble(),
-      tags: tagsOf(_groups),
-    );
-    if (widget.retake && mounted) Navigator.pop(context);
+    setState(() => _saving = true);
+    try {
+      await s.setUserName(_name.text);
+      await s.save(
+        lang: _lang,
+        style: _style,
+        budget: b < 0 ? null : b.toDouble(),
+        tags: tagsOf(_groups),
+      );
+      if (widget.retake && mounted) Navigator.pop(context);
+    } catch (e, st) {
+      // The answers were not saved: stay on the last question and let the button work again.
+      debugPrint('Quiz: save failed: $e\n$st');
+    } finally {
+      if (mounted) setState(() => _saving = false);
+    }
   }
 
   void _back() {

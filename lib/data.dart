@@ -1,34 +1,107 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 
 /// Opens the bundled database. On first launch it is copied from the app's
 /// assets to the phone's private storage so it can be written to (quiz answers).
+///
+/// When an app update ships newer data (places, prices, hours), raise [bundledDbVersion]. On the next start the new
+/// database is copied in and the user's own rows (quiz answers, saved itineraries, interaction log) are carried over.
+/// If anything goes wrong during that, the old database is left untouched and keeps being used.
 class Db {
   static Database? _db;
 
+  /// Raise this number every time assets/db/al_ain.db changes.
+  static const bundledDbVersion = 2;
+  static const _versionKey = 'daleel_db_version';
+
+  /// Tables that hold the user's own data. Everything else comes from the bundled database.
+  static const _userTables = [
+    'user_preference',
+    'user_preference_tags',
+    'itineraries',
+    'itinerary_items',
+    'interaction_log',
+  ];
+
   static Future<Database> get() async => _db ??= await _open();
+
+  static Future<void> _copyAssetTo(String target) async {
+    await Directory(dirname(target)).create(recursive: true);
+    final data = await rootBundle.load('assets/db/al_ain.db');
+    // Write to a temporary file first and rename it when complete, so an app killed halfway through the copy
+    // never leaves a half-written database that would be treated as valid on the next start.
+    final tmp = File('$target.tmp');
+    await tmp.writeAsBytes(
+      data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes),
+      flush: true,
+    );
+    await tmp.rename(target);
+  }
 
   static Future<Database> _open() async {
     final path = join(await getDatabasesPath(), 'al_ain.db');
+    SharedPreferences? prefs;
+    try {
+      prefs = await SharedPreferences.getInstance();
+    } catch (_) {
+      prefs = null;
+    }
     if (!await databaseExists(path)) {
-      await Directory(dirname(path)).create(recursive: true);
-      final data = await rootBundle.load('assets/db/al_ain.db');
-      // Write to a temporary file first and rename it when complete, so an app killed halfway through the copy
-      // never leaves a half-written database that would be treated as valid on the next start.
-      final tmp = File('$path.tmp');
-      await tmp.writeAsBytes(
-        data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes),
-        flush: true,
-      );
-      await tmp.rename(path);
+      await _copyAssetTo(path);
+      await prefs?.setInt(_versionKey, bundledDbVersion);
+    } else if ((prefs?.getInt(_versionKey) ?? 1) < bundledDbVersion) {
+      try {
+        await _upgrade(path);
+        await prefs?.setInt(_versionKey, bundledDbVersion);
+      } catch (e, st) {
+        // Keep the old database; the upgrade is tried again on the next start.
+        debugPrint('Database upgrade failed, keeping the old one: $e\n$st');
+      }
     }
     return openDatabase(
       path,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
     );
+  }
+
+  /// Builds a fresh copy from the assets, moves the user's rows into it, then swaps it in for the old file.
+  static Future<void> _upgrade(String path) async {
+    final fresh = '$path.new';
+    if (await databaseExists(fresh)) await deleteDatabase(fresh);
+    await _copyAssetTo(fresh);
+    final db = await openDatabase(fresh);
+    try {
+      // ItineraryStore adds these three columns to the old database; the new one needs them too.
+      final itemCols = {for (final r in await db.rawQuery('PRAGMA table_info(itinerary_items)')) r['name'] as String};
+      const extra = {'day_number': 'INTEGER', 'slot': 'TEXT', 'note': 'TEXT'};
+      for (final c in extra.entries) {
+        if (!itemCols.contains(c.key)) await db.execute('ALTER TABLE itinerary_items ADD COLUMN ${c.key} ${c.value}');
+      }
+      await db.execute('PRAGMA foreign_keys = OFF');
+      await db.execute("ATTACH DATABASE '${path.replaceAll("'", "''")}' AS old");
+      await db.transaction((txn) async {
+        for (final table in _userTables) {
+          final oldCols = {for (final r in await txn.rawQuery('PRAGMA old.table_info($table)')) r['name'] as String};
+          final newCols = [for (final r in await txn.rawQuery('PRAGMA main.table_info($table)')) r['name'] as String];
+          final shared = [for (final c in newCols) if (oldCols.contains(c)) c];
+          if (shared.isEmpty) continue;
+          final list = shared.join(', ');
+          await txn.execute('INSERT INTO main.$table ($list) SELECT $list FROM old.$table');
+        }
+        final broken = await txn.rawQuery('PRAGMA foreign_key_check');
+        if (broken.isNotEmpty) throw StateError('foreign key problems after the copy: $broken');
+      });
+      await db.execute('DETACH DATABASE old');
+    } finally {
+      await db.close();
+    }
+    // Only now is the old file replaced.
+    await File(fresh).rename(path);
   }
 }
 
