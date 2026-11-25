@@ -26,6 +26,30 @@ class AppState extends ChangeNotifier {
   bool quizDone = false;
   int? _prefId;
 
+  // --- The traveller's name (optional, asked in the welcome questions) ------
+  static const _nameKey = 'daleel_user_name_v1';
+  String userName = '';
+
+  Future<void> setUserName(String name) async {
+    userName = name.trim();
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_nameKey, userName);
+    } catch (_) {
+      // Best effort: the name still shows this session.
+    }
+  }
+
+  Future<void> _loadName() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      userName = prefs.getString(_nameKey) ?? '';
+    } catch (_) {
+      userName = '';
+    }
+  }
+
   // --- Saved places --------------------------------------------------------
   static const _favoritesKey = 'daleel_favorites_v1';
   static const _legacyMapStateKey = 'al_ain_user_state_v1';
@@ -89,6 +113,7 @@ class AppState extends ChangeNotifier {
 
   Future<void> load() async {
     await _loadFavorites();
+    await _loadName();
     final db = await Db.get();
     final rows = await db.query('user_preference', orderBy: 'pref_id DESC', limit: 1);
     if (rows.isEmpty) return; // first launch: no quiz answers yet

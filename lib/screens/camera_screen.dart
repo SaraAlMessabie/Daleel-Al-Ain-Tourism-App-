@@ -191,17 +191,25 @@ class _ResultView extends StatelessWidget {
 
     final best = result.top.first;
     final a = byLabel(best.label);
-    final pct = (best.confidence * 100).round();
+    final strong = best.confidence >= 0.75;
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(s.t('cam_sure'),
+            Text(s.t(strong ? 'cam_likely' : 'cam_possible'),
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: mutedBrown)),
             Text(a?.pick(l, 'name') ?? best.label, style: title),
-            Text('$pct% ${s.t('cam_confidence')}', style: Theme.of(context).textTheme.bodySmall),
+            const SizedBox(height: 4),
+            Text(s.t(strong ? 'cam_band_high' : 'cam_band_mid'),
+                style: Theme.of(context).textTheme.bodySmall),
+            const SizedBox(height: 8),
+            Text(s.t('cam_check'),
+                style: Theme.of(context)
+                    .textTheme
+                    .bodySmall
+                    ?.copyWith(fontStyle: FontStyle.italic)),
             if (a != null) ...[
               const SizedBox(height: 12),
               Text(s.t('cam_history'), style: Theme.of(context).textTheme.titleMedium),
@@ -228,7 +236,6 @@ class _MatchTile extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       title: Text(a?.pick(l, 'name') ?? p.label),
-      trailing: Text('${(p.confidence * 100).round()}%'),
       onTap: a == null ? null : () => onOpen(a!),
     );
   }

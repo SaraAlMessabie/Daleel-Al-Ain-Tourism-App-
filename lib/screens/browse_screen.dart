@@ -64,7 +64,11 @@ class _BrowseScreenState extends State<BrowseScreen> {
   Widget build(BuildContext context) {
     final s = context.watch<AppState>();
     return Scaffold(
-      appBar: AppBar(title: Text(s.t('tab_browse'))),
+      appBar: AppBar(
+        title: Text(s.userName.isEmpty
+            ? s.t('tab_browse')
+            : '${s.t('hello')} ${s.userName}'),
+      ),
       body: FutureBuilder<(List<Attraction>, List<PlaceCategoryRow>)>(
         future: _future,
         builder: (context, snap) {

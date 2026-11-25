@@ -118,6 +118,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
+  Future<void> _editName(AppState s) async {
+    final c = TextEditingController(text: s.userName);
+    final saved = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(s.t('p_name_title')),
+        content: TextField(
+          controller: c,
+          autofocus: true,
+          maxLength: 30,
+          textCapitalization: TextCapitalization.words,
+          decoration: InputDecoration(hintText: s.t('q_name_hint')),
+          onSubmitted: (v) => Navigator.pop(ctx, v),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx), child: Text(s.t('back'))),
+          FilledButton(
+              onPressed: () => Navigator.pop(ctx, c.text), child: Text(s.t('p_save'))),
+        ],
+      ),
+    );
+    c.dispose();
+    if (saved != null) await s.setUserName(saved);
+  }
+
   // ---- screen ------------------------------------------------------------
   @override
   Widget build(BuildContext context) {
@@ -159,6 +184,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
           const SizedBox(height: 24),
           _GroupTitle(s.t('p_prefs')),
           _Group(children: [
+            _Row(
+              icon: Icons.badge_outlined,
+              title: s.t('p_name'),
+              value: s.userName.isEmpty ? s.t('p_none') : s.userName,
+              onTap: () => _editName(s),
+            ),
             _Row(
               icon: Icons.language,
               title: s.t('language'),
@@ -273,7 +304,8 @@ class _Header extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(s.t('p_traveller'), style: text.headlineSmall),
+                Text(s.userName.isEmpty ? s.t('p_traveller') : s.userName,
+                    style: text.headlineSmall),
                 const SizedBox(height: 4),
                 Text(summary, style: text.bodyMedium?.copyWith(color: mutedBrown)),
                 const SizedBox(height: 10),
