@@ -104,7 +104,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   tween: Tween(end: (_page + 1) / 4),
                   duration: const Duration(milliseconds: 250),
                   curve: Curves.easeOutCubic,
-                  builder: (_, v, __) => LinearProgressIndicator(
+                  builder: (_, v, _) => LinearProgressIndicator(
                     value: v,
                     minHeight: 6,
                     semanticsLabel: '${_page + 1} / 4',

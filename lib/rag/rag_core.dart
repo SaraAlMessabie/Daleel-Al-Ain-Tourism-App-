@@ -118,7 +118,7 @@ List<Hit> rank(List<double> query, List<Chunk> chunks) {
 // ---------------------------------------------------------------------------------------------
 
 /// Maps each place's lower-case name to its database card. Cards look like
-/// "Wadi Adventure (<Arabic name>) is a Family & Adventure attraction in Al Ain. Opening hours: ..."
+/// `Wadi Adventure (<Arabic name>) is a Family & Adventure attraction in Al Ain. Opening hours: ...`
 Map<String, Chunk> buildCardIndex(List<Chunk> chunks) {
   final cards = <String, Chunk>{};
   for (final c in chunks) {
