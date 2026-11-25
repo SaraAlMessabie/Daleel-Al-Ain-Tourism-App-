@@ -1022,6 +1022,8 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
   }
 
   void _showMessage(String message) {
+    // Several callers run after an await (location permission, routing); the screen may be gone by then.
+    if (!mounted) return;
     ScaffoldMessenger.of(context)
       ..hideCurrentSnackBar()
       ..showSnackBar(SnackBar(content: Text(message)));

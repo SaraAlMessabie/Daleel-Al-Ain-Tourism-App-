@@ -198,7 +198,12 @@ CardResult attachCards(List<Hit> retrieved, Map<String, Chunk> cards, {int cards
 // Prompts
 // ---------------------------------------------------------------------------------------------
 
-String _cut(String s, int n) => s.length > n ? s.substring(0, n) : s;
+String _cut(String s, int n) {
+  if (s.length <= n) return s;
+  // Do not cut between the two halves of an emoji (a surrogate pair): that leaves an invalid character.
+  final cut = (n > 0 && (s.codeUnitAt(n) & 0xFC00) == 0xDC00) ? n - 1 : n;
+  return s.substring(0, cut);
+}
 
 /// What the user has said so far (all short), plus the model's last couple of replies, shortened.
 String buildHistoryText(List<Turn> history, RagSettings s) {

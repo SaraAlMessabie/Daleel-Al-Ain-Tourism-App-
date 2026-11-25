@@ -16,10 +16,14 @@ class Db {
     if (!await databaseExists(path)) {
       await Directory(dirname(path)).create(recursive: true);
       final data = await rootBundle.load('assets/db/al_ain.db');
-      await File(path).writeAsBytes(
+      // Write to a temporary file first and rename it when complete, so an app killed halfway through the copy
+      // never leaves a half-written database that would be treated as valid on the next start.
+      final tmp = File('$path.tmp');
+      await tmp.writeAsBytes(
         data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes),
         flush: true,
       );
+      await tmp.rename(path);
     }
     return openDatabase(
       path,

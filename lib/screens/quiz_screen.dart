@@ -59,6 +59,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<void> _next() async {
     if (_page < 3) return _go(1);
+    if (_saving) return;
     final s = context.read<AppState>();
     final b = _budget!;
     await s.setUserName(_name.text);
@@ -172,7 +173,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     TextButton(onPressed: _back, child: Text(s.t('back'))),
                   const Spacer(),
                   FilledButton(
-                    onPressed: _valid ? _next : null,
+                    onPressed: _valid && !_saving ? _next : null,
                     child: Text(_page == 3 ? s.t('finish') : s.t('next')),
                   ),
                 ],

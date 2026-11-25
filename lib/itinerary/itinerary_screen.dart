@@ -65,6 +65,10 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
   final _budget = TextEditingController();
   int? _savedId;
   bool _dirty = true;
+  bool _saving = false; // a second tap while saving would insert the itinerary twice
+
+  /// Places that are not in Daleel's guide are never saved, so a plan with none of Daleel's places has nothing to save.
+  bool get _canSave => plan.days.any((d) => d.stops.any((s) => s.inGuide));
 
   @override
   void initState() {
@@ -93,6 +97,8 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
   }
 
   Future<void> _save() async {
+    if (_saving) return;
+    _saving = true;
     final t = context.read<AppState>().t;
     final messenger = ScaffoldMessenger.of(context);
     try {
@@ -110,6 +116,8 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
       messenger
         ..hideCurrentSnackBar()
         ..showSnackBar(SnackBar(content: Text(t('it_save_failed'))));
+    } finally {
+      _saving = false;
     }
   }
 
@@ -340,7 +348,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
           child: FilledButton.icon(
-            onPressed: _dirty ? _save : null,
+            onPressed: _dirty && _canSave ? _save : null,
             icon: Icon(_dirty ? Icons.bookmark_add_outlined : Icons.check),
             label: Text(_dirty ? t('it_save') : t('saved')),
           ),
