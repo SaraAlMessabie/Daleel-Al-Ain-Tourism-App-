@@ -19,6 +19,12 @@ for a in att:
 
 rag = json.load(open("assets/data/rag_index.json", encoding="utf-8"))
 idset = set(ids)
+# The app's SQLite DB is the source of truth for ids; the JSON only holds attractions with map coordinates.
+try:
+    import sqlite3
+    idset |= {r[0] for r in sqlite3.connect("assets/db/al_ain.db").execute("select attraction_id from attractions")}
+except Exception as e:
+    print(f"WARN: could not read assets/db/al_ain.db ({e}); checking RAG ids against JSON only")
 for c in rag["chunks"]:
     if c["type"] == "attraction" and c["source_id"] not in idset: err(f"rag chunk {c['id']}: unknown attraction {c['source_id']}")
 have = {c["source_id"] for c in rag["chunks"] if c["type"] == "attraction"}
