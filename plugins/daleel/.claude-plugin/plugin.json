@@ -1,0 +1,7 @@
+{
+  "name": "daleel",
+  "version": "0.1.0",
+  "description": "Helpers for the Daleel Al Ain tourism Flutter app: add attractions, add bilingual strings, validate bundled data.",
+  "author": { "name": "Sara Al Messabie" },
+  "repository": "https://github.com/SaraAlMessabie/Daleel-Al-Ain-Tourism-App-"
+}

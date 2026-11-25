@@ -1,0 +1,11 @@
+{
+  "name": "daleel",
+  "owner": { "name": "Sara Al Messabie" },
+  "plugins": [
+    {
+      "name": "daleel",
+      "source": "./plugins/daleel",
+      "description": "Skills for working on the Daleel Al Ain tourism app: attraction data, EN/AR strings and data checks."
+    }
+  ]
+}
