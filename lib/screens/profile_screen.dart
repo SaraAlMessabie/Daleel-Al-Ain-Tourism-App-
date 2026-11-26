@@ -8,6 +8,7 @@ import '../ui.dart';
 import '../widgets.dart';
 import 'detail_screen.dart';
 import 'quiz_screen.dart';
+import '../itinerary/my_itineraries_screen.dart';
 
 const kAppVersion = '1.0.0';
 
@@ -143,6 +144,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
     if (saved != null) await s.setUserName(saved);
   }
 
+  Future<void> _confirmDeleteData(AppState s) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (d) => AlertDialog(
+        title: Text(s.t('p_delete_ask')),
+        content: Text(s.t('p_delete_body')),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(d, false), child: Text(s.t('it_cancel'))),
+          FilledButton(onPressed: () => Navigator.pop(d, true), child: Text(s.t('it_delete'))),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    await s.deleteAllData(); // quizDone becomes false, so the app shows the welcome questions again
+  }
+
   // ---- screen ------------------------------------------------------------
   @override
   Widget build(BuildContext context) {
@@ -224,7 +241,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     const SizedBox(height: 12),
                     InterestChoice(
                       selected: groupsOf(s.tagIds),
-                      onChanged: (g) => _update(s, tags: tagsOf(g)),
+                      // Keep at least one interest, as the welcome questions do; with none, Explore has no order.
+                      onChanged: (g) {
+                        if (g.isNotEmpty) _update(s, tags: tagsOf(g));
+                      },
                     ),
                   ],
                 ),
@@ -250,6 +270,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ]),
           const SizedBox(height: 24),
+          _GroupTitle(s.t('p_trips')),
+          _Group(children: [
+            // Saved itineraries used to be reachable only from the Assistant, and only once it was installed.
+            _Row(
+              icon: Icons.route_outlined,
+              title: s.t('it_my'),
+              onTap: () => Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => const MyItinerariesScreen())),
+            ),
+          ]),
+          const SizedBox(height: 24),
           _GroupTitle(s.t('p_app')),
           _Group(children: [
             _Row(
@@ -268,6 +299,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 applicationIcon: const DaleelLogo(size: 48),
                 children: [Text(s.t('about_text'))],
               ),
+            ),
+            _Row(
+              icon: Icons.delete_outline,
+              title: s.t('p_delete_data'),
+              subtitle: s.t('p_delete_data_sub'),
+              onTap: () => _confirmDeleteData(s),
             ),
           ]),
           const SizedBox(height: 16),

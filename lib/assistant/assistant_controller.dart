@@ -16,7 +16,11 @@ import '../rag/rag_index_format.dart';
 
 enum AssistantPhase { starting, needsSetup, downloading, ready, failed }
 
-enum AssistantFailure { start, download }
+/// Set by main() when the on-device AI engines started. If they did not, this phone cannot run the assistant,
+/// so offering the 2.6 GB download would only end in a failure.
+bool assistantEnginesStarted = false;
+
+enum AssistantFailure { start, download, unsupported }
 
 class ChatMessage {
   ChatMessage(this.fromUser, this.text);
@@ -26,6 +30,9 @@ class ChatMessage {
 
   /// Set when the answer reads like a plan: the itinerary that can be made from it.
   itin.Plan? plan;
+
+  /// The id of that itinerary once it has been saved, so saving again updates it instead of making a copy.
+  int? savedItineraryId;
   bool failed = false;
 }
 
@@ -69,6 +76,11 @@ class AssistantController extends ChangeNotifier {
 
   /// Loads everything. If the two models have never been installed, asks for the one-time download instead.
   Future<void> start({bool afterInstall = false}) async {
+    if (!assistantEnginesStarted) {
+      failure = AssistantFailure.unsupported;
+      _setPhase(AssistantPhase.failed);
+      return;
+    }
     _setPhase(AssistantPhase.starting);
     try {
       await FlutterEdgeAi.getActiveEmbedder();
@@ -131,7 +143,8 @@ class AssistantController extends ChangeNotifier {
     await start(afterInstall: true);
   }
 
-  Future<void> send(String text) async {
+  /// [userContext]: a short note about the visitor and today's date (see RagEngine.ask).
+  Future<void> send(String text, {String? userContext}) async {
     final engine = _engine;
     final question = text.trim();
     if (engine == null || question.isEmpty || answering) return;
@@ -142,7 +155,7 @@ class AssistantController extends ChangeNotifier {
     answering = true;
     _notify();
     try {
-      final result = await engine.ask(question, onToken: (token) {
+      final result = await engine.ask(question, userContext: userContext, onToken: (token) {
         reply.text += token;
         _notify();
       });

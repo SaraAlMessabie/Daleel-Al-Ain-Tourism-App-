@@ -8,19 +8,9 @@ import '../ui.dart';
 import '../widgets.dart';
 import 'detail_screen.dart';
 
-/// Orders places by how well they match the quiz answers.
-List<Attraction> _rank(List<Attraction> all, AppState s) {
-  double score(Attraction a) {
-    var v = a.tags.intersection(s.tagIds).length * 3.0;
-    if (s.travelStyle == 'family' && a.family) v += 2;
-    if (s.budget != null && a.price > s.budget!) v -= 100; // over budget -> bottom
-    return v + a.popularity / 100;
-  }
-
-  final list = [...all];
-  list.sort((x, y) => score(y).compareTo(score(x)));
-  return list;
-}
+/// Orders places by how well they match the quiz answers (the rule is in data.dart, where it is tested).
+List<Attraction> _rank(List<Attraction> all, AppState s) =>
+    rankAttractions(all, s.tagIds, s.travelStyle, s.budget);
 
 class BrowseScreen extends StatefulWidget {
   const BrowseScreen({super.key});
@@ -55,9 +45,13 @@ class _BrowseScreenState extends State<BrowseScreen> {
   bool _matches(Attraction a) {
     if (_category != null && a.categoryId != _category) return false;
     if (_query.isEmpty) return true;
-    return a.pick('en', 'name').toLowerCase().contains(_query) ||
-        a.pick('ar', 'name').contains(_query) ||
-        a.pick('en', 'tagline').toLowerCase().contains(_query);
+    // Both languages, names and taglines, with Arabic spelling variants folded (searchKey).
+    return [
+      a.pick('en', 'name'),
+      a.pick('ar', 'name'),
+      a.pick('en', 'tagline'),
+      a.pick('ar', 'tagline'),
+    ].any((text) => searchKey(text).contains(_query));
   }
 
   @override
@@ -106,7 +100,7 @@ class _BrowseScreenState extends State<BrowseScreen> {
                               },
                             ),
                     ),
-                    onChanged: (v) => setState(() => _query = v.trim().toLowerCase()),
+                    onChanged: (v) => setState(() => _query = searchKey(v)),
                   ),
                 ),
               ),
@@ -209,6 +203,7 @@ class _PlaceCard extends StatelessWidget {
     final overBudget = s.budget != null && a.price > s.budget!;
     final category = categories.where((c) => c.id == a.categoryId).firstOrNull;
     final saved = s.isFavorite(a.id);
+    final open = a.openAt(DateTime.now());
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -272,6 +267,14 @@ class _PlaceCard extends StatelessWidget {
                           color: PlaceCategory.color(category.id),
                         ),
                       MetaItem(icon: Icons.confirmation_number_outlined, label: priceLabel(a, s)),
+                      if (open != null)
+                        MetaItem(
+                          icon: Icons.schedule,
+                          label: s.t(open ? 'open_now' : 'closed_now'),
+                          color: open ? oasis : null,
+                        ),
+                      if (a.ladiesOnly)
+                        MetaItem(icon: Icons.woman_outlined, label: s.t('ladies_only')),
                       if (overBudget)
                         MetaItem(icon: Icons.info_outline, label: s.t('over_budget'))
                       else if (matches)

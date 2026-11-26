@@ -168,4 +168,42 @@ class AppState extends ChangeNotifier {
     quizDone = true;
     notifyListeners();
   }
+
+  /// "Delete my data": removes everything the visitor saved on this phone (answers, name, saved places,
+  /// itineraries, the map's saved trips and cached routes) and goes back to the welcome questions.
+  Future<void> deleteAllData() async {
+    final db = await Db.get();
+    await db.transaction((txn) async {
+      for (final table in const [
+        'itinerary_items',
+        'itineraries',
+        'user_preference_tags',
+        'user_preference',
+        'interaction_log',
+      ]) {
+        await txn.delete(table);
+      }
+    });
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      for (final key in const [
+        _nameKey,
+        _favoritesKey,
+        _legacyMapStateKey,
+        'al_ain_road_route_cache_v1', // the map's cached routes (OfflineRouteCache)
+      ]) {
+        await prefs.remove(key);
+      }
+    } catch (_) {
+      // Settings could not be cleared; the database rows above are already gone.
+    }
+    _prefId = null;
+    userName = '';
+    favoriteIds = {};
+    travelStyle = null;
+    budget = null;
+    tagIds = {};
+    quizDone = false;
+    notifyListeners();
+  }
 }

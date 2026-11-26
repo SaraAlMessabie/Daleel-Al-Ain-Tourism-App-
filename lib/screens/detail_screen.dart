@@ -39,13 +39,23 @@ class DetailScreen extends StatelessWidget {
         : a.row['district_area'] as String?;
     final minutes = a.visitMinutes;
 
+    final closed = a.local(l, 'closed_days');
+    final closedEn = ((a.row['closed_days'] as String?) ?? '').trim().toLowerCase();
+    final open = a.openAt(DateTime.now());
     final facts = <(IconData, String, String?)>[
-      (Icons.schedule, s.t('hours'), a.row['opening_hours'] as String?),
-      (Icons.wb_twilight, s.t('best_time'), a.row['best_time_to_visit'] as String?),
+      (Icons.schedule, s.t('hours'),
+          [a.local(l, 'opening_hours'), if (open != null) s.t(open ? 'open_now' : 'closed_now')]
+              .where((x) => x.trim().isNotEmpty)
+              .join(' · ')),
+      // Closed days were in the data but never shown, so visitors could arrive on a closed day.
+      (Icons.event_busy_outlined, s.t('closed_days'),
+          (closedEn.isEmpty || closedEn == 'none' || closedEn == 'none reported') ? null : closed),
+      (Icons.wb_twilight, s.t('best_time'), a.local(l, 'best_time_to_visit')),
       (Icons.hourglass_bottom, s.t('visit_length'),
           minutes == null ? null : '${s.t('about')} $minutes ${s.t('min')}'),
-      (Icons.checkroom, s.t('dress'), a.row['dress_code_note'] as String?),
+      (Icons.checkroom, s.t('dress'), a.local(l, 'dress_code_note')),
       (Icons.location_on_outlined, s.t('area'), area),
+      (Icons.language, s.t('website'), a.row['website_url'] as String?),
     ].where((f) => f.$3 != null && f.$3!.trim().isNotEmpty).toList();
 
     return Scaffold(
@@ -147,7 +157,8 @@ class DetailScreen extends StatelessWidget {
                             leading: Icon(facts[i].$1),
                             title: Text(facts[i].$2,
                                 style: text.bodySmall?.copyWith(fontWeight: FontWeight.w600)),
-                            subtitle: Text(facts[i].$3!,
+                            // Selectable, so a website or hours can be copied.
+                            subtitle: SelectableText(facts[i].$3!,
                                 style: text.bodyMedium?.copyWith(color: darkBrown)),
                           ),
                         ],

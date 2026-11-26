@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
@@ -25,6 +26,7 @@ class _CameraScreenState extends State<CameraScreen> {
   File? _photo;
   ClassifyResult? _result;
   bool _busy = false;
+  bool _denied = false; // camera or photo access was refused
   String? _error;
 
   Attraction? _byLabel(String label) {
@@ -36,16 +38,29 @@ class _CameraScreenState extends State<CameraScreen> {
 
   Future<void> _pick(ImageSource source) async {
     if (_busy) return;
+    // Busy before the picker opens: a quick second tap would otherwise open it twice.
+    setState(() {
+      _busy = true;
+      _error = null;
+      _denied = false;
+    });
     try {
-      final x = await ImagePicker().pickImage(
-        source: source,
-        maxWidth: 1600, // smaller photo = less memory
-        imageQuality: 90,
-      );
+      final XFile? x;
+      try {
+        x = await ImagePicker().pickImage(
+          source: source,
+          maxWidth: 1600, // smaller photo = less memory
+          imageQuality: 90,
+        );
+      } on PlatformException catch (e) {
+        if (e.code.contains('access_denied') || e.code.contains('permission')) {
+          if (mounted) setState(() => _denied = true);
+          return;
+        }
+        rethrow;
+      }
       if (x == null) return;
       setState(() {
-        _busy = true;
-        _error = null;
         _result = null;
         _photo = File(x.path);
       });
@@ -137,6 +152,18 @@ class _CameraScreenState extends State<CameraScreen> {
                 Text(s.t('cam_analyzing')),
               ],
             ),
+          if (_denied)
+            Card(
+              child: ListTile(
+                contentPadding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                leading: const Icon(Icons.no_photography_outlined, color: errorClay),
+                title: Text(s.t('cam_denied'), style: Theme.of(context).textTheme.titleMedium),
+                subtitle: Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(s.t('cam_denied_body')),
+                ),
+              ),
+            ),
           if (_error != null)
             Card(
               child: ListTile(
@@ -169,7 +196,24 @@ class _ResultView extends StatelessWidget {
     final l = s.language;
     final title = Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold);
 
-    // "Not sure" below the confidence limit (40%): show the closest matches instead.
+    // Not one of the known landmarks at all: say so, and do not suggest places it is not.
+    if (result.unknown) {
+      return Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(s.t('cam_unknown'), style: title),
+              const SizedBox(height: 8),
+              Text(s.t('cam_unknown_body')),
+            ],
+          ),
+        ),
+      );
+    }
+
+    // "Not sure" below the confidence limit (65%) or between two close guesses: show the closest matches.
     if (result.notSure) {
       return Card(
         child: Padding(

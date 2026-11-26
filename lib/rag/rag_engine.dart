@@ -24,9 +24,12 @@ abstract class LlmPort {
 
 /// A place named in the reply, with the id that opens its screen in the app.
 class PlaceRef {
-  const PlaceRef(this.attractionId, this.name);
+  const PlaceRef(this.attractionId, this.name, [this.nameAr]);
   final int attractionId;
   final String name;
+
+  /// The Arabic name from the place's card, when it has one.
+  final String? nameAr;
 }
 
 class TurnResult {
@@ -86,6 +89,8 @@ class RagEngine {
     for (final e in _cards.entries) {
       final name = cardPlaceName(e.value.text);
       if (name != null) _cardNames[e.value.id] = name;
+      final ar = cardPlaceNameAr(e.value.text);
+      if (ar != null && ar.isNotEmpty) _cardNamesAr[e.value.id] = ar;
     }
   }
 
@@ -96,6 +101,7 @@ class RagEngine {
   final List<Chunk> _chunks;
   final Map<String, Chunk> _cards;
   final Map<int, String> _cardNames = {}; // card chunk id -> the place's name as written on the card
+  final Map<int, String> _cardNamesAr = {}; // card chunk id -> the place's Arabic name on the card
   final List<Turn> history = [];
 
   int get chunkCount => _chunks.length;
@@ -103,7 +109,9 @@ class RagEngine {
 
   void reset() => history.clear();
 
-  Future<TurnResult> ask(String userInput, {void Function(String token)? onToken}) async {
+  /// [userContext] is a short note about the visitor (interests, budget, travel style) and today's date. It goes
+  /// into the answer prompt only, not into the searches, so it never changes what is retrieved.
+  Future<TurnResult> ask(String userInput, {void Function(String token)? onToken, String? userContext}) async {
     final s = settings;
     final clock = Stopwatch()..start();
     final historyText = buildHistoryText(history, s);
@@ -179,13 +187,14 @@ class RagEngine {
 
     // 5. The prompt. If it would not fit the engine's window, the lowest-scoring chunks go.
     var shown = List<Hit>.from(retrieved);
-    var prompt = buildPrompt(userInput, shown, historyText);
+    final question = (userContext == null || userContext.trim().isEmpty) ? userInput : '$userContext\n\n$userInput';
+    var prompt = buildPrompt(question, shown, historyText);
     final systemTokens = estimateTokens(systemPrompt);
     var dropped = 0;
     while (estimateTokens(prompt) + systemTokens > s.maxPromptTokens && shown.length > 3) {
       shown.removeLast();
       dropped++;
-      prompt = buildPrompt(userInput, shown, historyText);
+      prompt = buildPrompt(question, shown, historyText);
     }
     final searchMs = clock.elapsedMilliseconds;
 
@@ -207,8 +216,11 @@ class RagEngine {
     for (final h in shown) {
       final name = _cardNames[h.chunk.id];
       if (name == null || h.chunk.sourceId <= 0 || places.length >= 4) continue;
-      if (lowReply.contains(name.toLowerCase()) && places.every((p) => p.attractionId != h.chunk.sourceId)) {
-        places.add(PlaceRef(h.chunk.sourceId, name));
+      final ar = _cardNamesAr[h.chunk.id];
+      // Arabic answers name places in Arabic, so match the Arabic name too.
+      final named = lowReply.contains(name.toLowerCase()) || (ar != null && lowReply.contains(ar));
+      if (named && places.every((p) => p.attractionId != h.chunk.sourceId)) {
+        places.add(PlaceRef(h.chunk.sourceId, name, ar));
       }
     }
 

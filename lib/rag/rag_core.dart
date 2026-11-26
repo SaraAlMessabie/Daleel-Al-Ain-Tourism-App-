@@ -144,6 +144,14 @@ String? cardPlaceName(String text) {
   return prefix.trim();
 }
 
+/// The place's Arabic name, as written in brackets on its card (null if the card has none).
+String? cardPlaceNameAr(String text) {
+  final m = _cardPattern.firstMatch(text);
+  if (m == null) return null;
+  final ar = RegExp(r'\(([^()]*[\u0600-\u06FF][^()]*)\)').firstMatch(m.group(1)!);
+  return ar?.group(1)?.trim();
+}
+
 class CardResult {
   const CardResult(this.merged, this.names);
   final List<Hit> merged;
@@ -258,8 +266,14 @@ List<String> parseSearchQueries(String reply, int queriesMax) {
   return queries.length > queriesMax ? queries.sublist(0, queriesMax) : queries;
 }
 
-/// Rough token count (words x 1.5), the same estimate the Python script prints.
+/// Rough token count: an English word is about 1.5 tokens (the estimate the Python script prints), an Arabic
+/// word about 3, because the tokenizer splits Arabic into more pieces. Counting Arabic as English let long Arabic
+/// chats overflow the 4,096-token window.
 int estimateTokens(String text) {
-  final words = text.split(RegExp(r'\s+')).where((w) => w.isNotEmpty).length;
-  return (words * 1.5).round();
+  var tokens = 0.0;
+  for (final w in text.split(RegExp(r'\s+'))) {
+    if (w.isEmpty) continue;
+    tokens += _arabicLetter.hasMatch(w) ? 3.0 : 1.5;
+  }
+  return tokens.round();
 }

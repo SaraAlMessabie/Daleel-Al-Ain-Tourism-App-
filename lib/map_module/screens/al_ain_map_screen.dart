@@ -21,6 +21,7 @@ import '../models/saved_trip.dart';
 import '../services/app_storage.dart';
 import '../services/offline_map_bundle.dart';
 import '../services/routing_service.dart';
+import '../../data.dart' show searchKey;
 import '../../theme.dart';
 import '../../ui.dart';
 
@@ -35,6 +36,7 @@ class AlAinMapScreen extends StatefulWidget {
     this.favoriteIds,
     this.onToggleFavorite,
     this.onOpenDetails,
+    this.active = true,
   });
 
   final ThemeMode themeMode;
@@ -56,6 +58,9 @@ class AlAinMapScreen extends StatefulWidget {
 
   /// DALEEL: opens the app's single place screen.
   final void Function(int attractionId)? onOpenDetails;
+
+  /// DALEEL: false while another tab is shown. Location tracking stops then, unless a journey is being guided.
+  final bool active;
 
   @override
   State<AlAinMapScreen> createState() => _AlAinMapScreenState();
@@ -128,7 +133,7 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
   String _t(String english, String arabic) => _isArabic ? arabic : english;
 
   List<Attraction> get _filteredAttractions {
-    final query = _searchQuery.trim().toLowerCase();
+    final query = searchKey(_searchQuery);
     final result = _attractions.where((attraction) {
       if (_savedOnly && !_favoriteIds.contains(attraction.attractionId)) {
         return false;
@@ -138,8 +143,8 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
           attraction.categoryId == _selectedCategoryId;
       final matchesSearch =
           query.isEmpty ||
-          attraction.nameEn.toLowerCase().contains(query) ||
-          attraction.nameAr.contains(_searchQuery.trim());
+          searchKey(attraction.nameEn).contains(query) ||
+          searchKey(attraction.nameAr).contains(query);
       return attraction.isActive && matchesCategory && matchesSearch;
     }).toList();
 
@@ -233,6 +238,23 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
     }
     if (widget.focusNonce != oldWidget.focusNonce) {
       WidgetsBinding.instance.addPostFrameCallback((_) => _applyFocusRequest());
+    }
+    // Leaving the Map tab: stop GPS unless a journey is being guided (it keeps guiding in the background tab).
+    if (oldWidget.active && !widget.active && _navigationTarget == null) {
+      unawaited(_stopLiveTracking());
+    }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // GPS at navigation accuracy drains the battery: pause it while the app is not on screen,
+    // and carry on when the visitor comes back.
+    final sub = _positionSubscription;
+    if (sub == null) return;
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.hidden) {
+      if (!sub.isPaused) sub.pause();
+    } else if (state == AppLifecycleState.resumed) {
+      if (sub.isPaused) sub.resume();
     }
   }
 
@@ -579,19 +601,21 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
   Future<void> _startTripNavigation() async {
     final stops = List<Attraction>.from(_tripStops);
     if (stops.isEmpty) return;
-    final origin = await _ensureLiveLocation(followUser: false);
-    if (origin == null || !mounted) return;
-    if (!_isInsideAlAin(origin)) {
-      _showMessage(
-        _t(
-          'Navigation is available inside the offline Al Ain map area.',
-          'التنقل متاح داخل نطاق خريطة العين دون اتصال.',
-        ),
-      );
-      return;
-    }
+    final gps = await _ensureLiveLocation(followUser: false);
+    if (gps == null || !mounted) return;
+    final origin = _planningOrigin(gps);
     if (_travelMode == TravelMode.bus) {
-      await _startBusNavigation(stops.last, origin);
+      // M3: a bus journey goes to one place at a time. Start with the trip's first stop (it used to jump to the
+      // last one and skip the rest); the visitor plans the next leg from there.
+      if (stops.length > 1) {
+        _showMessage(
+          _t(
+            'Bus directions go to one place at a time. Starting with ${stops.first.nameEn}.',
+            'اتجاهات الحافلة لمكان واحد في كل مرة. نبدأ بـ ${stops.first.nameAr}.',
+          ),
+        );
+      }
+      await _startBusNavigation(stops.first, origin);
       return;
     }
     setState(() => _isCalculatingRoute = true);
@@ -743,8 +767,18 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
         permission == LocationPermission.unableToDetermine) {
       permission = await Geolocator.requestPermission();
     }
-    if (permission == LocationPermission.denied ||
-        permission == LocationPermission.deniedForever) {
+    if (permission == LocationPermission.deniedForever) {
+      _showMessage(
+        _t(
+          'Location is turned off for Daleel. Allow it in Settings to use the map around you.',
+          'الموقع متوقف لتطبيق دليل. اسمح به من الإعدادات لاستخدام الخريطة حولك.',
+        ),
+        actionLabel: _t('Settings', 'الإعدادات'),
+        onAction: () => unawaited(Geolocator.openAppSettings()),
+      );
+      return false;
+    }
+    if (permission == LocationPermission.denied) {
       _showMessage(_t('Location permission was denied.', 'تم رفض إذن الموقع.'));
       return false;
     }
@@ -756,18 +790,33 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
     setState(() => _isLoadingLocation = true);
     try {
       if (!await _ensureLocationPermission()) return null;
-      final position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.high,
-        ),
-      );
+      Position position;
+      try {
+        position = await Geolocator.getCurrentPosition(
+          locationSettings: const LocationSettings(
+            accuracy: LocationAccuracy.high,
+            timeLimit: Duration(seconds: 15),
+          ),
+        );
+      } on TimeoutException {
+        // Indoors the first fix can take very long: use the last known position instead of waiting forever.
+        final last = await Geolocator.getLastKnownPosition();
+        if (last == null) rethrow;
+        position = last;
+      }
       if (!mounted) return null;
       _applyPosition(position, moveCamera: followUser);
       await _startPositionStream(followUser: followUser);
       return LatLng(position.latitude, position.longitude);
     } catch (error) {
+      debugPrint('Location error: $error');
       if (mounted) {
-        _showMessage(error.toString().replaceFirst('Exception: ', ''));
+        _showMessage(
+          _t(
+            'Your location could not be found. Try again near a window or outdoors.',
+            'تعذر تحديد موقعك. حاول مرة أخرى قرب نافذة أو في الخارج.',
+          ),
+        );
       }
       return null;
     } finally {
@@ -791,7 +840,11 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
           (position) => _applyPosition(position, moveCamera: _followUser),
           onError: (Object error) {
             if (!mounted) return;
-            _showMessage(error.toString());
+            debugPrint('Location stream error: $error');
+            _showMessage(
+              _t('Location updates stopped. Tap the location button to try again.',
+                  'توقف تحديث الموقع. اضغط زر الموقع للمحاولة مرة أخرى.'),
+            );
           },
         );
   }
@@ -1014,6 +1067,22 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
     });
   }
 
+  /// Al Ain city centre, used as the start when the visitor is outside the map area (planning ahead).
+  static const LatLng _cityCentre = LatLng(24.2207, 55.7633);
+
+  /// The start of a route: the visitor's position inside Al Ain, or the city centre when they are elsewhere
+  /// (for example planning from a hotel in Dubai), with a note so they know.
+  LatLng _planningOrigin(LatLng location) {
+    if (_isInsideAlAin(location)) return location;
+    _showMessage(
+      _t(
+        'You are outside Al Ain, so this route starts from Al Ain city centre.',
+        'أنت خارج العين، لذلك يبدأ هذا المسار من وسط مدينة العين.',
+      ),
+    );
+    return _cityCentre;
+  }
+
   bool _isInsideAlAin(LatLng location) {
     return location.latitude >= southBoundary &&
         location.latitude <= northBoundary &&
@@ -1021,12 +1090,17 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
         location.longitude <= eastBoundary;
   }
 
-  void _showMessage(String message) {
+  void _showMessage(String message, {String? actionLabel, VoidCallback? onAction}) {
     // Several callers run after an await (location permission, routing); the screen may be gone by then.
     if (!mounted) return;
     ScaffoldMessenger.of(context)
       ..hideCurrentSnackBar()
-      ..showSnackBar(SnackBar(content: Text(message)));
+      ..showSnackBar(SnackBar(
+        content: Text(message),
+        action: actionLabel == null || onAction == null
+            ? null
+            : SnackBarAction(label: actionLabel, onPressed: onAction),
+      ));
   }
 
   Future<void> _showNearMeSheet() async {
@@ -1137,20 +1211,13 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
       ),
     );
     if (mounted) setState(() => _nearMeEnabled = false);
+    if (mounted && _navigationTarget == null && !_followUser) unawaited(_stopLiveTracking());
   }
 
   Future<void> _showNavigationOptions(Attraction attraction) async {
-    final location = await _ensureLiveLocation(followUser: false);
-    if (location == null || !mounted) return;
-    if (!_isInsideAlAin(location)) {
-      _showMessage(
-        _t(
-          'Navigation is available inside the offline Al Ain map area.',
-          'التنقل متاح داخل نطاق خريطة العين دون اتصال.',
-        ),
-      );
-      return;
-    }
+    final gps = await _ensureLiveLocation(followUser: false);
+    if (gps == null || !mounted) return;
+    final location = _planningOrigin(gps);
 
     final mode = await showModalBottomSheet<TravelMode>(
       context: context,
@@ -1347,7 +1414,21 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
     _showBusJourneySheet(plan, attraction);
   }
 
+  /// The best direct bus. Short walks are tried first (about 10 minutes at each end, since Al Ain is hot for much
+  /// of the year); only if no bus fits are longer walks allowed.
   BusJourneyPlan? _findBestDirectBusPlan(LatLng origin, LatLng destination) {
+    for (final maxWalkKm in const [0.8, 1.5, 3.0]) {
+      final plan = _findDirectBusPlanWithin(origin, destination, maxWalkKm);
+      if (plan != null) return plan;
+    }
+    return null;
+  }
+
+  BusJourneyPlan? _findDirectBusPlanWithin(
+    LatLng origin,
+    LatLng destination,
+    double maxWalkKm,
+  ) {
     BusJourneyPlan? best;
     var bestScore = double.infinity;
     for (final direction in _routeDirections) {
@@ -1366,7 +1447,7 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
           origin,
           LatLng(boardStop.latitude, boardStop.longitude),
         );
-        if (walkToBoard > 3) continue;
+        if (walkToBoard > maxWalkKm) continue;
 
         for (
           var alightIndex = boardIndex + 1;
@@ -1381,7 +1462,7 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
             LatLng(alightStop.latitude, alightStop.longitude),
             destination,
           );
-          if (walkFromAlight > 3) continue;
+          if (walkFromAlight > maxWalkKm) continue;
           final score =
               walkToBoard + walkFromAlight + (alightIndex - boardIndex) * 0.02;
           if (score >= bestScore) continue;

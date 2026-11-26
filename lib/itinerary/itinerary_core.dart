@@ -35,6 +35,8 @@ class PlaceFacts {
     this.visitMinutes,
     this.hoursText = '',
     this.closedText = '',
+    this.hoursTextAr = '',
+    this.closedTextAr = '',
     this.openMinutes,
     this.closeMinutes,
     this.is24h = false,
@@ -49,6 +51,8 @@ class PlaceFacts {
         visitMinutes: (r['avg_visit_duration_mins'] as num?)?.toInt(),
         hoursText: (r['opening_hours'] as String?) ?? '',
         closedText: (r['closed_days'] as String?) ?? '',
+        hoursTextAr: (r['opening_hours_ar'] as String?) ?? '',
+        closedTextAr: (r['closed_days_ar'] as String?) ?? '',
         openMinutes: parseClock(r['open_time']),
         closeMinutes: parseClock(r['close_time']),
         is24h: r['is_24_hours'] == 1 || r['is_24_hours'] == true,
@@ -61,6 +65,12 @@ class PlaceFacts {
   final int? visitMinutes;
   final String hoursText;
   final String closedText;
+
+  /// Arabic versions (empty when the database has none; then the English text is shown).
+  final String hoursTextAr;
+  final String closedTextAr;
+
+  String hours(String lang) => lang == 'ar' && hoursTextAr.trim().isNotEmpty ? hoursTextAr : hoursText;
   final int? openMinutes;
   final int? closeMinutes;
   final bool is24h;
@@ -77,6 +87,13 @@ class PlaceFacts {
     final t = closedText.trim();
     final l = t.toLowerCase();
     return (t.isEmpty || l == 'none' || l == 'none reported') ? null : t;
+  }
+
+  /// [closedNote] in the app's language.
+  String? closedNoteIn(String lang) {
+    final note = closedNote;
+    if (note == null) return null;
+    return lang == 'ar' && closedTextAr.trim().isNotEmpty ? closedTextAr : note;
   }
 }
 
@@ -147,7 +164,18 @@ class Plan {
 // Matching names in the text to places
 // ---------------------------------------------------------------------------------------------
 
-String _norm(String s) => s
+/// Arabic-Indic digits (٠-٩) as 0-9, so "اليوم ١" reads as day 1.
+String westernDigits(String s) => s.replaceAllMapped(
+    RegExp('[\u0660-\u0669]'), (m) => String.fromCharCode(m.group(0)!.codeUnitAt(0) - 0x0660 + 0x30));
+
+/// Spellings of the same Arabic letter treated as one (أ إ آ = ا, ة = ه, ى = ي), one character for one, so
+/// positions found in the folded text are the same in the original.
+String foldArabic(String s) => s
+    .replaceAll(RegExp('[\u0623\u0625\u0622]'), '\u0627')
+    .replaceAll('\u0629', '\u0647')
+    .replaceAll('\u0649', '\u064A');
+
+String _norm(String s) => foldArabic(s)
     .toLowerCase()
     .replaceAll(RegExp('[\u2019\u2018\u02BC`]'), "'")
     .replaceAll(RegExp(r'\s+'), ' ')
@@ -360,7 +388,7 @@ ExtractResult extractPlan(String reply, PlaceIndex index) {
   var headings = 0;
   var sawDayHeading = false;
 
-  for (final raw in reply.split(RegExp(r'\r?\n'))) {
+  for (final raw in westernDigits(reply).split(RegExp(r'\r?\n'))) {
     final text = _clean(raw);
     if (text.isEmpty) continue;
 

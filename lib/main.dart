@@ -7,6 +7,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 
 import 'app_state.dart';
+import 'assistant/assistant_controller.dart' show assistantEnginesStarted;
 import 'screens/home_shell.dart';
 import 'screens/quiz_screen.dart';
 import 'theme.dart';
@@ -40,6 +41,7 @@ Future<void> main() async {
           ? null
           : const String.fromEnvironment('HUGGINGFACE_TOKEN'),
     );
+    assistantEnginesStarted = true;
   } catch (e, st) {
     debugPrint('Assistant engines did not start: $e\n$st');
   }

@@ -24,12 +24,14 @@ class _QuizScreenState extends State<QuizScreen> {
   int? _budget;
   bool _saving = false; // stops a double-tap on "Finish" from saving twice
   final _name = TextEditingController();
+  late String _startLang; // the language when the quiz opened, restored if a retake is cancelled
 
   @override
   void initState() {
     super.initState();
     final s = context.read<AppState>();
     _lang = s.language;
+    _startLang = s.language;
     _name.text = s.userName;
     if (widget.retake) {
       _style = s.travelStyle;
@@ -74,8 +76,11 @@ class _QuizScreenState extends State<QuizScreen> {
       );
       if (widget.retake && mounted) Navigator.pop(context);
     } catch (e, st) {
-      // The answers were not saved: stay on the last question and let the button work again.
+      // The answers were not saved: stay on the last question, say so, and let the button work again.
       debugPrint('Quiz: save failed: $e\n$st');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(s.t('quiz_save_failed'))));
+      }
     } finally {
       if (mounted) setState(() => _saving = false);
     }
@@ -83,7 +88,11 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void _back() {
     if (_page == 0) {
-      if (widget.retake) Navigator.pop(context);
+      if (widget.retake) {
+        // Cancelling a retake keeps the saved language, not the one tapped on the first page.
+        context.read<AppState>().setLanguage(_startLang);
+        Navigator.pop(context);
+      }
       return;
     }
     _go(-1);
@@ -92,7 +101,13 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     final s = context.watch<AppState>();
-    return Scaffold(
+    // Android Back goes to the previous question instead of closing the app (or cancels a retake).
+    return PopScope(
+      canPop: _page == 0 && !widget.retake, // on the first question of the first run, Back leaves the app
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _back();
+      },
+      child: Scaffold(
       body: SafeArea(
         child: Column(
           children: [
@@ -191,6 +206,7 @@ class _QuizScreenState extends State<QuizScreen> {
           ],
         ),
       ),
+    ),
     );
   }
 }

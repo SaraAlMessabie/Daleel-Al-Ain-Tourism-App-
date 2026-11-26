@@ -49,9 +49,12 @@ Future<bool> confirmDelete(BuildContext context, String Function(String) t) asyn
 }
 
 class ItineraryScreen extends StatefulWidget {
-  const ItineraryScreen({super.key, required this.plan, this.savedId});
+  const ItineraryScreen({super.key, required this.plan, this.savedId, this.onSaved});
 
   final Plan plan;
+
+  /// Told the itinerary's id after each save (the chat uses it so a second save updates instead of copying).
+  final ValueChanged<int>? onSaved;
 
   /// Set when this is a saved itinerary being opened again.
   final int? savedId;
@@ -66,6 +69,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
   int? _savedId;
   bool _dirty = true;
   bool _saving = false; // a second tap while saving would insert the itinerary twice
+  bool _leaving = false; // set once leaving is confirmed (or after a delete), so the page can close
 
   /// Places that are not in Daleel's guide are never saved, so a plan with none of Daleel's places has nothing to save.
   bool get _canSave => plan.days.any((d) => d.stops.any((s) => s.inGuide));
@@ -108,6 +112,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
         _savedId = id;
         _dirty = false;
       });
+      widget.onSaved?.call(id);
       messenger
         ..hideCurrentSnackBar()
         ..showSnackBar(SnackBar(content: Text(t('it_saved_snack')), duration: const Duration(seconds: 2)));
@@ -127,7 +132,15 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
     if (!await confirmDelete(context, context.read<AppState>().t)) return;
     await ItineraryStore.delete(id);
     if (!mounted) return;
-    Navigator.pop(context, true);
+    _closeWith(true);
+  }
+
+  /// Closes the page without the unsaved-changes question (the page rebuilds first so it is allowed to close).
+  void _closeWith([Object? result]) {
+    setState(() => _leaving = true);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) Navigator.pop(context, result);
+    });
   }
 
   String _placeName(PlanStop s, String lang) {
@@ -153,11 +166,11 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
     final stop = day.stops[si];
     final f = stop.facts;
     final facts = <String>[
-      if (f != null && f.hoursText.isNotEmpty) f.hoursText,
+      if (f != null && f.hours(s.language).isNotEmpty) f.hours(s.language),
       if (f != null) money(stop.price, t),
       if (f != null) '${stop.minutes} ${t('min')}',
     ].join('  \u00B7  ');
-    final closed = f?.closedNote;
+    final closed = f?.closedNoteIn(s.language);
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 5),
       child: Padding(
@@ -270,7 +283,25 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
     final t = s.t;
     final theme = Theme.of(context);
     final unknown = plan.days.fold<int>(0, (a, d) => a + d.stops.where((x) => !x.inGuide).length);
-    return Scaffold(
+    // Leaving with unsaved changes asks first, so an edited plan is not lost by accident.
+    return PopScope(
+      canPop: _leaving || !_dirty || !_canSave,
+      onPopInvokedWithResult: (didPop, _) async {
+        if (didPop) return;
+        final leave = await showDialog<bool>(
+          context: context,
+          builder: (d) => AlertDialog(
+            title: Text(t('it_leave_ask')),
+            content: Text(t('it_leave_body')),
+            actions: [
+              TextButton(onPressed: () => Navigator.pop(d, false), child: Text(t('it_cancel'))),
+              FilledButton(onPressed: () => Navigator.pop(d, true), child: Text(t('it_leave'))),
+            ],
+          ),
+        );
+        if (leave == true && mounted) _closeWith();
+      },
+      child: Scaffold(
       appBar: AppBar(
         title: Text(plan.title ?? t('it_title')),
         actions: [
@@ -354,6 +385,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
           ),
         ),
       ),
+    ),
     );
   }
 }
