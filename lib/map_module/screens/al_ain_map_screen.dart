@@ -1969,7 +1969,7 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
     return Padding(
       padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
       child: _floatingSurface(
-        shape: const StadiumBorder(side: BorderSide(color: duneLine)),
+        shape: const StadiumBorder(side: BorderSide(color: controlLine)), // a box you type in: 3:1 edge
         child: Row(
           children: [
             const Padding(
@@ -2716,7 +2716,7 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
                       '${tripIndex + 1}',
                       style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 11,
+                        fontSize: 12,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

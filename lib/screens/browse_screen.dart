@@ -58,10 +58,21 @@ class _BrowseScreenState extends State<BrowseScreen> {
   Widget build(BuildContext context) {
     final s = context.watch<AppState>();
     return Scaffold(
+      // The page is named like its tab; the greeting sits under it.
       appBar: AppBar(
-        title: Text(s.userName.isEmpty
-            ? s.t('tab_browse')
-            : '${s.t('hello')} ${s.userName}'),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(s.t('tab_browse')),
+            if (s.userName.isNotEmpty)
+              Text(
+                '${s.t('hello')} ${s.userName}',
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: mutedBrown),
+              ),
+          ],
+        ),
+        toolbarHeight: s.userName.isEmpty ? null : 72,
       ),
       body: FutureBuilder<(List<Attraction>, List<PlaceCategoryRow>)>(
         future: _future,
@@ -157,8 +168,9 @@ class _CategoryRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = context.watch<AppState>();
+    // Grows with the phone's text size, so chip labels are not cut off at large text.
     return SizedBox(
-      height: 52,
+      height: MediaQuery.textScalerOf(context).scale(40) + 12,
       child: ListView(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -199,7 +211,10 @@ class _PlaceCard extends StatelessWidget {
     final s = context.watch<AppState>();
     final l = s.language;
     final tagline = a.pick(l, 'tagline');
-    final matches = a.tags.intersection(s.tagIds).isNotEmpty;
+    final matched = a.tags.intersection(s.tagIds);
+    final matches = matched.isNotEmpty;
+    // Say why a place is suggested: the first of the visitor's interests it matches.
+    final reason = interests.where((g) => g.tags.any(matched.contains)).firstOrNull;
     final overBudget = s.budget != null && a.price > s.budget!;
     final category = categories.where((c) => c.id == a.categoryId).firstOrNull;
     final saved = s.isFavorite(a.id);
@@ -239,7 +254,10 @@ class _PlaceCard extends StatelessWidget {
                 ),
               ],
             ),
-            Padding(
+            // One item for screen readers (name, tagline, price, open now, why it is suggested) instead of
+            // six separate ones; the Save button stays its own item.
+            MergeSemantics(
+              child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -278,11 +296,18 @@ class _PlaceCard extends StatelessWidget {
                       if (overBudget)
                         MetaItem(icon: Icons.info_outline, label: s.t('over_budget'))
                       else if (matches)
-                        MetaItem(icon: Icons.favorite_outline, label: s.t('for_you'), color: oasis),
+                        MetaItem(
+                          icon: Icons.favorite_outline,
+                          label: reason == null
+                              ? s.t('for_you')
+                              : '${s.t('for_you_short')} · ${l == 'ar' ? reason.ar : reason.en}',
+                          color: oasis,
+                        ),
                     ],
                   ),
                 ],
               ),
+            ),
             ),
           ],
         ),

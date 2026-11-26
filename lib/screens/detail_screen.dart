@@ -136,11 +136,11 @@ class DetailScreen extends StatelessWidget {
                     Expanded(child: SaveButton(attractionId: a.id, expanded: true)),
                   ],
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 4),
                 // Booking tickets is planned for a later version; the button shows where it will go.
-                SizedBox(
-                  width: double.infinity,
-                  child: OutlinedButton.icon(
+                // A quiet text button so it does not compete with the real actions above.
+                Center(
+                  child: TextButton.icon(
                     onPressed: null,
                     icon: const Icon(Icons.confirmation_number_outlined),
                     label: Text(s.t('book_soon')),
@@ -150,14 +150,10 @@ class DetailScreen extends StatelessWidget {
                   const SizedBox(height: 8),
                   MetaItem(icon: Icons.info_outline, label: s.t('no_coords')),
                 ],
-                if (description.trim().isNotEmpty) ...[
-                  const SizedBox(height: 28),
-                  Text(s.t('about_place'), style: text.titleLarge),
-                  const SizedBox(height: 8),
-                  Text(description, style: text.bodyLarge),
-                ],
+                // Visiting facts (hours, closed days, dress code) come before the long description:
+                // they are what visitors check first.
                 if (facts.isNotEmpty) ...[
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 20),
                   Card(
                     child: Column(
                       children: [
@@ -175,6 +171,12 @@ class DetailScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+                if (description.trim().isNotEmpty) ...[
+                  const SizedBox(height: 28),
+                  Text(s.t('about_place'), style: text.titleLarge),
+                  const SizedBox(height: 8),
+                  Text(description, style: text.bodyLarge),
                 ],
               ],
             ),

@@ -88,6 +88,7 @@ const Map<String, String> _en = {
   'quiz_save_failed': 'Your answers could not be saved. Please try again.',
   'p_trips': 'Trips',
   'book_soon': 'Book (coming soon)',
+  'it_fewer_people': 'Fewer people', 'it_more_people': 'More people', 'for_you_short': 'For you',
   'p_delete_data': 'Delete my data', 'p_delete_data_sub': 'Answers, name, saved places, itineraries and saved routes',
   'p_delete_ask': 'Delete all your data?', 'p_delete_body': 'Everything you saved in Daleel on this phone is removed and you start again from the welcome questions. This cannot be undone.',
 };
@@ -181,6 +182,7 @@ const Map<String, String> _ar = {
   'quiz_save_failed': 'تعذر حفظ إجاباتك. حاول مرة أخرى.',
   'p_trips': 'الرحلات',
   'book_soon': 'احجز (قريباً)',
+  'it_fewer_people': 'عدد أقل من الأشخاص', 'it_more_people': 'عدد أكبر من الأشخاص', 'for_you_short': 'لك',
   'p_delete_data': 'حذف بياناتي', 'p_delete_data_sub': 'الإجابات والاسم والأماكن المحفوظة والبرامج والمسارات المحفوظة',
   'p_delete_ask': 'حذف جميع بياناتك؟', 'p_delete_body': 'سيُحذف كل ما حفظته في دليل على هذا الهاتف وتبدأ من جديد من أسئلة الترحيب. لا يمكن التراجع عن ذلك.',
 };

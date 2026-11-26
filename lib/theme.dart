@@ -10,7 +10,10 @@ const sand = Color(0xFFF5EBDD); // page background
 const sandDeep = Color(0xFFEDE0CC); // secondary panels, skeletons
 const parchment = Color(0xFFFFFBF5); // cards, sheets, search fields
 const dune = Color(0xFFD9B380); // selection, indicator, decoration only
-const duneLine = Color(0xFFE2D2BA); // hairlines and outlines
+const duneLine = Color(0xFFE2D2BA); // hairlines and card edges (decoration only)
+// Edges of things you tap or type in (search box, chips, outlined buttons). WCAG 2.2 asks 3:1 for these:
+// 3.9:1 on parchment, 3.4:1 on sand, 3.1:1 on sandDeep. The old duneLine edge was only 1.4:1.
+const controlLine = Color(0xFF947B5F);
 const terracotta = Color(0xFFA4522D); // primary actions (white text 5.5:1)
 const terracottaDeep = Color(0xFF7E3B1E); // pressed / text on dune
 const oasis = Color(0xFF4F6B4A); // secondary, "for you", success
@@ -53,7 +56,7 @@ ThemeData daleelTheme() {
     surfaceContainer: parchment,
     surfaceContainerHigh: Color(0xFFF8F0E4),
     surfaceContainerHighest: sandDeep,
-    outline: Color(0xFFB9A58C),
+    outline: controlLine,
     outlineVariant: duneLine,
     inverseSurface: darkBrown,
     onInverseSurface: sand,
@@ -145,7 +148,7 @@ ThemeData daleelTheme() {
       backgroundColor: parchment,
       selectedColor: dune.withValues(alpha: 0.6),
       checkmarkColor: terracottaDeep,
-      side: const BorderSide(color: duneLine),
+      side: const BorderSide(color: controlLine),
       shape: const StadiumBorder(),
       labelStyle: const TextStyle(
         fontFamily: textFont,
@@ -167,7 +170,7 @@ ThemeData daleelTheme() {
         shape: rounded14,
         minimumSize: const Size(64, 48),
         foregroundColor: terracottaDeep,
-        side: const BorderSide(color: Color(0xFFB9A58C)),
+        side: const BorderSide(color: controlLine),
         textStyle: buttonText,
       ),
     ),
@@ -182,7 +185,7 @@ ThemeData daleelTheme() {
       style: SegmentedButton.styleFrom(
         selectedBackgroundColor: dune.withValues(alpha: 0.6),
         selectedForegroundColor: darkBrown,
-        side: const BorderSide(color: duneLine),
+        side: const BorderSide(color: controlLine),
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
@@ -192,8 +195,8 @@ ThemeData daleelTheme() {
       prefixIconColor: mutedBrown,
       suffixIconColor: mutedBrown,
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      border: field(duneLine),
-      enabledBorder: field(duneLine),
+      border: field(controlLine),
+      enabledBorder: field(controlLine),
       focusedBorder: field(terracotta, 1.6),
     ),
     bottomSheetTheme: const BottomSheetThemeData(

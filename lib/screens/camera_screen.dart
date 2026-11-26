@@ -27,6 +27,7 @@ class _CameraScreenState extends State<CameraScreen> {
   ClassifyResult? _result;
   bool _busy = false;
   bool _denied = false; // camera or photo access was refused
+  bool _analysing = false; // a photo was chosen and is being recognised (not while the picker is open)
   String? _error;
 
   Attraction? _byLabel(String label) {
@@ -64,6 +65,7 @@ class _CameraScreenState extends State<CameraScreen> {
       setState(() {
         _result = null;
         _photo = photo;
+        _analysing = true;
       });
       _all = _all.isEmpty ? await loadAttractions() : _all;
       _clf ??= await Classifier.load(); // loaded only the first time it is needed
@@ -74,7 +76,12 @@ class _CameraScreenState extends State<CameraScreen> {
       debugPrint('Camera error: $e\n$st');
       if (mounted) setState(() => _error = '$e');
     } finally {
-      if (mounted) setState(() => _busy = false);
+      if (mounted) {
+        setState(() {
+          _busy = false;
+          _analysing = false;
+        });
+      }
     }
   }
 
@@ -144,7 +151,7 @@ class _CameraScreenState extends State<CameraScreen> {
             ],
           ),
           const SizedBox(height: 16),
-          if (_busy)
+          if (_analysing)
             Row(
               children: [
                 const SizedBox(
@@ -178,7 +185,12 @@ class _CameraScreenState extends State<CameraScreen> {
                 ),
               ),
             ),
-          if (_result != null) _ResultView(result: _result!, byLabel: _byLabel, onOpen: _open),
+          // A live region: screen readers read the result out when it appears.
+          if (_result != null)
+            Semantics(
+              liveRegion: true,
+              child: _ResultView(result: _result!, byLabel: _byLabel, onOpen: _open),
+            ),
         ],
       ),
     );

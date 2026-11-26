@@ -324,11 +324,13 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
                         Text(t('it_people'), style: theme.textTheme.titleMedium),
                         const Spacer(),
                         IconButton(
+                          tooltip: t('it_fewer_people'), // screen readers said only "button"
                           onPressed: plan.people > 1 ? () => _edit(() => plan.people--) : null,
                           icon: const Icon(Icons.remove_circle_outline),
                         ),
                         Text('${plan.people}', style: theme.textTheme.titleMedium),
                         IconButton(
+                          tooltip: t('it_more_people'),
                           onPressed: plan.people < 20 ? () => _edit(() => plan.people++) : null,
                           icon: const Icon(Icons.add_circle_outline),
                         ),
