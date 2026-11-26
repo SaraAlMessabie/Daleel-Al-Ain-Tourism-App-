@@ -136,6 +136,16 @@ class DetailScreen extends StatelessWidget {
                     Expanded(child: SaveButton(attractionId: a.id, expanded: true)),
                   ],
                 ),
+                const SizedBox(height: 10),
+                // Booking tickets is planned for a later version; the button shows where it will go.
+                SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton.icon(
+                    onPressed: null,
+                    icon: const Icon(Icons.confirmation_number_outlined),
+                    label: Text(s.t('book_soon')),
+                  ),
+                ),
                 if (!a.hasLocation) ...[
                   const SizedBox(height: 8),
                   MetaItem(icon: Icons.info_outline, label: s.t('no_coords')),

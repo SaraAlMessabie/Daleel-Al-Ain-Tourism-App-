@@ -601,9 +601,17 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
   Future<void> _startTripNavigation() async {
     final stops = List<Attraction>.from(_tripStops);
     if (stops.isEmpty) return;
-    final gps = await _ensureLiveLocation(followUser: false);
-    if (gps == null || !mounted) return;
-    final origin = _planningOrigin(gps);
+    final origin = await _ensureLiveLocation(followUser: false);
+    if (origin == null || !mounted) return;
+    if (!_isInsideAlAin(origin)) {
+      _showMessage(
+        _t(
+          'Navigation is available inside the offline Al Ain map area.',
+          'التنقل متاح داخل نطاق خريطة العين دون اتصال.',
+        ),
+      );
+      return;
+    }
     if (_travelMode == TravelMode.bus) {
       // M3: a bus journey goes to one place at a time. Start with the trip's first stop (it used to jump to the
       // last one and skip the rest); the visitor plans the next leg from there.
@@ -1067,22 +1075,6 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
     });
   }
 
-  /// Al Ain city centre, used as the start when the visitor is outside the map area (planning ahead).
-  static const LatLng _cityCentre = LatLng(24.2207, 55.7633);
-
-  /// The start of a route: the visitor's position inside Al Ain, or the city centre when they are elsewhere
-  /// (for example planning from a hotel in Dubai), with a note so they know.
-  LatLng _planningOrigin(LatLng location) {
-    if (_isInsideAlAin(location)) return location;
-    _showMessage(
-      _t(
-        'You are outside Al Ain, so this route starts from Al Ain city centre.',
-        'أنت خارج العين، لذلك يبدأ هذا المسار من وسط مدينة العين.',
-      ),
-    );
-    return _cityCentre;
-  }
-
   bool _isInsideAlAin(LatLng location) {
     return location.latitude >= southBoundary &&
         location.latitude <= northBoundary &&
@@ -1215,9 +1207,18 @@ class _AlAinMapScreenState extends State<AlAinMapScreen>
   }
 
   Future<void> _showNavigationOptions(Attraction attraction) async {
-    final gps = await _ensureLiveLocation(followUser: false);
-    if (gps == null || !mounted) return;
-    final location = _planningOrigin(gps);
+    final location = await _ensureLiveLocation(followUser: false);
+    if (location == null || !mounted) return;
+    if (!_isInsideAlAin(location)) {
+      _showMessage(
+        _t(
+          'Navigation is available inside the offline Al Ain map area.',
+          'التنقل متاح داخل نطاق خريطة العين دون اتصال.',
+        ),
+      );
+      return;
+    }
+
 
     final mode = await showModalBottomSheet<TravelMode>(
       context: context,
