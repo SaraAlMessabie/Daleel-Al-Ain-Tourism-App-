@@ -60,9 +60,10 @@ class _CameraScreenState extends State<CameraScreen> {
         rethrow;
       }
       if (x == null) return;
+      final photo = File(x.path);
       setState(() {
         _result = null;
-        _photo = File(x.path);
+        _photo = photo;
       });
       _all = _all.isEmpty ? await loadAttractions() : _all;
       _clf ??= await Classifier.load(); // loaded only the first time it is needed
