@@ -299,12 +299,12 @@ flutter run
 
 ## Updating the data
 
-Places live in `assets/db/al_ain.db`; the map and the assistant also read `assets/data/attractions.json` and `assets/data/rag_index.json`. Keep the three in step:
+Places live in `assets/db/al_ain.db`, the one source of truth. The map reads `assets/data/attractions.json`, which is generated from the database, and the assistant reads `assets/data/rag_index.json`:
 
-1. Edit the database and the JSON together; every image path must exist in `assets/images/`.
+1. Edit the database (fill the `_ar` columns too), then run `python3 plugins/daleel/scripts/export_map_json.py` to refresh the map's JSON. Every image path must exist in `assets/images/`.
 2. Rebuild `rag_index.json` with your embedding pipeline (EmbeddingGemma 2, 270m). Vectors cannot be edited by hand.
 3. Raise `Db.bundledDbVersion` in `lib/data.dart`. On the next start the app installs the new database and carries the user's quiz answers and saved itineraries over.
-4. Run `python3 plugins/daleel/scripts/check_data.py`. It checks ids, categories, images, search-index links and English/Arabic string parity.
+4. Run `python3 plugins/daleel/scripts/check_data.py`. It checks ids, categories, images, locations, that the JSON matches the database, search-index links and English/Arabic string parity. GitHub runs it, `flutter analyze`, `flutter test` and an Android build on every push (`.github/workflows/check.yml`).
 
 The repo also contains a Claude Code plugin (`plugins/daleel`) with skills for adding attractions, adding bilingual strings and running that check:
 
