@@ -49,11 +49,13 @@ class MapDataRepository {
             )
             .where((route) => route.isActive)
             .toList()
-          ..sort(
-            (first, second) =>
-                int.parse(first.routeNumber)
-                    .compareTo(int.parse(second.routeNumber)),
-          );
+          ..sort((first, second) {
+            // A route number with letters (for example "X5") must not stop all bus data from loading.
+            final a = int.tryParse(first.routeNumber);
+            final b = int.tryParse(second.routeNumber);
+            if (a != null && b != null) return a.compareTo(b);
+            return first.routeNumber.compareTo(second.routeNumber);
+          });
 
     final directions = directionJson
         .map(

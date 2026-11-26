@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../app_state.dart';
+import '../data.dart' show groupsOf, interests;
 import '../screens/detail_screen.dart';
 import '../theme.dart';
 import '../itinerary/itinerary_screen.dart';
@@ -83,11 +84,12 @@ class _AssistantView extends StatelessWidget {
         );
       case AssistantPhase.failed:
         final download = c.failure == AssistantFailure.download;
+        final unsupported = c.failure == AssistantFailure.unsupported;
         body = ErrorPanel(
           title: t('a_err_title'),
-          body: download ? t('a_err_download') : t('a_err_start'),
-          retryLabel: t('retry'),
-          onRetry: download ? c.install : c.start,
+          body: unsupported ? t('a_err_unsupported') : (download ? t('a_err_download') : t('a_err_start')),
+          retryLabel: unsupported ? null : t('retry'),
+          onRetry: unsupported ? null : (download ? c.install : c.start),
           icon: Icons.smart_toy_outlined,
         );
       case AssistantPhase.ready:
@@ -167,7 +169,9 @@ class _ChatState extends State<_Chat> {
     super.dispose();
   }
 
-  void _toBottom() {
+  /// Follows the answer as it is written, unless the visitor has scrolled up to read something earlier.
+  void _toBottom({bool force = false}) {
+    if (!force && _scroll.hasClients && _scroll.position.maxScrollExtent - _scroll.position.pixels > 160) return;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scroll.hasClients) _scroll.jumpTo(_scroll.position.maxScrollExtent);
     });
@@ -178,8 +182,8 @@ class _ChatState extends State<_Chat> {
     final q = (text ?? _input.text).trim();
     if (q.isEmpty || c.answering) return;
     _input.clear();
-    c.send(q);
-    _toBottom();
+    c.send(q, userContext: visitorNote(context.read<AppState>(), DateTime.now()));
+    _toBottom(force: true);
   }
 
   @override
@@ -224,6 +228,7 @@ class _ChatState extends State<_Chat> {
               const SizedBox(width: 8),
               IconButton.filled(
                 onPressed: c.answering ? null : _submit,
+                tooltip: t('a_send'),
                 icon: const Icon(Icons.send),
               ),
             ],
@@ -277,7 +282,9 @@ class _Bubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.watch<AppState>().t;
+    final app = context.watch<AppState>();
+    final t = app.t;
+    final lang = app.language;
     final theme = Theme.of(context);
     final mine = message.fromUser;
     final text = message.failed && message.text.isEmpty ? t('a_err_chat') : message.text;
@@ -315,7 +322,14 @@ class _Bubble extends StatelessWidget {
               const SizedBox(height: 8),
               FilledButton.tonalIcon(
                 onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => ItineraryScreen(plan: message.plan!)),
+                  MaterialPageRoute(
+                    builder: (_) => ItineraryScreen(
+                      plan: message.plan!,
+                      savedId: message.savedItineraryId,
+                      // Saving again from this answer updates the same itinerary instead of making a copy.
+                      onSaved: (id) => message.savedItineraryId = id,
+                    ),
+                  ),
                 ),
                 icon: const Icon(Icons.route_outlined),
                 label: Text(t('it_create')),
@@ -330,7 +344,7 @@ class _Bubble extends StatelessWidget {
                   for (final p in message.places)
                     ActionChip(
                       avatar: const Icon(Icons.place_outlined, size: 18),
-                      label: Text(p.name),
+                      label: Text(lang == 'ar' && p.nameAr != null ? p.nameAr! : p.name),
                       tooltip: t('a_places'),
                       onPressed: () => DetailScreen.openById(context, p.attractionId),
                     ),
@@ -342,4 +356,22 @@ class _Bubble extends StatelessWidget {
       ),
     );
   }
+}
+/// A short note about the visitor for the assistant: what they told the welcome quiz, and the day and time now,
+/// so answers can fit their interests and budget and say what is open. Written in English for the model.
+String visitorNote(AppState s, DateTime now) {
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+      'November', 'December'];
+  final parts = <String>[];
+  final style = s.travelStyle;
+  if (style != null) parts.add(style == 'solo' ? 'travelling alone' : 'travelling as a $style');
+  final names = [for (final i in (groupsOf(s.tagIds).toList()..sort())) interests[i].en];
+  if (names.isNotEmpty) parts.add('interested in ${names.join(', ')}');
+  final b = s.budget;
+  if (b != null) parts.add(b == 0 ? 'prefers free places' : 'budget up to ${b.round()} AED per place per person');
+  final time = '${now.hour.toString().padLeft(2, '0')}:${now.minute.toString().padLeft(2, '0')}';
+  final today = '${days[now.weekday - 1]} ${now.day} ${months[now.month - 1]} ${now.year}, $time';
+  final about = parts.isEmpty ? '' : 'About the visitor: ${parts.join('; ')}. ';
+  return '[${about}Now: $today in Al Ain. Use this only where it helps the answer.]';
 }

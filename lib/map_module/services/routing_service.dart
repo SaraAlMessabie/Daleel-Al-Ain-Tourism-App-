@@ -57,8 +57,9 @@ class RoutingService {
     );
     final client = _client ?? http.Client();
     try {
+      // The public routing servers ask apps to identify themselves.
       final response = await client
-          .get(uri)
+          .get(uri, headers: const {'User-Agent': 'Daleel/1.0 (Al Ain tourism app, student project)'})
           .timeout(const Duration(seconds: 20));
       if (response.statusCode != 200) {
         throw RoutingException(
@@ -125,10 +126,8 @@ class RoutingService {
     } on RoutingException {
       rethrow;
     } catch (error) {
-      throw RoutingException(
-        'This route is not saved offline yet. Connect once to download it: '
-        '$error',
-      );
+      // Keep the technical detail in the log; callers show the visitor a short message.
+      throw RoutingException('This route is not saved offline yet. Connect once to download it. ($error)');
     } finally {
       if (_client == null) client.close();
     }

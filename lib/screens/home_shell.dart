@@ -37,6 +37,7 @@ class _HomeShellState extends State<HomeShell> {
           favoriteIds: s.favoriteIds,
           onToggleFavorite: s.toggleFavorite,
           onOpenDetails: (id) => DetailScreen.openById(context, id),
+          active: _i == Tabs.map, // GPS stops when another tab is shown
         );
       case Tabs.assistant:
         return const AssistantScreen();
@@ -66,7 +67,13 @@ class _HomeShellState extends State<HomeShell> {
       });
     }
 
-    return Scaffold(
+    // Android Back on another tab goes to Explore first instead of closing the app.
+    return PopScope(
+      canPop: _i == Tabs.explore,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _select(Tabs.explore);
+      },
+      child: Scaffold(
       body: IndexedStack(
         index: _i,
         children: [for (var i = 0; i < 5; i++) _page(i, s)],
@@ -97,6 +104,7 @@ class _HomeShellState extends State<HomeShell> {
               label: t('tab_profile')),
         ],
       ),
+    ),
     );
   }
 }

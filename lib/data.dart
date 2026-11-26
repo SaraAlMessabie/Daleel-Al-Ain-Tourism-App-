@@ -16,7 +16,7 @@ class Db {
   static Database? _db;
 
   /// Raise this number every time assets/db/al_ain.db changes.
-  static const bundledDbVersion = 2;
+  static const bundledDbVersion = 3;
   static const _versionKey = 'daleel_db_version';
 
   /// Tables that hold the user's own data. Everything else comes from the bundled database.
@@ -93,6 +93,13 @@ class Db {
           final list = shared.join(', ');
           await txn.execute('INSERT INTO main.$table ($list) SELECT $list FROM old.$table');
         }
+        // A place or tag removed from the new data must not block the update: drop the user's rows that point to it
+        // (they could no longer be shown anyway), instead of failing the update on every start.
+        await txn.execute('DELETE FROM main.itinerary_items WHERE attraction_id IS NOT NULL '
+            'AND attraction_id NOT IN (SELECT attraction_id FROM main.attractions)');
+        await txn.execute('DELETE FROM main.itinerary_items WHERE event_id IS NOT NULL '
+            'AND event_id NOT IN (SELECT event_id FROM main.events)');
+        await txn.execute('DELETE FROM main.user_preference_tags WHERE tag_id NOT IN (SELECT tag_id FROM main.tags)');
         final broken = await txn.rawQuery('PRAGMA foreign_key_check');
         if (broken.isNotEmpty) throw StateError('foreign key problems after the copy: $broken');
       });
@@ -127,7 +134,77 @@ class Attraction {
     if (v != null && v.trim().isNotEmpty) return v;
     return (row['${base}_en'] as String?) ?? '';
   }
+
+  /// For columns stored as English `<column>` plus Arabic `<column>_ar` (opening_hours, dress_code_note,
+  /// best_time_to_visit, closed_days): the Arabic text in Arabic, else the English one.
+  String local(String lang, String column) {
+    if (lang == 'ar') {
+      final ar = row['${column}_ar'] as String?;
+      if (ar != null && ar.trim().isNotEmpty) return ar;
+    }
+    return (row[column] as String?) ?? '';
+  }
+
+  bool get ladiesOnly => tags.contains(ladiesOnlyTag);
+
+  /// True or false when the opening times say for sure whether the place is open at [now]; null when they
+  /// cannot tell (no times, or a note such as "Friday until 3:00 PM" that applies today, prayer times, seasons).
+  bool? openAt(DateTime now) {
+    if (row['is_24_hours'] == 1) return true;
+    int? clock(Object? v) {
+      final m = v is String ? RegExp(r'^(\d{1,2}):(\d{2})').firstMatch(v.trim()) : null;
+      return m == null ? null : int.parse(m.group(1)!) * 60 + int.parse(m.group(2)!);
+    }
+
+    final open = clock(row['open_time']), close = clock(row['close_time']);
+    if (open == null || close == null) return null;
+    final note = ((row['closed_days'] as String?) ?? '').trim().toLowerCase();
+    final noNote = note.isEmpty || note == 'none' || note == 'none reported';
+    if (!noNote) {
+      final friday = now.weekday == DateTime.friday;
+      if (!(note.startsWith('friday') && !friday)) return null; // a note that may apply now
+    }
+    final m = now.hour * 60 + now.minute;
+    return close > open ? (m >= open && m < close) : (m >= open || m < close);
+  }
 }
+
+/// Tag ids used by the ranking and labels.
+const ladiesOnlyTag = 26;
+
+/// Tags that suit each travel style. A place gets a small bonus for each one it has (at most 2), so the travel
+/// style changes the order. (The old rule used the family-friendly flag, which every place has.)
+const styleTags = <String, Set<int>>{
+  'family': {2, 28, 17, 29, 18, 20}, // family-friendly, theme park, wildlife, educational, water, picnic
+  'couple': {16, 21, 19, 32}, // scenic views, photography, relaxation, dining
+  'friends': {5, 23, 24, 28, 22}, // adventure, desert, sports, theme park, cycling
+  'solo': {13, 1, 15, 21, 7}, // history, culture, hiking, photography, exhibition
+};
+
+/// Orders places by how well they match the quiz answers: 3 points per matching interest tag, up to 2 for the
+/// travel style, popularity only to break ties, and places over the budget moved to the bottom.
+List<Attraction> rankAttractions(List<Attraction> all, Set<int> tagIds, String? style, double? budget) {
+  double score(Attraction a) {
+    var v = a.tags.intersection(tagIds).length * 3.0;
+    final st = styleTags[style];
+    if (st != null) v += a.tags.intersection(st).length.clamp(0, 2).toDouble();
+    if (budget != null && a.price > budget) v -= 100; // over budget -> bottom
+    return v + a.popularity / 100;
+  }
+
+  final scores = {for (final a in all) a.id: score(a)};
+  return [...all]..sort((x, y) => scores[y.id]!.compareTo(scores[x.id]!));
+}
+
+/// Lower case, Arabic letter variants folded (أ إ آ = ا, ة = ه, ى = ي) and Arabic diacritics removed, so a search
+/// finds a place however its name is spelled.
+String searchKey(String s) => s
+    .toLowerCase()
+    .replaceAll(RegExp('[\u064B-\u0652\u0640]'), '')
+    .replaceAll(RegExp('[\u0623\u0625\u0622]'), '\u0627')
+    .replaceAll('\u0629', '\u0647')
+    .replaceAll('\u0649', '\u064A')
+    .trim();
 
 Future<List<Attraction>> loadAttractions() async {
   final db = await Db.get();
@@ -176,6 +253,7 @@ class Interest {
   final List<int> tags;
 }
 
+// "Festivals & events" was removed: no place carries those tags, so choosing it changed nothing.
 const interests = [
   Interest('History & heritage', 'التاريخ والتراث', [13, 25]),
   Interest('Art & culture', 'الفنون والثقافة', [1, 9, 7]),
@@ -190,7 +268,6 @@ const interests = [
   Interest('Mosques & religious sites', 'المساجد والمواقع الدينية', [14]),
   Interest('Theme parks & fun', 'المتنزهات الترفيهية', [28]),
   Interest('Learning', 'التعلّم', [29]),
-  Interest('Festivals & events', 'المهرجانات والفعاليات', [8, 31, 6]),
 ];
 
 Set<int> tagsOf(Set<int> groups) => {for (final i in groups) ...interests[i].tags};

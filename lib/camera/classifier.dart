@@ -14,10 +14,16 @@ class Prediction {
 }
 
 class ClassifyResult {
-  ClassifyResult(this.top, this.notSure);
+  ClassifyResult(this.top, this.notSure, {this.unknown = false});
   final List<Prediction> top; // best first, up to 3
   final bool notSure; // true when the best guess is below the confidence limit
+
+  /// True when the photo does not look like any of the known landmarks at all (for example a game screenshot).
+  /// Then the closest matches are not worth showing.
+  final bool unknown;
 }
+
+Object? _decodeJson(String text) => jsonDecode(text);
 
 /// Photo -> 224x224 RGB numbers between 0 and 1.
 /// Runs in a background isolate (via compute) so the screen does not freeze.
@@ -66,7 +72,8 @@ class Classifier {
   static Future<Classifier> load() async {
     final interp = await Interpreter.fromAsset('assets/model/mobilenetv3_embedder.tflite');
     final raw = await rootBundle.loadString('assets/model/svm_head.json');
-    final j = jsonDecode(raw) as Map<String, dynamic>;
+    // 1.1 MB of numbers: read it in the background so the screen does not freeze.
+    final j = await compute(_decodeJson, raw) as Map<String, dynamic>;
 
     if ((j['embedding_dim'] as num).toInt() != dim) {
       throw Exception('svm_head.json expects ${j['embedding_dim']} numbers, the model gives $dim');
@@ -153,7 +160,10 @@ class Classifier {
       }
     }
     return ClassifyResult(
-        top, top.first.confidence < notSureBelow || close || lowScore || lowSim);
+      top,
+      top.first.confidence < notSureBelow || close || lowScore || lowSim,
+      unknown: lowScore || lowSim,
+    );
   }
 
   void close() => _interp.close();
