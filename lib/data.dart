@@ -16,7 +16,7 @@ class Db {
   static Database? _db;
 
   /// Raise this number every time assets/db/al_ain.db changes.
-  static const bundledDbVersion = 2;
+  static const bundledDbVersion = 3;
   static const _versionKey = 'daleel_db_version';
 
   /// Tables that hold the user's own data. Everything else comes from the bundled database.
@@ -93,6 +93,13 @@ class Db {
           final list = shared.join(', ');
           await txn.execute('INSERT INTO main.$table ($list) SELECT $list FROM old.$table');
         }
+        // A place or tag removed from the new data must not block the update: drop the user's rows that point to it
+        // (they could no longer be shown anyway), instead of failing the update on every start.
+        await txn.execute('DELETE FROM main.itinerary_items WHERE attraction_id IS NOT NULL '
+            'AND attraction_id NOT IN (SELECT attraction_id FROM main.attractions)');
+        await txn.execute('DELETE FROM main.itinerary_items WHERE event_id IS NOT NULL '
+            'AND event_id NOT IN (SELECT event_id FROM main.events)');
+        await txn.execute('DELETE FROM main.user_preference_tags WHERE tag_id NOT IN (SELECT tag_id FROM main.tags)');
         final broken = await txn.rawQuery('PRAGMA foreign_key_check');
         if (broken.isNotEmpty) throw StateError('foreign key problems after the copy: $broken');
       });
